@@ -578,8 +578,7 @@ def validate_and_fix_fiche_ids():
     return issues_found
 
 def get_fiche(fiche_id):
-    """
-    Récupère une fiche à partir de son ID avec gestion des IDs legacy
+    """Récupère une fiche à partir de son ID avec gestion des IDs legacy
     
     Args:
         fiche_id (str): L'identifiant de la fiche à récupérer
@@ -587,8 +586,9 @@ def get_fiche(fiche_id):
     Returns:
         dict: Les données de la fiche ou None si non trouvée
     """
-    # Vérifier si le fichier de la fiche existe
-    fiche_file = os.path.join('data', 'fiches', f'{fiche_id}.json')
+    # Utiliser un chemin absolu
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    fiche_file = os.path.join(base_dir, 'data', 'fiches', f'{fiche_id}.json')
     
     try:
         if os.path.exists(fiche_file):
@@ -603,21 +603,37 @@ def get_fiche(fiche_id):
         return None
     except Exception as e:
         st.error(f"Erreur lors du chargement de la fiche {fiche_id}: {e}")
+        st.error(f"Chemin de la fiche: {fiche_file}")
         return None
 
 class SessionManager:
     def __init__(self, sessions_file="data/sessions.json"):
-        self.sessions_file = sessions_file
+        # Utiliser un chemin absolu basé sur le fichier app.py
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        self.sessions_file = os.path.join(base_dir, sessions_file)
+        st.write(f"📁 Chemin du fichier sessions: {self.sessions_file}")
         self.sessions_data = self.load_sessions()
         self.fiches_cache = {}
     
     def load_sessions(self):
         """Charge les données de sessions avec validation"""
         try:
+            if not os.path.exists(self.sessions_file):
+                st.error(f"❌ Fichier sessions.json introuvable: {self.sessions_file}")
+                st.write(f"Répertoire parent existe: {os.path.exists(os.path.dirname(self.sessions_file))}")
+                if os.path.exists(os.path.dirname(self.sessions_file)):
+                    st.write(f"Contenu du répertoire: {os.listdir(os.path.dirname(self.sessions_file))}")
+                return {"sessions": {}}
+                    
             with open(self.sessions_file, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                data = json.load(f)
+                st.success(f"✅ Sessions chargées depuis: {self.sessions_file}")
+                st.write(f"Nombre de sessions dans le fichier: {len(data.get('sessions', {}))}")
+                return data
         except Exception as e:
-            st.error(f"Erreur lors du chargement des sessions : {e}")
+            st.error(f"❌ Erreur lors du chargement des sessions : {e}")
+            st.error(f"Type d'erreur: {type(e).__name__}")
+            st.error(f"Chemin du fichier: {self.sessions_file}")
             return {"sessions": {}}
     
     def get_session_by_id(self, session_id):
@@ -834,6 +850,22 @@ def display_enhanced_session_selector():
     """Affichage amélioré du sélecteur de sessions"""
     session_manager = SessionManager()
     sessions = session_manager.sessions_data.get("sessions", {})
+    
+    # Ajout de débogage temporaire pour Render
+    st.write(f"🔍 **Debug Info:**")
+    st.write(f"- Nombre de sessions chargées: {len(sessions)}")
+    st.write(f"- Sessions disponibles: {list(sessions.keys())}")
+    st.write(f"- Répertoire de travail: {os.getcwd()}")
+    st.write(f"- Fichier sessions.json existe: {os.path.exists('data/sessions.json')}")
+    
+    if not sessions:
+        st.error("❌ Aucune session trouvée. Vérifiez le fichier sessions.json")
+        st.write("Contenu du répertoire data:")
+        if os.path.exists('data'):
+            st.write(os.listdir('data'))
+        else:
+            st.write("Le répertoire 'data' n'existe pas")
+        return
     
     # Créer des colonnes pour l'affichage en grille
     cols = st.columns(2)
