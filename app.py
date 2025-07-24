@@ -851,20 +851,8 @@ def display_enhanced_session_selector():
     session_manager = SessionManager()
     sessions = session_manager.sessions_data.get("sessions", {})
     
-    # Ajout de débogage temporaire pour Render
-    st.write(f"🔍 **Debug Info:**")
-    st.write(f"- Nombre de sessions chargées: {len(sessions)}")
-    st.write(f"- Sessions disponibles: {list(sessions.keys())}")
-    st.write(f"- Répertoire de travail: {os.getcwd()}")
-    st.write(f"- Fichier sessions.json existe: {os.path.exists('data/sessions.json')}")
-    
     if not sessions:
         st.error("❌ Aucune session trouvée. Vérifiez le fichier sessions.json")
-        st.write("Contenu du répertoire data:")
-        if os.path.exists('data'):
-            st.write(os.listdir('data'))
-        else:
-            st.write("Le répertoire 'data' n'existe pas")
         return
     
     # Créer des colonnes pour l'affichage en grille
