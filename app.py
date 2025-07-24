@@ -1791,7 +1791,7 @@ def show_questionnaires():
     
     # Afficher les fiches de la session en accordéon
     if 'fiches' in selected_session and selected_session['fiches']:
-        st.markdown("## 📋 Fiches de la session")
+        st.markdown("## 📋 Bienvenue dans la session ")
         
         # Initialiser l'état d'expansion des accordéons et les modifications non sauvegardées
         if 'expanded_fiches' not in st.session_state:
@@ -1829,14 +1829,6 @@ def show_questionnaires():
                 status_text = "Non commencée"
                 status_color = "#9ca3af"  # Gris pour non commencé
             
-            # Barre de progression personnalisée
-            progress_bar = f"""
-            <div style="height: 6px; background-color: #e5e7eb; border-radius: 3px; margin: 8px 0;">
-                <div style="height: 6px; width: {fiche_progress}%; background-color: {status_color}; 
-                            border-radius: 3px; transition: width 0.3s ease-in-out;"></div>
-            </div>
-            """
-            
             # Style personnalisé pour l'accordéon
             st.markdown("""
             <style>
@@ -1861,17 +1853,6 @@ def show_questionnaires():
             
             # Afficher le style personnalisé
             title = fiche.get('title', 'Fiche sans titre')
-            header_html = f"""
-            <div style="margin-bottom: 0.5rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                    <span>{status_icon} <strong>{title}</strong> 
-                    <span style="color: {status_color}; font-size: 0.9rem; margin-left: 0.5rem;">{status_text}</span></span>
-                    <span style="font-size: 0.9rem; color: #6b7280;">{fiche_progress}%</span>
-                </div>
-                {progress_bar}
-            </div>
-            """
-            st.markdown(header_html, unsafe_allow_html=True)
             
             # Créer l'accordéon avec un titre simple
             with st.expander(
