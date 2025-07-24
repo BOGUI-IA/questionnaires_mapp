@@ -9,3 +9,15 @@ services:
         value: "True"
       - key: PORT
         value: "10000"
+    includePaths:
+      - "app.py"
+      - "requirements.txt"
+      - "setup.sh"
+      - "data/**"
+      - "script/**"
+    ignorePaths:
+      - "README.md"
+      - "BACKUP_README.md"
+      - "*.md"
+      - ".gitignore"
+      - "fiches_backup.zip"
