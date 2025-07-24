@@ -1,0 +1,191 @@
+{
+  "id": "fiche3_anthropologie_donnees",
+  "title": "Anthropologie des Données",
+  "description": "Décrypter la culture cachée derrière les données brutes pour garantir la pertinence et la fiabilité de l'IA.",
+  "session": "session_1",
+  "question_count": 14,
+  "questions": [
+    {
+      "id": "q1_biographie_donnee",
+      "text": "Biographie d'une Donnée : Une ligne de votre historique de maintenance est principalement...",
+      "options": [
+        "(A) Un fait technique objectif, saisi rigoureusement.",
+        "(B) Le reflet de l'interprétation subjective du technicien sur le moment.",
+        "(C) Une formalité administrative, souvent remplie rapidement pour clôturer le ticket.",
+        "(D) Un mélange complexe des trois, dont la vérité dépend de qui l'a écrite.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q2_champ_poubelle",
+      "text": "Le Champ \"Poubelle\" : La colonne où les techniciens mettent l'information la plus riche (et la plus désordonnée) est...",
+      "options": [
+        "(A) Commentaires libres",
+        "(B) Description du problème",
+        "(C) Solution appliquée",
+        "(D) Observations diverses",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q3_hierarchie_confiance",
+      "text": "Hiérarchie de Confiance : La colonne à laquelle vous faites le plus confiance est... et celle dont vous vous méfiez le plus est...",
+      "options": [
+        "(A) Plus confiance: Le nom ou code de l'équipement (fiable et standardisé) / Moins confiance: Cause Racine (souvent une supposition rapide).",
+        "(B) Plus confiance: La date de l'intervention / Moins confiance: Description des symptômes (très variable selon le technicien).",
+        "(C) Plus confiance: L'ID de la pièce de rechange utilisée / Moins confiance: Temps de réparation déclaré (souvent arrondi ou sous-estimé).",
+        "(D) Plus confiance: Le temps d'arrêt déclaré / Moins confiance: Le statut de clôture du ticket.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q4_donnee_fantome",
+      "text": "🔥 LA DONNÉE FANTÔME : L'information la plus critique qui n'est JAMAIS enregistrée formellement est...",
+      "options": [
+        "(A) Le contexte de production au moment de la panne (cadence, lot, réglages).",
+        "(B) L'identité de l'opérateur machine qui a signalé le problème.",
+        "(C) Les conditions environnementales précises (température, humidité dans l'atelier).",
+        "(D) Les \"quasi-incidents\" et les micro-ajustements faits par les opérateurs pour éviter un arrêt complet.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q5_dictionnaire_jargon",
+      "text": "Dictionnaire du Jargon : Le jargon de vos données est principalement composé de...",
+      "options": [
+        "(A) Abréviations techniques standard (ex: \"alim\" pour alimentation).",
+        "(B) Noms de code internes pour les machines ou les pannes.",
+        "(C) Références à des personnes ou des équipes (ex: \"vu avec Michel\").",
+        "(D) Fautes d'orthographe et de frappe récurrentes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q6_decodage_ras",
+      "text": "Décodage du \"RAS\" : Quand un technicien écrit \"Rien À Signaler\", cela signifie le plus souvent...",
+      "options": [
+        "(A) L'intervention préventive s'est déroulée normalement, sans aucun problème.",
+        "(B) Le technicien n'a pas eu le temps de documenter en détail.",
+        "(C) Le problème intermittent signalé n'a pas pu être reproduit.",
+        "(D) Le problème a été résolu par une action simple (ex: redémarrage) ne nécessitant pas de rapport détaillé.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q7_donnee_revee",
+      "text": "Donnée Rêvée : Si vous pouviez ajouter UNE seule nouvelle donnée temps réel, ce serait...",
+      "options": [
+        "(A) La consommation énergétique précise de chaque machine.",
+        "(B) Un indicateur du niveau de fatigue/stress de l'opérateur.",
+        "(C) La composition chimique exacte de la matière première en cours d'utilisation.",
+        "(D) La position exacte des équipements mobiles (chariots, etc.).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q8_source_ultime",
+      "text": "Source Ultime : Si une seule source de vérité devait exister, ce serait...",
+      "options": [
+        "(A) La GMAO, car c'est le registre officiel des interventions.",
+        "(B) Le MES, car il reflète la réalité de la production en temps réel.",
+        "(C) L'ERP, car il contient la vérité financière et logistique.",
+        "(D) Le cerveau collectif des techniciens seniors, car il contient le contexte non écrit.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q9_arrangements",
+      "text": "🔥 LES ARRANGEMENTS : Les données sont parfois \"arrangées\" ou incomplètes principalement...",
+      "options": [
+        "(A) Pour simplifier et accélérer la saisie administrative.",
+        "(B) Pour éviter de blâmer un autre service ou un collègue.",
+        "(C) Pour faire en sorte que les indicateurs de performance (KPI) apparaissent meilleurs qu'ils ne le sont.",
+        "(D) Par manque de formation sur l'importance de la qualité des données.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q10_proprietaire_reel",
+      "text": "Propriétaire Réel : Aujourd'hui, qui est concrètement responsable de la qualité des données de maintenance ?",
+      "options": [
+        "(A) Le technicien qui effectue la saisie.",
+        "(B) Le responsable de maintenance, qui est censé vérifier.",
+        "(C) Le service IT / le gestionnaire de la GMAO.",
+        "(D) Personne en particulier, c'est une responsabilité diffuse.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q11_correlation_secrete",
+      "text": "Corrélation Secrète : La corrélation de données la plus \"magique\" à réaliser serait de lier...",
+      "options": [
+        "(A) Les plannings des équipes RH (fatigue, absentéisme) avec les pics de pannes.",
+        "(B) La performance des lots de fournisseurs avec l'usure prématurée des pièces.",
+        "(C) Les réclamations clients avec les micro-arrêts de production survenus des semaines plus tôt.",
+        "(D) La consommation d'énergie avec le niveau de compétence des opérateurs sur une machine.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q12_peremption_donnees",
+      "text": "Péremption des Données : Une donnée de panne devient significativement moins pertinente après...",
+      "options": [
+        "(A) 1 an (les process changent trop vite).",
+        "(B) 3-5 ans (bon équilibre, les machines majeures sont encore là).",
+        "(C) 10 ans (tout est utile pour détecter des cycles longs).",
+        "(D) Cela dépend totalement du type de machine et de panne.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q13_patrimoine_visuel",
+      "text": "Patrimoine Visuel : Les photos et vidéos de pannes sont actuellement...",
+      "options": [
+        "(A) Inexistantes ou très rares.",
+        "(B) Stockées de manière informelle sur les téléphones personnels ou des groupes de chat.",
+        "(C) Dans un dossier partagé sur le réseau, mais sans structure claire.",
+        "(D) Parfois attachées aux bons d'intervention dans la GMAO, mais ce n'est pas systématique.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q14_defi_data",
+      "text": "Défi N°1 Data : Votre plus grand challenge concernant les données est...",
+      "options": [
+        "(A) Le Volume (la simple quantité de données à traiter).",
+        "(B) La Variété (des formats incompatibles : Excel, PDF, texte libre...).",
+        "(C) La Vélocité (la difficulté à traiter les flux de données en temps réel).",
+        "(D) La Véracité (le manque de fiabilité et de qualité des données saisies).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    }
+  ]
+}

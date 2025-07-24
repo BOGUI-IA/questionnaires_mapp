@@ -1,0 +1,191 @@
+{
+  "id": 10,
+  "title": "L'Entreprise de Demain & la Culture",
+  "description": "Anticiper la croissance, définir l'ADN de la future entreprise et aligner la vision produit avec la vision d'entreprise.",
+  "session": 3,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 PROCHAIN PROFIL : Le MVP est un succès et nous avons sécurisé nos finances. Après le CTO, le premier recrutement absolument stratégique est...",
+      "options": [
+        "(A) Un **\"Sales Engineer\"** (Ingénieur Commercial) pour accélérer l'acquisition des premiers clients.",
+        "(B) Un **\"Data Scientist\"** supplémentaire pour améliorer continuellement nos modèles d'IA.",
+        "(C) Un **\"Customer Success Manager\"** pour s'assurer que nos premiers clients sont heureux et adoptent le produit.",
+        "(D) Un **\"Product Manager\"** pour structurer la roadmap et la collecte des besoins clients.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "ADN en 3 Mots : Les 3 valeurs fondamentales et non-négociables qui doivent définir la culture de notre entreprise sont...",
+      "options": [
+        "(A) Simplicité, Efficacité, Fiabilité.",
+        "(B) Innovation, Audace, Vitesse.",
+        "(C) Partenariat Client, Transparence, Humilité.",
+        "(D) Excellence, Rigueur, Expertise.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "Nom Définitif : Le nom \"IA PRODUCT-INDUS\"...",
+      "options": [
+        "(A) Est parfait, il est clair, descriptif et professionnel. On le garde.",
+        "(B) Est un excellent nom de code pour le projet, mais il faudra trouver un nom de marque plus court et plus marketing.",
+        "(C) Est bon, mais un peu trop technique. On pourrait le simplifier.",
+        "(D) N'est pas la priorité, on décidera plus tard.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "🔥 PARTENAIRE RÊVÉ : Si nous pouvions signer une alliance stratégique avec n'importe quelle entreprise dans le monde, celle qui changerait radicalement notre destin serait...",
+      "options": [
+        "(A) Un géant du **Cloud** (Microsoft, AWS) pour une distribution massive et une crédibilité technique.",
+        "(B) Un grand **constructeur de machines** (OEM comme Siemens, Rockwell) pour intégrer notre IA en natif.",
+        "(C) Un éditeur majeur de **GMAO/ERP** (comme SAP, Infor) pour devenir leur brique d'intelligence officielle.",
+        "(D) Un grand **cabinet de conseil en stratégie industrielle** (comme McKinsey, BCG) pour qu'ils prescrivent notre solution.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "Transformation Métier : Notre outil va changer le quotidien d'un technicien principalement en...",
+      "options": [
+        "(A) Réduisant les tâches à faible valeur (recherche, saisie) pour qu'il se concentre sur l'expertise.",
+        "(B) Lui donnant les moyens de devenir plus proactif et prédictif, comme un \"docteur\" de machines.",
+        "(C) Facilitant le partage de son savoir, faisant de lui un mentor pour les plus jeunes.",
+        "(D) Augmentant sa valeur et sa reconnaissance au sein de l'entreprise.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "🔥 NOUVELLE COMPÉTENCE MANAGER : La compétence que les responsables de maintenance devront absolument développer grâce à notre outil est...",
+      "options": [
+        "(A) Le **pilotage par la donnée** (passer de l'intuition à l'analyse de KPI).",
+        "(B) La **gestion de projet d'amélioration continue**.",
+        "(C) Le **management du changement** pour accompagner leurs équipes.",
+        "(D) La **gestion des talents** et des plans de carrière basés sur les compétences.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "Équipe de Légende : Pour devenir un leader mondial, notre équipe de 10 personnes doit être composée principalement...",
+      "options": [
+        "(A) D'ingénieurs et de data scientists de très haut niveau (focus produit).",
+        "(B) D'une force de vente et de marketing exceptionnelle (focus marché).",
+        "(C) D'experts métier de l'industrie qui comprennent nos clients mieux que personne (focus client).",
+        "(D) D'un équilibre parfait entre les trois.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "🔥 DÉFI CROISSANCE : En passant de 10 à 100 clients, le plus grand défi sera...",
+      "options": [
+        "(A) La **scalabilité technique** de la plateforme pour gérer la charge.",
+        "(B) Le **support client** et l'onboarding, qui risquent d'être débordés.",
+        "(C) Le **recrutement** des bons talents pour soutenir la croissance.",
+        "(D) La **concurrence** qui se réveillera et essaiera de nous copier.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "Garant Éthique : Au sein de notre future entreprise, le garant final de l'utilisation éthique des données de nos clients sera...",
+      "options": [
+        "(A) Le CEO (Alex).",
+        "(B) Le CTO.",
+        "(C) Un comité d'éthique indépendant que nous créerons.",
+        "(D) Chaque employé, à travers une charte éthique très stricte.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "🔥 INNOVATION CONTINUE : Pour s'assurer que l'entreprise ne se repose jamais sur ses acquis, la meilleure méthode est de...",
+      "options": [
+        "(A) Dédier un pourcentage fixe du chiffre d'affaires à la R&D.",
+        "(B) Créer une \"cellule innovation\" séparée du reste de l'équipe produit.",
+        "(C) Mettre en place une culture où chaque employé a du temps alloué pour des projets personnels (\"20% time\" de Google).",
+        "(D) Rester en contact permanent avec nos clients les plus exigeants et co-développer le futur avec eux.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "Message Quotidien : La motivation que chaque employé doit avoir en tête en arrivant le matin est...",
+      "options": [
+        "(A) \"Construire la meilleure technologie IA pour l'industrie.\"",
+        "(B) \"Aider nos clients à réussir.\"",
+        "(C) \"Rendre le travail des techniciens plus simple et plus sûr.\"",
+        "(D) \"Bâtir une entreprise rentable et leader sur son marché.\"",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "🔥 INDICATEUR DE RÉUSSITE : Au-delà du chiffre d'affaires, le jour où nous pourrons dire que nous avons VRAIMENT réussi, c'est quand...",
+      "options": [
+        "(A) Notre nom deviendra un standard dans l'industrie (\"Tu as checké sur IA-INDUS ?\").",
+        "(B) Nous aurons une étude d'impact montrant que nous avons significativement réduit les accidents du travail.",
+        "(C) Nos premiers clients pilotes seront toujours avec nous après 5 ans.",
+        "(D) Les techniciens diront que notre outil a rendu leur métier plus intéressant.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "🔥 PREMIÈRE CÉLÉBRATION : Le premier jalon qui méritera une vraie fête mémorable est...",
+      "options": [
+        "(A) La signature du premier client payant.",
+        "(B) Le premier million d'euros d'ARR.",
+        "(C) Le jour où un client nous dira : \"Votre IA a prédit une panne qui nous aurait coûté une fortune.\"",
+        "(D) Le jour où nous aurons 100 utilisateurs actifs quotidiens.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "Héritage 10 ans : Dans 10 ans, si l'on ne devait retenir qu'UNE seule chose de l'impact de IA PRODUCT-INDUS, ce serait...",
+      "options": [
+        "(A) Avoir rendu l'IA accessible et utile pour des milliers de PME/ETI.",
+        "(B) Avoir transformé le métier de la maintenance industrielle.",
+        "(C) Avoir créé une entreprise avec une culture forte et des employés épanouis.",
+        "(D) Avoir prouvé que performance industrielle et durabilité peuvent aller de pair.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

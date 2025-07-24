@@ -1,0 +1,191 @@
+{
+  "id": 7,
+  "title": "Gestion des Risques & Angles Morts",
+  "description": "Identifier et anticiper les risques techniques, éthiques et business qui pourraient compromettre le succès du projet.",
+  "session": 2,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 RISQUE TECHNIQUE MAJEUR : Le risque technique qui pourrait le plus compromettre notre projet est...",
+      "options": [
+        "(A) La qualité insuffisante des données historiques de la GMAO (données manquantes, incohérentes, mal structurées).",
+        "(B) La difficulté d'intégration avec les systèmes existants du client (API fermées, formats propriétaires).",
+        "(C) Les performances décevantes du modèle d'IA sur des cas réels (trop de faux positifs ou de diagnostics erronés).",
+        "(D) L'instabilité ou les coûts prohibitifs des services cloud d'IA (OpenAI, Azure, etc.).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "Dépendance Critique : Notre plus grande vulnérabilité externe est...",
+      "options": [
+        "(A) Notre dépendance aux API d'OpenAI/Azure pour les LLM.",
+        "(B) Notre dépendance à un seul développeur clé (Alex) pour l'architecture technique.",
+        "(C) Notre dépendance aux données clients pour entraîner et améliorer le modèle.",
+        "(D) Notre dépendance à un premier client pilote pour valider le concept.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "🔥 RÉSISTANCE AU CHANGEMENT : La résistance la plus probable de la part des techniciens sera...",
+      "options": [
+        "(A) \"L'IA ne comprend rien aux spécificités de nos machines.\" (Scepticisme technique)",
+        "(B) \"Cet outil va remplacer notre expertise et notre emploi.\" (Peur du remplacement)",
+        "(C) \"C'est encore un gadget de la direction qui ne nous fera pas gagner de temps.\" (Lassitude des nouveaux outils)",
+        "(D) \"Nous n'avons pas le temps d'apprendre un nouvel outil.\" (Surcharge de travail)",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "Concurrence Inattendue : Le concurrent qui pourrait nous surprendre et nous devancer est...",
+      "options": [
+        "(A) Un éditeur de GMAO qui intègre directement l'IA dans son produit existant.",
+        "(B) Un constructeur de machines (OEM) qui propose l'IA directement intégrée à ses équipements.",
+        "(C) Une startup spécialisée en IA industrielle avec plus de moyens financiers.",
+        "(D) Un cabinet de conseil qui développe une solution similaire en interne pour ses clients.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "🔥 ANGLE MORT BUSINESS : L'aspect business que nous sous-estimons probablement est...",
+      "options": [
+        "(A) Le temps nécessaire pour convaincre et former les équipes (adoption plus lente que prévu).",
+        "(B) La complexité des cycles de vente B2B industriels (décisions longues, multiples interlocuteurs).",
+        "(C) Les exigences de sécurité et de conformité (RGPD, certifications industrielles).",
+        "(D) Le coût réel de l'accompagnement client (support, formation, personnalisation).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "Évolution Technologique : La technologie qui pourrait rendre notre approche obsolète est...",
+      "options": [
+        "(A) L'arrivée de LLM spécialisés en maintenance industrielle, rendant notre couche RAG moins pertinente.",
+        "(B) L'intégration native de l'IA dans les machines par les constructeurs.",
+        "(C) Le développement de capteurs IoT si avancés qu'ils prédisent les pannes avant qu'elles n'arrivent.",
+        "(D) L'émergence de standards industriels qui uniformisent les données, réduisant notre avantage sur le nettoyage de données.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "🔥 ERREUR FATALE : L'erreur de notre IA qui pourrait tuer la confiance du client est...",
+      "options": [
+        "(A) Recommander une action dangereuse qui pourrait blesser un technicien.",
+        "(B) Passer à côté d'une panne critique qui entraîne un arrêt de production coûteux.",
+        "(C) Donner systématiquement de mauvais diagnostics sur un type d'équipement spécifique.",
+        "(D) \"Halluciner\" et inventer des solutions qui n'existent pas dans l'historique.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "Limite de Scalabilité : Le facteur qui pourrait limiter notre croissance est...",
+      "options": [
+        "(A) Le coût croissant des API d'IA avec l'augmentation du volume de requêtes.",
+        "(B) La difficulté à recruter des profils techniques capables de comprendre à la fois l'IA et l'industrie.",
+        "(C) La nécessité de personnaliser chaque déploiement, rendant difficile la standardisation.",
+        "(D) Les contraintes réglementaires qui varient selon les secteurs et les pays.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "Éthique de l'IA : Une décision que l'IA ne devrait éthiquement jamais influencer est...",
+      "options": [
+        "(A) L'évaluation de la performance d'un technicien.",
+        "(B) Une décision de mise à l'arrêt d'une ligne de production si des personnes y travaillent.",
+        "(C) Le choix de remplacer un équipement (et donc potentiellement le personnel associé).",
+        "(D) Toute décision ayant un impact direct sur la sécurité humaine sans validation par un expert humain.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "Réglementation Future : La future loi qui pourrait le plus impacter notre business est...",
+      "options": [
+        "(A) Une réglementation stricte sur l'utilisation des données industrielles transfrontalières.",
+        "(B) Une loi qui impose la \"transparence\" et l'\"explicabilité\" totale des algorithmes d'IA.",
+        "(C) Une réglementation qui définit la responsabilité légale en cas d'erreur d'une IA.",
+        "(D) Des normes environnementales qui changent les priorités de production de nos clients.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "🔥 CLIENT IMPOSSIBLE : Si un client n'est jamais satisfait des recommandations de l'IA car \"ses problèmes sont uniques\", notre approche est de...",
+      "options": [
+        "(A) Utiliser les données de son insatisfaction (feedback) pour sur-spécialiser son modèle.",
+        "(B) Lui prouver avec des métriques que, statistiquement, l'IA est plus fiable que ses experts.",
+        "(C) Lui proposer une prestation de consulting pour mieux paramétrer l'outil à son contexte.",
+        "(D) Accepter que notre produit n'est pas fait pour lui et proposer une rupture de contrat à l'amiable.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "Obsolescence Technologique : Ce qui pourrait rendre notre solution obsolète en 3 ans, c'est...",
+      "options": [
+        "(A) L'arrivée d'une nouvelle génération de LLM beaucoup plus puissants qui n'ont plus besoin de l'approche RAG.",
+        "(B) L'intégration de l'IA directement dans les machines par les constructeurs (OEM), rendant notre couche logicielle superflue.",
+        "(C) Un changement radical de plateforme (ex: le passage à l'informatique quantique).",
+        "(D) La standardisation des formats de données industrielles, qui rendrait nos outils de nettoyage moins pertinents.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "🔥 CONFIDENTIALITÉ : Pour rassurer un client sur le fait que ses données ne \"fuiteront\" pas vers ses concurrents via notre apprentissage croisé, l'argument clé est...",
+      "options": [
+        "(A) **Juridique :** Nos contrats garantissent une confidentialité absolue.",
+        "(B) **Technique :** Nous utilisons des techniques d'anonymisation et de pseudonymisation robustes, aucune donnée brute n'est partagée.",
+        "(C) **Conceptuel :** Nous n'apprenons que des \"patterns\" génériques (ex: \"ce type de vibration précède ce type de panne\"), pas des secrets de fabrication.",
+        "(D) **Optionnel :** Nous lui offrons l'option \"Premium Exclusif\" pour que son modèle reste 100% isolé.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "Plan B Technique : Si notre approche RAG s'avère finalement moins performante que prévu, l'alternative de secours est de...",
+      "options": [
+        "(A) Se concentrer sur un modèle de classification plus simple (moins \"intelligent\", mais plus robuste).",
+        "(B) Pivoter vers un produit de \"Business Intelligence\" et de visualisation de données, moins centré sur la génération de langage.",
+        "(C) Utiliser des LLM beaucoup plus gros et puissants, même si c'est plus cher.",
+        "(D) Se focaliser sur l'aspect \"Knowledge Management\", en devenant la meilleure interface pour rechercher manuellement dans la GMAO.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

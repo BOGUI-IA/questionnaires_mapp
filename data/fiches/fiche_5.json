@@ -1,0 +1,191 @@
+{
+  "id": 5,
+  "title": "UX/UI Optimale pour l'Adoption",
+  "description": "Concevoir une interface et une expérience qui inspirent la confiance, maximisent la simplicité et s'intègrent naturellement dans le workflow des utilisateurs.",
+  "session": 2,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 PRINCIPE DES 3 CLICS : Le parcours idéal pour obtenir un diagnostic, depuis l'ouverture de l'application, est...",
+      "options": [
+        "(A) **Clic 1:** Sélectionner la machine > **Clic 2:** Taper la panne > **Clic 3:** Lancer l'analyse.",
+        "(B) **Action 1:** Scanner un QR code sur la machine > **Action 2:** Dicter la panne à la voix > **Résultat.**",
+        "(C) **Clic 1:** Ouvrir le bon d'intervention dans la GMAO > **Clic 2:** Cliquer sur un bouton 'Aide au Diagnostic IA' intégré.",
+        "(D) **Action 1:** Taper la panne dans une barre de recherche universelle > **Résultat.**",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "🔥 ÉCRAN PARFAIT : Après un diagnostic, les 3 éléments qui DOIVENT apparaître en premier à l'écran, sans scroller, sont...",
+      "options": [
+        "(A) **1.** Cause la plus probable, **2.** Pièce à préparer, **3.** Action de sécurité N°1.",
+        "(B) **1. **Cause la plus probable, **2.** Lien vers le cas similaire le plus pertinent, **3.** Temps de réparation estimé.",
+        "(C) **1.** Score de confiance du diagnostic, **2.** Checklist d'actions complète, **3.** Impact potentiel sur la production.",
+        "(D) **1.** Cause la plus probable, **2.** Schéma de la pièce concernée, **3.** Bouton pour contacter un expert.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "Information Toxique : L'information qu'il ne faut SURTOUT PAS montrer car elle créerait de la confusion ou de la méfiance est...",
+      "options": [
+        "(A) Des scores de probabilité trop bas (ex: moins de 50%).",
+        "(B) Une liste de plus de 3 ou 4 cas similaires, qui noierait l'utilisateur.",
+        "(C) Du jargon technique lié à l'IA (ex: 'embedding', 'similarité cosinus').",
+        "(D) Le coût estimé de la panne, qui pourrait stresser inutilement le technicien.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "Post-Diagnostic : L'IA a donné son diagnostic. La question suivante IMMÉDIATE du technicien est...",
+      "options": [
+        "(A) 'Où se trouve la pièce de rechange dans le magasin ?'",
+        "(B) 'Comment effectue-t-on cette réparation exactement ? (mode opératoire)'",
+        "(C) 'Qui est l'expert de ce problème dans l'usine si j'ai besoin d'aide ?'",
+        "(D) 'Combien de temps cela va-t-il me prendre ?'",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "Personnalité de l'IA : Le ton de communication de l'assistant doit être celui d'un...",
+      "options": [
+        "(A) Expert directif et affirmatif ('La cause est X. Faites Y.').",
+        "(B) Collègue expérimenté qui suggère et conseille ('La cause pourrait être X. Je te suggère de vérifier Y.').",
+        "(C) Assistant neutre et factuel ('Probabilité de X: 85%. Cas similaires: #123, #456.').",
+        "(D) Coach pédagogue qui explique le raisonnement ('Nous suspectons X car les symptômes A et B sont souvent liés...').",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "Adaptation au Niveau : L'interface pour un technicien junior devrait...",
+      "options": [
+        "(A) Être exactement la même que pour un senior pour standardiser.",
+        "(B) Afficher plus de détails dans la checklist et des liens vers la documentation de base.",
+        "(C) Suggérer automatiquement de demander la validation d'un senior pour les pannes critiques.",
+        "(D) Combiner (B) et (C).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "🔥 FEEDBACK NÉGATIF : Pour qu'un utilisateur signale simplement et efficacement que 'L'IA s'est trompée', la meilleure méthode est...",
+      "options": [
+        "(A) Un simple bouton 'Pouce vers le bas 👍/👎'.",
+        "(B) Un bouton 'Pouce vers le bas' qui ouvre ensuite un petit champ de texte optionnel 'Pourquoi ?'.",
+        "(C) Un bouton 'Signaler une erreur' qui ouvre un formulaire avec des choix multiples (ex: 'Diagnostic incorrect', 'Cas similaire non pertinent').",
+        "(D) Permettre à l'utilisateur de directement corriger le diagnostic et de sauvegarder la 'bonne' version.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "Proactivité Intelligente : L'IA devrait envoyer des alertes proactives principalement pour...",
+      "options": [
+        "(A) Des pannes qu'elle prédit avec une forte probabilité.",
+        "(B) Des niveaux de stock de pièces de rechange qui deviennent critiques.",
+        "(C) Des dérives de performance anormales sur une machine.",
+        "(D) Tout ce qui précède, mais avec un système de préférences pour que l'utilisateur ne soit pas spammé.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "Support Optimal : Le meilleur 'device' pour utiliser l'outil sur le terrain est...",
+      "options": [
+        "(A) Une tablette industrielle durcie, fournie par l'entreprise.",
+        "(B) Le smartphone personnel du technicien ('Bring Your Own Device').",
+        "(C) Un PC portable robuste sur un chariot mobile.",
+        "(D) Un grand écran tactile fixe, positionné stratégiquement dans l'atelier.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "Format Visuel : La présentation des résultats la plus impactante serait...",
+      "options": [
+        "(A) Principalement du texte et des listes claires, pour aller droit au but.",
+        "(B) Des graphiques simples (barres de confiance, timelines).",
+        "(C) Des schémas interactifs de la machine ('éclatés') où la pièce suspecte est mise en surbrillance.",
+        "(D) Une combinaison intelligente des trois, s'adaptant à la complexité de la panne.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "🔥 GESTION D'ERREUR : Si l'IA se trompe, la meilleure façon pour l'interface de préserver la confiance de l'utilisateur est de...",
+      "options": [
+        "(A) Présenter systématiquement chaque diagnostic comme une 'suggestion' ou une 'hypothèse', jamais comme une certitude.",
+        "(B) Afficher un message clair reconnaissant l'erreur et facilitant son signalement.",
+        "(C) Montrer immédiatement 2 ou 3 alternatives de diagnostic.",
+        "(D) Permettre à l'utilisateur de 'prendre la main' et de documenter facilement la bonne solution, pour que l'IA apprenne de son erreur.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "Gamification Pertinente : Un système de 'points' ou de 'badges'...",
+      "options": [
+        "(A) Est une excellente idée pour motiver l'adoption et la contribution (feedback).",
+        "(B) Est infantilisant et totalement inadapté à un environnement industriel sérieux.",
+        "(C) Pourrait être pertinent pour la qualité du feedback, mais pas pour l'usage quotidien.",
+        "(D) Est une option à tester avec les pilotes pour voir leur réaction.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "Recherche Historique : Un technicien veut retrouver une de ses anciennes analyses en cherchant par...",
+      "options": [
+        "(A) Nom ou code de la machine.",
+        "(B) Période de date.",
+        "(C) Mots-clés qu'il avait tapés.",
+        "(D) Il veut une recherche universelle qui cherche dans tout en même temps.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "🔥 BOUTON MAGIQUE : S'il existait UN seul bouton 'coup de baguette magique' dans l'interface, il servirait à...",
+      "options": [
+        "(A) 'Commander la pièce et prévenir le magasinier'.",
+        "(B) 'Générer et pré-remplir le rapport d'intervention complet pour la GMAO'.",
+        "(C) 'Afficher une vidéo tutoriel de 2 minutes montrant la procédure de réparation'.",
+        "(D) 'Mettre en relation instantanément avec le meilleur expert interne de ce problème'.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

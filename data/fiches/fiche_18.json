@@ -1,0 +1,191 @@
+{
+  "id": "fiche_18",
+  "title": "Validation du Périmètre et des Fonctions des Assistants IA",
+  "description": "Définir et valider précisément le rôle, les responsabilités et les limites de chacun des 19 assistants spécialisés de la plateforme.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "options": [
+        "(A) **Très pointu** : Chaque assistant maîtrise parfaitement un domaine très précis.",
+        "(B) **Équilibré** : Spécialisé dans son domaine, mais avec des connaissances transversales.",
+        "(C) **Adaptatif** : Capable d'élargir son périmètre selon les besoins de l'entreprise.",
+        "(D) **Collaboratif** : Spécialisé mais conçu pour travailler en synergie avec les autres.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA SPÉCIALISATION : Le niveau de spécialisation de chaque assistant doit être..."
+    },
+    {
+      "id": 2,
+      "options": [
+        "(A) **Routage automatique** : Le Cerveau Central dirige vers l'assistant le plus pertinent.",
+        "(B) **Collaboration forcée** : Les assistants concernés travaillent ensemble obligatoirement.",
+        "(C) **Négociation** : Les assistants 'négocient' entre eux qui prend le lead.",
+        "(D) **Escalade** : La demande remonte au Cerveau Central pour arbitrage.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LES FRONTIÈRES : Que se passe-t-il quand une demande chevauche plusieurs domaines ?"
+    },
+    {
+      "id": 3,
+      "options": [
+        "(A) **Uniquement le diagnostic** : Identifier les pannes et proposer des solutions.",
+        "(B) **Maintenance + planification** : Diagnostic + organisation des interventions.",
+        "(C) **Maintenance + stock** : Diagnostic + gestion des pièces de rechange.",
+        "(D) **Maintenance complète** : Diagnostic + planification + stock + formation des techniciens.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'ASSISTANT MAINTENANCE : Son périmètre doit-il inclure..."
+    },
+    {
+      "id": 4,
+      "options": [
+        "(A) **Jamais** : Il analyse et recommande, mais ne modifie rien.",
+        "(B) **Micro-ajustements** : Petites optimisations automatiques dans des limites prédéfinies.",
+        "(C) **Avec validation** : Il propose des modifications que l'humain doit approuver.",
+        "(D) **Autonomie complète** : Il peut réorganiser la production selon ses analyses.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'ASSISTANT PRODUCTION : Doit-il pouvoir modifier les plannings ?"
+    },
+    {
+      "id": 5,
+      "options": [
+        "(A) **Détecter et alerter** : Identifier les dérives et prévenir les équipes.",
+        "(B) **Analyser les causes** : Remonter aux causes racines des problèmes qualité.",
+        "(C) **Proposer des actions** : Recommander des corrections et améliorations.",
+        "(D) **Orchestrer la réponse** : Coordonner les actions de tous les services concernés.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'ASSISTANT QUALITÉ : Son rôle face à un défaut produit est de..."
+    },
+    {
+      "id": 6,
+      "options": [
+        "(A) **Accès complet** : Toutes les données RH pour optimiser la gestion des équipes.",
+        "(B) **Données anonymisées** : Statistiques et tendances sans identification personnelle.",
+        "(C) **Accès limité** : Seulement les données nécessaires à ses fonctions (planning, compétences).",
+        "(D) **Aucun accès** : Il travaille uniquement avec des données agrégées et publiques.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'ASSISTANT RH : Peut-il accéder aux données personnelles des employés ?"
+    },
+    {
+      "id": 7,
+      "options": [
+        "(A) **Alerter immédiatement** : Notification instantanée aux responsables sécurité.",
+        "(B) **Prendre le contrôle** : Arrêter automatiquement les équipements dangereux.",
+        "(C) **Coordonner la réponse** : Orchestrer l'intervention de tous les services.",
+        "(D) **Documenter et analyser** : Enregistrer l'incident et proposer des améliorations.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'ASSISTANT SÉCURITÉ : En cas d'incident, il doit..."
+    },
+    {
+      "id": 8,
+      "options": [
+        "(A) **Accès total** : Toutes les données financières pour une analyse complète.",
+        "(B) **Données opérationnelles** : Coûts de production, budgets, mais pas la stratégie commerciale.",
+        "(C) **Vue agrégée** : Indicateurs financiers globaux sans détail par client/produit.",
+        "(D) **Accès contextuel** : Données nécessaires selon la demande spécifique.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'ASSISTANT FINANCE : Doit-il avoir accès aux données commerciales sensibles ?"
+    },
+    {
+      "id": 9,
+      "options": [
+        "(A) **Égalité totale** : Tous les assistants ont le même niveau d'autorité.",
+        "(B) **Hiérarchie par criticité** : Sécurité > Production > Qualité > autres.",
+        "(C) **Hiérarchie contextuelle** : L'importance varie selon la situation.",
+        "(D) **Pas de hiérarchie** : Le Cerveau Central arbitre tous les conflits.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA HIÉRARCHIE DES ASSISTANTS : Y a-t-il des assistants plus 'importants' que d'autres ?"
+    },
+    {
+      "id": 10,
+      "options": [
+        "(A) **Périmètres fixes** : Chaque assistant garde son rôle défini à vie.",
+        "(B) **Évolution programmée** : Élargissement progressif selon un plan prédéfini.",
+        "(C) **Adaptation dynamique** : Les périmètres s'ajustent selon les besoins de l'entreprise.",
+        "(D) **Évolution par apprentissage** : Les assistants développent naturellement de nouvelles compétences.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'ÉVOLUTION DES PÉRIMÈTRES : Les rôles des assistants peuvent-ils changer ?"
+    },
+    {
+      "id": 11,
+      "options": [
+        "(A) **Aucun recouvrement** : Chaque fonction est assignée à un seul assistant.",
+        "(B) **Redondance sécurisée** : Fonctions critiques couvertes par plusieurs assistants.",
+        "(C) **Recouvrement collaboratif** : Zones de chevauchement pour favoriser la coopération.",
+        "(D) **Redondance intelligente** : Le Cerveau Central gère les recouvrements selon le contexte.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA REDONDANCE : Peut-il y avoir des recouvrements entre assistants ?"
+    },
+    {
+      "id": 12,
+      "options": [
+        "(A) **Autonomie totale** : Chaque assistant peut prendre toutes les décisions de son domaine.",
+        "(B) **Autonomie limitée** : Décisions mineures autorisées, validation humaine pour le reste.",
+        "(C) **Autonomie progressive** : Élargissement des pouvoirs selon la confiance acquise.",
+        "(D) **Autonomie contextuelle** : Niveau d'autonomie qui varie selon la criticité de la situation.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'AUTONOMIE DÉCISIONNELLE : Quel niveau d'autonomie pour chaque assistant ?"
+    },
+    {
+      "id": 13,
+      "options": [
+        "(A) **L'assistant lui-même** : Chaque IA est responsable de ses recommandations.",
+        "(B) **L'utilisateur final** : La personne qui suit la recommandation en assume la responsabilité.",
+        "(C) **Le responsable métier** : Le manager du domaine concerné reste responsable.",
+        "(D) **Responsabilité partagée** : Système de co-responsabilité humain-IA.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA RESPONSABILITÉ : Qui est responsable des décisions d'un assistant ?"
+    },
+    {
+      "id": 14,
+      "options": [
+        "(A) **Une équipe d'experts** : Chacun maître dans son domaine, collaborant sur les projets.",
+        "(B) **Un orchestre** : Chaque assistant joue sa partition sous la direction du Cerveau Central.",
+        "(C) **Un organisme vivant** : Système auto-organisé où chaque assistant trouve naturellement sa place.",
+        "(D) **Une entreprise virtuelle** : Organisation hiérarchisée avec des départements IA spécialisés.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA VISION GLOBALE : L'écosystème des 19 assistants doit ressembler à..."
+    }
+  ]
+}

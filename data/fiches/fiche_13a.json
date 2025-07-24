@@ -1,0 +1,191 @@
+{
+  "id": "13A",
+  "title": "Architecture Conceptuelle - Le Cerveau, les Assistants et les Données",
+  "description": "Valider et formaliser la compréhension commune du rôle de chaque grand composant de la plateforme (Cerveau Central, Assistants, Données) et de leurs interactions.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "LE RÔLE DU CERVEAU CENTRAL : Le \"Cerveau Central\" (`IA PRODUCT-INDUS`) est avant tout...",
+      "options": [
+        "(A) Un **Orchestrateur** qui distribue les tâches aux bons assistants.",
+        "(B) Un **Analyste Stratégique** qui trouve des corrélations cachées entre les données des différents assistants.",
+        "(C) Une **Mémoire Centrale** qui capitalise toute la connaissance de l'entreprise.",
+        "(D) Les trois à la fois, c'est ce qui le définit.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "L'AUTONOMIE DES ASSISTANTS : Un assistant spécialisé (ex: Maintenance)...",
+      "options": [
+        "(A) Ne peut pas fonctionner sans le Cerveau Central, il en est totalement dépendant.",
+        "(B) Peut réaliser ses tâches de base en autonomie, mais devient \"plus intelligent\" grâce au contexte fourni par le Cerveau Central.",
+        "(C) Est complètement autonome, le Cerveau Central ne servant qu'à la visualisation globale.",
+        "(D) Peut communiquer directement avec un autre assistant sans passer par le Cerveau Central en cas d'urgence.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "LA SOURCE DE VÉRITÉ DES DONNÉES : La stratégie de données est...",
+      "options": [
+        "(A) D'avoir **un seul grand \"Golden Dataset\"** pour toute la plateforme.",
+        "(B) D'avoir un **\"Data Mart\" spécialisé et optimisé pour chaque Pilier** (un pour la Maintenance, un pour la Production, etc.).",
+        "(C) D'avoir un \"Data Mart\" par assistant, très spécialisé.",
+        "(D) De ne pas avoir de Data Mart, l'IA travaille directement sur le Data Lake de données brutes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "🔥 LE FLUX DE L'APPRENTISSAGE : Comment le système s'améliore-t-il ?",
+      "options": [
+        "(A) Chaque assistant apprend uniquement de ses propres données.",
+        "(B) Les assistants remontent leurs apprentissages au Cerveau Central, qui les redistribue à tous les autres. C'est l'**apprentissage collectif**.",
+        "(C) L'amélioration est principalement manuelle, via les feedbacks des utilisateurs.",
+        "(D) Le système n'apprend pas en continu, les modèles sont ré-entraînés tous les 6 mois.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "L'INTERFACE UTILISATEUR ET LES ASSISTANTS : Un utilisateur (ex: un technicien)...",
+      "options": [
+        "(A) Interagit avec **UNE seule interface globale** (celle du Cerveau Central) qui lui donne accès à tout.",
+        "(B) Interagit principalement avec l'**interface de son assistant métier** (ex: l'Assistant Maintenance).",
+        "(C) A accès à plusieurs interfaces d'assistants en fonction de son rôle.",
+        "(D) N'a pas d'interface, il interagit via un chatbot ou des commandes vocales.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "PRIORITÉ DE DÉVELOPPEMENT DES PILIERS : L'ordre logique de développement des Piliers est...",
+      "options": [
+        "(A) Maintenance → Production → Gestion → Support.",
+        "(B) Maintenance → Gestion (pour maîtriser les coûts) → Production.",
+        "(C) Il n'y a pas d'ordre fixe, on développe les assistants les plus demandés par les clients.",
+        "(D) Tous les piliers doivent être développés en parallèle, même de manière minimale.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "LA GESTION D'UN CONFLIT (EX: CADENCE VS. MAINTENANCE) : Le rôle de l'IA est de...",
+      "options": [
+        "(A) **Décider** automatiquement quelle est la meilleure option et l'appliquer.",
+        "(B) **Proposer un arbitrage optimisé** (ex: \"+5% de cadence puis arrêt\") en le justifiant avec des chiffres.",
+        "(C) Simplement **présenter les impacts** de chaque scénario (coût, risque) et laisser les humains négocier.",
+        "(D) **Faire remonter le conflit** au bon niveau hiérarchique avec une note de synthèse.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "🔥 LA DONNÉE LA PLUS TRANSVERSALE : S'il ne fallait choisir qu'UNE donnée à partager entre TOUS les assistants, ce serait...",
+      "options": [
+        "(A) Le **planning de production en temps réel**.",
+        "(B) L'**état de santé des équipements critiques**.",
+        "(C) Les **coûts de revient en temps réel**.",
+        "(D) Les **objectifs stratégiques (KPI)** de l'entreprise.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "LA NATURE DES ASSISTANTS : Nos assistants sont principalement...",
+      "options": [
+        "(A) Des **moteurs d'analyse de données** qui présentent des dashboards.",
+        "(B) Des **systèmes prédictifs** qui anticipent l'avenir.",
+        "(C) Des **systèmes prescriptifs** qui recommandent des actions.",
+        "(D) Des **agents conversationnels (chatbots)** avec qui l'on peut dialoguer.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "L'ARCHITECTURE TECHNIQUE & CONCEPTUELLE : La séparation en microservices pour l'architecture technique...",
+      "options": [
+        "(A) Est un simple choix technique pour la scalabilité.",
+        "(B) **Reflète exactement** la séparation conceptuelle des assistants spécialisés. Chaque assistant sera son propre microservice.",
+        "(C) Est un bon principe, mais en pratique plusieurs assistants pourraient être regroupés dans un même service.",
+        "(D) Est trop complexe pour le début, on commencera avec une application monolithique.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "🔥 LES LIMITES DU CERVEAU CENTRAL : Le Cerveau Central, malgré son intelligence, ne pourra JAMAIS...",
+      "options": [
+        "(A) Comprendre un contexte métier totalement nouveau sans données historiques.",
+        "(B) Remplacer l'intuition d'un expert humain face à un problème inédit.",
+        "(C) Gérer les aspects émotionnels et relationnels d'une décision.",
+        "(D) Tout ce qui précède.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "LE RÔLE DES DONNÉES HUMAINES (RETOURS TERRAIN) : Les retours des experts et des techniciens sont...",
+      "options": [
+        "(A) Une source de données parmi d'autres, à traiter comme les données des capteurs.",
+        "(B) La **source de vérité la plus importante** pour valider et corriger les recommandations de l'IA.",
+        "(C) Utiles au début, mais destinées à devenir moins importantes à mesure que l'IA apprend.",
+        "(D) Principalement utilisées pour améliorer l'interface utilisateur, pas les modèles d'IA.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "LA COMMUNICATION INTER-ASSISTANTS : La communication directe entre deux assistants (ex: Maintenance ↔ Production)...",
+      "options": [
+        "(A) Doit toujours passer par le Cerveau Central pour garantir la cohérence.",
+        "(B) Est **essentielle pour les urgences opérationnelles** en temps réel.",
+        "(C) Est une bonne idée, mais trop complexe à mettre en œuvre pour les premières versions.",
+        "(D) Est la responsabilité des utilisateurs, qui font le pont entre les interfaces.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "🔥 LA DÉFINITION FINALE : En une phrase, le Cerveau Central est pour les Assistants ce que...",
+      "options": [
+        "(A) Un **chef d'orchestre** est pour ses musiciens.",
+        "(B) Le **cortex préfrontal** (raisonnement) est pour les zones spécialisées du cerveau (vision, audition).",
+        "(C) Un **fournisseur de services de données enrichies** est pour ses applications clientes.",
+        "(D) Le **système d'exploitation** est pour les logiciels installés dessus.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "fiche_16",
+  "title": "Design, Identité Visuelle & Ergonomie (MVP)",
+  "description": "Définir l'interface, l'identité visuelle et l'ergonomie de l'Assistant Diagnostic MVP pour optimiser l'expérience utilisateur et faciliter l'adoption.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "options": [
+        "(A) **La simplicité absolue** : Une seule fonction visible, tout le reste est caché.",
+        "(B) **L'efficacité** : Toutes les fonctions importantes accessibles en 1-2 clics.",
+        "(C) **La familiarité** : Ressembler aux outils que les techniciens connaissent déjà.",
+        "(D) **La modernité** : Interface innovante qui montre la puissance de l'IA.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA PHILOSOPHIE DESIGN : L'interface du MVP doit privilégier..."
+    },
+    {
+      "id": 2,
+      "options": [
+        "(A) **Une barre de recherche** avec le texte 'Décrivez votre problème...'.",
+        "(B) **Un tableau de bord** avec les pannes récentes et les statistiques.",
+        "(C) **Un menu** avec les différentes fonctions (diagnostic, historique, aide).",
+        "(D) **Un assistant conversationnel** qui demande 'Comment puis-je vous aider ?'.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'ÉCRAN PRINCIPAL : Que doit voir un technicien en ouvrant l'application ?"
+    },
+    {
+      "id": 3,
+      "options": [
+        "(A) **Texte libre** : Une grande zone de texte pour décrire librement.",
+        "(B) **Formulaire guidé** : Champs structurés (équipement, symptômes, contexte).",
+        "(C) **Vocal + texte** : Possibilité de dicter ou d'écrire.",
+        "(D) **Hybride intelligent** : Texte libre + suggestions automatiques pendant la frappe.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA SAISIE DU PROBLÈME : Comment le technicien doit-il décrire la panne ?"
+    },
+    {
+      "id": 4,
+      "options": [
+        "(A) **En une phrase** : 'Cause probable : défaut de roulement (85%)' + bouton 'Détails'.",
+        "(B) **En 3 blocs** : Diagnostic / Actions recommandées / Cas similaires.",
+        "(C) **En liste priorisée** : Les 3 causes les plus probables avec leurs pourcentages.",
+        "(D) **En mode conversationnel** : Comme une discussion avec un expert.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'AFFICHAGE DES RÉSULTATS : Le diagnostic doit être présenté..."
+    },
+    {
+      "id": 5,
+      "options": [
+        "(A) **La fiabilité** : Bleus et gris, couleurs 'corporate' rassurantes.",
+        "(B) **L'industrie** : Couleurs métalliques, gris anthracite, orange sécurité.",
+        "(C) **La modernité** : Couleurs vives et contrastées, design 'tech'.",
+        "(D) **La simplicité** : Palette minimaliste, beaucoup de blanc, accents colorés.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LES COULEURS : La palette de couleurs doit évoquer..."
+    },
+    {
+      "id": 6,
+      "options": [
+        "(A) **Menu hamburger** : Tout caché dans un menu déroulant.",
+        "(B) **Onglets** : 3-4 onglets principaux (Diagnostic, Historique, Profil).",
+        "(C) **Barre latérale** : Menu permanent sur le côté gauche.",
+        "(D) **Boutons flottants** : Actions contextuelles qui apparaissent selon la situation.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA NAVIGATION : Comment organiser les fonctions secondaires ?"
+    },
+    {
+      "id": 7,
+      "options": [
+        "(A) **Être identique** : Même interface, juste redimensionnée.",
+        "(B) **Être simplifiée** : Garder seulement les fonctions essentielles.",
+        "(C) **Être repensée** : Interface spécifiquement conçue pour le tactile.",
+        "(D) **Être vocale** : Privilégier les commandes vocales sur mobile.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'ADAPTATION MOBILE : Sur tablette/smartphone, l'interface doit..."
+    },
+    {
+      "id": 8,
+      "options": [
+        "(A) **Discrètement** : Petite pastille rouge sur l'icône.",
+        "(B) **Clairement** : Pop-up qui s'affiche au centre de l'écran.",
+        "(C) **Contextuellement** : Bandeau en haut qui s'adapte à la situation.",
+        "(D) **Progressivement** : Notification douce qui s'intensifie si ignorée.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LES NOTIFICATIONS : Comment alerter l'utilisateur ?"
+    },
+    {
+      "id": 9,
+      "options": [
+        "(A) **Liste chronologique** : Derniers diagnostics en premier.",
+        "(B) **Recherche avancée** : Filtres par équipement, date, type de panne.",
+        "(C) **Vue calendrier** : Visualisation temporelle des interventions.",
+        "(D) **Favoris + récents** : Diagnostics marqués + dernières recherches.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'HISTORIQUE : Comment présenter les diagnostics passés ?"
+    },
+    {
+      "id": 10,
+      "options": [
+        "(A) **Aucune** : Interface fixe pour tous les utilisateurs.",
+        "(B) **Minimale** : Choix du thème (clair/sombre) et taille de police.",
+        "(C) **Modérée** : Réorganisation des éléments + raccourcis personnalisés.",
+        "(D) **Complète** : Chaque utilisateur peut créer son interface idéale.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA PERSONNALISATION : L'utilisateur peut-il adapter l'interface ?"
+    },
+    {
+      "id": 11,
+      "options": [
+        "(A) **Tutorial obligatoire** : Visite guidée complète au premier lancement.",
+        "(B) **Tooltips intelligents** : Bulles d'aide qui apparaissent au survol.",
+        "(C) **Mode découverte** : Option pour activer/désactiver les aides visuelles.",
+        "(D) **Assistant intégré** : Chatbot d'aide accessible en permanence.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'AIDE CONTEXTUELLE : Comment guider les nouveaux utilisateurs ?"
+    },
+    {
+      "id": 12,
+      "options": [
+        "(A) **Masquer le problème** : Animations pour faire patienter.",
+        "(B) **Être transparente** : Barre de progression avec temps estimé.",
+        "(C) **Rester utilisable** : Permettre d'autres actions pendant le chargement.",
+        "(D) **Donner le contrôle** : Bouton d'annulation + mode dégradé.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA PERFORMANCE VISUELLE : En cas de lenteur, l'interface doit..."
+    },
+    {
+      "id": 13,
+      "options": [
+        "(A) **La technologie** : Formes géométriques, couleurs tech, nom évoquant l'IA.",
+        "(B) **L'industrie** : Références aux outils, machines, environnement industriel.",
+        "(C) **L'humain** : Forme amicale, couleurs chaleureuses, nom personnalisé.",
+        "(D) **L'efficacité** : Design épuré, couleurs neutres, nom fonctionnel.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'IDENTITÉ VISUELLE : Le logo/nom de l'Assistant doit évoquer..."
+    },
+    {
+      "id": 14,
+      "options": [
+        "(A) **L'IA est puissante** : Interface sophistiquée qui impressionne.",
+        "(B) **L'outil est simple** : Interface si intuitive qu'elle se fait oublier.",
+        "(C) **L'utilisateur contrôle** : Interface qui donne le sentiment de maîtrise.",
+        "(D) **Le travail est facilité** : Interface qui rend les tâches plus agréables.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA PHILOSOPHIE GLOBALE : L'interface doit donner l'impression que..."
+    }
+  ]
+}

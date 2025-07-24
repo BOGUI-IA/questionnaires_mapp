@@ -1,0 +1,191 @@
+{
+  "id": 12,
+  "title": "Périmètre Fonctionnel Détaillé du MVP (Phase 1)",
+  "description": "Définir avec une précision absolue chaque fonctionnalité qui sera incluse dans le MVP, et, tout aussi important, celles qui seront exclues. Ce document servira de contrat de livraison pour le sprint de 6 semaines.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 FONCTIONNALITÉ CŒUR (Validation) : L'approche du \"1 + 2 Light\" est-elle la bonne stratégie pour le périmètre du MVP ?",
+      "options": [
+        "(A) **Oui, c'est parfait.** On se concentre sur l'Assistant Diagnostic (`#1`) et on l'enrichit avec les \"features satellites\" (Alerte récurrence et Export GMAO).",
+        "(B) **Non, c'est trop.** Restons uniquement sur l'Assistant Diagnostic (`#1`) pour garantir une qualité maximale.",
+        "(C) **Non, ce n'est pas assez.** Il faut intégrer l'Assistant Analyse Récurrente (`#2`) de manière plus complète.",
+        "(D) Je préfère un périmètre flexible à définir avec le client pilote.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "L'ACCÈS À L'APPLICATION : Le processus d'authentification pour le MVP doit être...",
+      "options": [
+        "(A) **Ultra-simple :** Un simple login (email) et mot de passe.",
+        "(B) **Sécurisé :** Doit inclure une option d'Authentification Multi-Facteurs (MFA) dès le départ.",
+        "(C) **Intégré :** Doit permettre une connexion via un compte existant (ex: \"Se connecter avec Google / Microsoft\").",
+        "(D) **Ouvert :** Pour le pilote, pas besoin d'authentification, juste un accès par URL secrète.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "L'ÉCRAN PRINCIPAL (DIAGNOSTIC) : L'utilisateur doit pouvoir saisir...",
+      "options": [
+        "(A) Uniquement la **description textuelle** de la panne. La simplicité avant tout.",
+        "(B) Le texte de la panne ET l'**identifiant de l'équipement** (obligatoire).",
+        "(C) Le texte, l'équipement, ET pouvoir **ajouter une photo** de la panne.",
+        "(D) Un formulaire complet avec plusieurs champs (symptômes, actions déjà tentées, niveau d'urgence).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "LA RÉPONSE DE L'IA (BLOC \"CAUSES PROBABLES\") : Ce bloc doit afficher...",
+      "options": [
+        "(A) Une liste simple des 3 causes les plus probables.",
+        "(B) Une liste avec des **scores de confiance** en pourcentage (ex: 85%).",
+        "(C) Une liste avec des scores ET une **brève justification** textuelle (\"Pourquoi l'IA pense cela\").",
+        "(D) Une seule cause, la plus probable, pour ne pas surcharger l'utilisateur de choix.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "LA RÉPONSE DE L'IA (BLOC \"CAS SIMILAIRES\") : Ce bloc doit montrer...",
+      "options": [
+        "(A) Juste les **IDs des bons d'intervention** similaires, pour que le technicien aille chercher dans sa GMAO.",
+        "(B) Un **résumé cliquable** de chaque cas (Symptômes + Solution appliquée).",
+        "(C) Un résumé incluant le **nom du technicien** qui avait résolu le cas.",
+        "(D) Un résumé incluant la **référence des pièces** qui avaient été utilisées.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "🔥 L'ALERTE DE RÉCURRENCE (\"Feature Satellite\") : L'alerte qui s'affiche doit être...",
+      "options": [
+        "(A) **Simple et factuelle :** \"Cette panne a été enregistrée X fois sur cet équipement.\"",
+        "(B) **Orientée Action :** \"Attention, problème chronique (X occurrences). Vérifier la cause racine.\"",
+        "(C) **Visuelle :** Un pictogramme \"Alerte\" avec le nombre d'occurrences.",
+        "(D) **Contextuelle :** \"X occurrences dans les 12 derniers mois\", pour donner une échelle de temps.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "🔥 L'EXPORT GMAO (\"Feature Satellite\") : Le bouton \"Copier pour la GMAO\" doit copier un texte...",
+      "options": [
+        "(A) **Minimaliste :** Juste les symptômes et le diagnostic de l'IA.",
+        "(B) **Structuré :** Un texte bien formaté avec des titres clairs (Équipement, Symptômes, Diagnostic IA, Solution Appliquée: [À COMPLÉTER]).",
+        "(C) **Riche :** Le texte structuré + les IDs des cas similaires trouvés.",
+        "(D) **Personnalisable :** Permettre au client pilote de définir le format du texte qu'il souhaite copier.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "L'HISTORIQUE DES ANALYSES : La page d'historique doit permettre à l'utilisateur de...",
+      "options": [
+        "(A) Simplement **voir la liste** de ses analyses passées.",
+        "(B) Voir la liste ET pouvoir **relancer une recherche** à partir d'une ancienne.",
+        "(C) Voir la liste ET pouvoir **filtrer** par date ou par équipement.",
+        "(D) Voir la liste ET **partager** une analyse avec un collègue.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "LE FEEDBACK UTILISATEUR : Le système de feedback sur les diagnostics doit être...",
+      "options": [
+        "(A) **Binaire :** Juste un \"Pouce haut / Pouce bas\" 👍👎.",
+        "(B) **Qualitatif :** Un \"Pouce bas\" ouvre un champ de commentaire optionnel.",
+        "(C) **Structuré :** Un système de notation de 1 à 5 étoiles.",
+        "(D) **Complet :** Permettre à l'utilisateur de soumettre la \"bonne\" solution si celle de l'IA est fausse.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "LES DONNÉES SOURCES : Pour le MVP, le moteur d'IA sera entraîné sur...",
+      "options": [
+        "(A) Uniquement l'historique de la **GMAO**. On reste focalisé.",
+        "(B) La GMAO + les **rapports d'arrêts** (Excel) pour enrichir le contexte.",
+        "(C) La GMAO + les **fiches de maintenance préventive** (PDF) pour apprendre le vocabulaire officiel.",
+        "(D) Uniquement les données de la GMAO des **3 dernières années**, pour une pertinence maximale.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "L'INTERNATIONALISATION : L'interface du MVP doit être...",
+      "options": [
+        "(A) Uniquement en **français**, pour le premier pilote.",
+        "(B) En **français**, mais avec un code préparé pour une traduction facile (i18n).",
+        "(C) Bilingue **français/anglais** dès le départ pour préparer l'avenir.",
+        "(D) C'est au client pilote de choisir la langue.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "🔥 FONCTIONNALITÉ EXCLUE N°1 : Pour le MVP, nous n'inclurons absolument PAS...",
+      "options": [
+        "(A) De **tableau de bord** managérial.",
+        "(B) Une **version mobile** sur smartphone.",
+        "(C) L'**écriture automatique** dans la GMAO.",
+        "(D) La gestion des utilisateurs (un seul compte partagé pour le pilote).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "🔥 FONCTIONNALITÉ EXCLUE N°2 : Une autre fonctionnalité que nous devons consciemment reporter est...",
+      "options": [
+        "(A) La recherche dans l'historique (c'est un \"nice to have\").",
+        "(B) La possibilité d'ajouter des photos (trop complexe pour le MVP).",
+        "(C) Le système de feedback (on le fera oralement au début).",
+        "(D) L'authentification multi-facteurs.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "LE CRITÈRE DE FINITION : Le MVP sera considéré comme \"fini\" et prêt pour le pilote lorsque...",
+      "options": [
+        "(A) Toutes les fonctionnalités de cette fiche seront implémentées et testées.",
+        "(B) L'application sera stable et ne présentera aucun bug critique.",
+        "(C) L'interface sera jugée \"claire et intuitive\" par vous (Alex).",
+        "(D) Tous les critères ci-dessus sont remplis.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

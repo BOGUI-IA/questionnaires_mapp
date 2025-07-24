@@ -1,0 +1,191 @@
+{
+  "id": 8,
+  "title": "MVP & Déploiement Pilote",
+  "description": "Définir la stratégie et les tactiques précises pour le lancement du MVP, afin de maximiser les chances de succès du pilote et de sécuriser le premier client.",
+  "session": 3,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 VALIDATION \"1+2 LIGHT\" : Pour le MVP, la meilleure approche est de se concentrer sur...",
+      "options": [
+        "(A) **Une seule fonction (Diagnostic), mais exécutée à la perfection.** Le focus absolu garantit la qualité.",
+        "(B) **La stratégie \"1+2 Light\" (Diagnostic + Alertes récurrence + Export GMAO).** Elle offre plus de valeur perçue avec un effort technique supplémentaire minime.",
+        "(C) Un périmètre un peu plus large, en incluant l'**Analyse Récurrente** de manière plus formelle pour montrer notre capacité d'analyse.",
+        "(D) Un périmètre flexible, à définir en collaboration avec le client pilote.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "Dream Team Pilote : Le profil idéal des 3 techniciens pour le beta-test est...",
+      "options": [
+        "(A) **Les Experts :** 3 techniciens seniors et respectés. S'ils sont convaincus, tout le monde suivra.",
+        "(B) **Les Enthousiastes :** 3 jeunes techniciens à l'aise avec la technologie et ouverts au changement.",
+        "(C) **Le Mix :** 1 senior sceptique, 1 technicien \"moyen\" représentatif, et 1 jeune enthousiaste.",
+        "(D) C'est au manager du site de choisir son équipe, nous ne devons pas imposer.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "🔥 CRITÈRE DE SUCCÈS UNIQUE : S'il ne fallait choisir qu'UN seul critère pour déclarer le pilote comme un succès total, ce serait...",
+      "options": [
+        "(A) Un **ROI mesuré et validé par le client** (ex: \"Nous avons économisé X € en temps d'arrêt\").",
+        "(B) Un **taux d'adoption quotidien élevé** (ex: \"L'outil est utilisé pour plus de 70% des diagnostics\").",
+        "(C) La **satisfaction unanime et l'enthousiasme** du manager du site et de son équipe.",
+        "(D) L'identification d'au moins **3 cas concrets** où l'IA a permis de résoudre une panne qui aurait été \"bloquante\" sans elle.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "Formation Maximum : La durée totale de formation à demander à une équipe de maintenance pour qu'elle adopte l'outil doit être...",
+      "options": [
+        "(A) **Zéro formation.** L'outil doit être si intuitif qu'un guide d'une page suffit.",
+        "(B) **Une session unique de 45-60 minutes,** axée sur la pratique.",
+        "(C) Plusieurs sessions courtes réparties sur la première semaine.",
+        "(D) Une formation initiale plus un suivi hebdomadaire obligatoire pendant le premier mois.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "Support Critique : Pendant le pilote, le type d'accompagnement le plus important sera...",
+      "options": [
+        "(A) Un support technique ultra-réactif pour corriger les bugs instantanément.",
+        "(B) Un \"coach\" métier disponible pour aider les techniciens à bien formuler leurs descriptions de pannes.",
+        "(C) Des points de suivi hebdomadaires avec le manager pour analyser les résultats.",
+        "(D) Une communication proactive de notre part sur les nouvelles améliorations déployées.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "Fréquence des Mises à Jour : Pendant le pilote, les utilisateurs s'attendent à voir des améliorations et des corrections...",
+      "options": [
+        "(A) Quotidiennement, en mode \"amélioration continue\" très agile.",
+        "(B) Hebdomadairement, avec une \"release\" stable chaque fin de semaine.",
+        "(C) Toutes les deux semaines, pour ne pas perturber leurs habitudes trop souvent.",
+        "(D) Il ne faut pas faire de mise à jour majeure, pour ne pas biaiser les résultats du pilote.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "🔥 FEEDBACK OPTIMAL : La meilleure méthode pour collecter des retours honnêtes et utiles est...",
+      "options": [
+        "(A) Un **bouton \"Feedback\" simple et rapide** directement dans l'application.",
+        "(B) Des **entretiens individuels et structurés** de 15 minutes chaque semaine avec chaque testeur.",
+        "(C) Un **canal de discussion instantanée** (Slack/Teams/WhatsApp) où ils peuvent poster leurs remarques \"à chaud\".",
+        "(D) Des sondages de satisfaction périodiques et anonymes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "🔥 CONVERSION PAYANTE : La condition sine qua non pour que le client pilote signe un contrat payant à la fin du test est...",
+      "options": [
+        "(A) L'atteinte des KPI de ROI que nous aurons définis ensemble.",
+        "(B) L'adoption et la demande explicite de l'équipe de techniciens pour garder l'outil.",
+        "(C) La démonstration que l'outil est stable, sécurisé et s'intègre bien à leur environnement.",
+        "(D) Une offre tarifaire post-pilote très attractive (\"offre partenaire fondateur\").",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "Matériel Fourni : Pour le pilote, il est préférable de...",
+      "options": [
+        "(A) Fournir nous-mêmes les tablettes industrielles, pré-configurées, pour maîtriser l'expérience de bout en bout.",
+        "(B) Laisser le client utiliser son propre matériel (PC, tablettes existantes) pour s'assurer que notre solution fonctionne dans leur environnement réel.",
+        "(C) Une approche hybride : recommander un modèle de tablette spécifique et laisser le client l'acheter.",
+        "(D) Se concentrer sur une application web qui fonctionne partout, le matériel n'est pas un sujet critique.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "Données Pilote : Pour l'entraînement du modèle du MVP, il faut utiliser...",
+      "options": [
+        "(A) L'historique complet (10 ans) pour une richesse maximale, même si les données sont anciennes.",
+        "(B) Uniquement les données des 3-5 dernières années, pour être plus représentatif des machines et pannes actuelles.",
+        "(C) Uniquement les données des 12 derniers mois pour une pertinence maximale, quitte à avoir moins de volume.",
+        "(D) Laisser le choix au client pilote, en lui expliquant les avantages et inconvénients de chaque option.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "🔥 COMMUNICATION INTERNE : Pour \"vendre\" le projet à ses équipes, le manager du site pilote doit présenter l'outil comme...",
+      "options": [
+        "(A) Un test d'un nouvel outil innovant pour moderniser le service.",
+        "(B) Un moyen de **les aider à résoudre plus vite les pannes difficiles** et à réduire leur stress.",
+        "(C) Un projet de la direction pour améliorer la performance et mesurer l'efficacité de la maintenance.",
+        "(D) Un \"collègue virtuel\" qui va capitaliser leur propre expertise pour la rendre accessible à tous.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "🔥 CAS D'USAGE ULTIME : Pour la démo de lancement du pilote, le cas de panne réel que nous devons absolument être capables de résoudre est...",
+      "options": [
+        "(A) Une panne très fréquente et simple, pour montrer la vitesse et la simplicité de l'outil.",
+        "(B) Une panne intermittente et complexe que même les experts ont du mal à diagnostiquer.",
+        "(C) Une panne récente qui a coûté très cher à l'entreprise.",
+        "(D) Une panne qui met en jeu la collaboration entre la maintenance et la production.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "Durée Pilote Idéale : Le timing optimal pour un pilote qui permet de mesurer le ROI sans s'éterniser est de...",
+      "options": [
+        "(A) 4 semaines (1 mois) : Rapide, intense, focus sur l'adoption initiale.",
+        "(B) 8 semaines (2 mois) : Permet de voir l'usage sur une plus longue période et de collecter plus de données.",
+        "(C) 12 semaines (3 mois) : Le standard pour avoir des résultats statistiques solides et voir l'impact sur les KPI.",
+        "(D) Flexible, avec des points de décision toutes les 4 semaines pour décider de continuer ou d'arrêter.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "🔥 RAPPORT FINAL : À la fin du pilote, les 3 KPI que le manager voudra absolument voir dans le rapport de synthèse sont...",
+      "options": [
+        "(A) 1. Argent économisé (€), 2. Temps gagné (heures), 3. Taux d'adoption (%).",
+        "(B) 1. Réduction du MTTR (Temps Moyen de Réparation), 2. Amélioration de l'OEE, 3. Satisfaction de l'équipe (note/10).",
+        "(C) 1. Nombre de pannes résolues avec l'IA, 2. Précision des diagnostics, 3. Nombre de feedbacks collectés.",
+        "(D) Une combinaison à définir avec lui, car chaque manager a ses propres priorités.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

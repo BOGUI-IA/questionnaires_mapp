@@ -1,0 +1,191 @@
+{
+  "id": "fiche_2",
+  "title": "Utilisateurs & Impact Quantifié",
+  "description": "Comprendre en profondeur les utilisateurs finaux et mesurer précisément l'impact de leurs problèmes quotidiens.",
+  "session": "session_1",
+  "question_count": 14,
+  "questions": [
+    {
+      "id": "q1_cartographie_politique",
+      "text": "Cartographie Politique : Dans une usine, nos principaux champions seront...",
+      "options": [
+        "(A) Les jeunes techniciens, à l'aise avec la technologie et désireux d'apprendre vite.",
+        "(B) Les responsables de maintenance innovants, cherchant à prouver la performance de leur service.",
+        "(C) Les directeurs de site, obsédés par l'OEE et la performance globale.",
+        "(D) Les DSI, qui cherchent à moderniser leur parc applicatif.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q2_chronologie_quotidien",
+      "text": "Chronologie du Quotidien : La journée d'un technicien est principalement rythmée par...",
+      "options": [
+        "(A) L'exécution du plan de maintenance préventive.",
+        "(B) La gestion des urgences et des pannes imprévues, le \"combat contre le feu\".",
+        "(C) Les réunions, la planification et la saisie de rapports dans la GMAO.",
+        "(D) La recherche de pièces, d'informations et la coordination avec la production.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q3_guru_informel",
+      "text": "Le \"Guru\" Informel : L'expert du service base principalement son savoir sur...",
+      "options": [
+        "(A) Sa mémoire photographique des pannes passées sur 10-15 ans.",
+        "(B) Son intuition et sa \"sensation\" de la machine (bruits, vibrations, odeurs).",
+        "(C) Un réseau de contacts externes (fournisseurs, anciens collègues).",
+        "(D) Une documentation personnelle méticuleuse (carnet, fichiers Excel).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q4_temps_perdu_quantifie",
+      "text": "🔥 TEMPS PERDU QUANTIFIÉ : En moyenne, un technicien perd chaque jour à chercher l'information manquante...",
+      "options": [
+        "(A) Moins de 30 minutes.",
+        "(B) Entre 30 et 60 minutes.",
+        "(C) Entre 60 et 90 minutes.",
+        "(D) Plus de 90 minutes (soit > 20% de sa journée).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q5_cout_arret",
+      "text": "🔥 COÛT DE L'ARRÊT : Le coût horaire d'un arrêt de production non planifié sur votre ligne la plus critique est de l'ordre de...",
+      "options": [
+        "(A) Moins de 1 000 €.",
+        "(B) Entre 1 000 € et 5 000 €.",
+        "(C) Entre 5 000 € et 10 000 €.",
+        "(D) Plus de 10 000 €.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q6_stress_dominant",
+      "text": "Stress Dominant : La plus grande source de stress d'un technicien est...",
+      "options": [
+        "(A) La pression du temps imposée par la production (\"Il faut redémarrer !\").",
+        "(B) Le manque d'information fiable pour prendre la bonne décision.",
+        "(C) La peur de se tromper et d'aggraver la panne ou de causer un accident.",
+        "(D) Les pannes intermittentes impossibles à reproduire et à diagnostiquer.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q7_information_sainte",
+      "text": "Information Sainte : L'information qu'un technicien rêverait d'avoir instantanément au pied de la machine est...",
+      "options": [
+        "(A) La liste des 3 causes les plus probables, classées.",
+        "(B) Le lien direct vers la dernière fois que ce problème exact est arrivé.",
+        "(C) La référence et la localisation de la pièce à changer.",
+        "(D) Une checklist visuelle (photos/vidéo) de la procédure de réparation.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q8_kpi_matinal",
+      "text": "🔥 KPI MATINAL : Le tout premier chiffre que le responsable maintenance regarde en arrivant le matin est...",
+      "options": [
+        "(A) Le nombre de bons d'intervention ouverts pendant la nuit.",
+        "(B) L'état d'avancement du planning de maintenance préventive.",
+        "(C) Le taux de disponibilité (OEE) des machines critiques de la veille.",
+        "(D) Le tableau des interventions urgentes en cours et des techniciens assignés.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q9_mecanisme_confiance",
+      "text": "Mécanisme de Confiance : Pour qu'un technicien senior accepte une recommandation de l'IA, l'élément le plus persuasif est...",
+      "options": [
+        "(A) Un score de probabilité très élevé (ex: 95%).",
+        "(B) Le lien cliquable vers le rapport d'intervention du cas similaire.",
+        "(C) Une explication concise du \"pourquoi\" (ex: \"car le symptôme X et Y sont corrélés à cette cause\").",
+        "(D) Le fait de savoir que la recommandation est basée sur l'expérience de ses propres collègues.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q10_transmission_savoir",
+      "text": "Transmission du Savoir : Aujourd'hui, la formation d'un nouveau technicien se fait principalement par...",
+      "options": [
+        "(A) Des manuels de procédures officiels et structurés.",
+        "(B) Du compagnonnage informel, en suivant un technicien senior.",
+        "(C) Des modules e-learning génériques.",
+        "(D) \"Sur le tas\", en étant confronté directement aux pannes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q11_definition_succes",
+      "text": "Définition du Succès Personnel : Un technicien rentre chez lui satisfait de sa journée quand...",
+      "options": [
+        "(A) Il a résolu une panne très complexe qui bloquait tout le monde (\"le coup de génie\").",
+        "(B) Il a \"vidé\" sa liste de tâches planifiées et n'a plus rien en retard.",
+        "(C) La journée a été calme, sans aucune urgence majeure.",
+        "(D) Il a pu améliorer quelque chose (une procédure, un réglage) pour que ça ne tombe plus en panne.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q12_metriques_adoption",
+      "text": "🔥 MÉTRIQUES D'ADOPTION : Nous saurons que l'outil est vraiment adopté quand...",
+      "options": [
+        "(A) Le nombre de diagnostics lancés par jour et par technicien est élevé.",
+        "(B) Les techniciens commencent à utiliser le \"jargon\" de l'IA dans leurs discussions.",
+        "(C) Le taux de \"feedback positif\" (pouce haut) sur les recommandations dépasse 80%.",
+        "(D) Les managers commencent à utiliser les données de l'outil dans leurs rapports de performance.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q13_traumatisme_logiciel",
+      "text": "Traumatisme Logiciel : Un outil informatique devient insupportable sur le terrain principalement à cause de...",
+      "options": [
+        "(A) Sa lenteur (chaque clic prend 5 secondes).",
+        "(B) Sa complexité (trop de boutons, de menus, d'options inutiles).",
+        "(C) Son manque d'adaptation (ne fonctionne pas bien sur tablette, mauvaise connexion réseau).",
+        "(D) Ses bugs et son manque de fiabilité (plante souvent).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q14_point_integration",
+      "text": "Point d'Intégration Naturel : Pour être le plus utile, l'Assistant Diagnostic devrait s'intégrer...",
+      "options": [
+        "(A) Directement dans l'interface de la GMAO, au moment de la création du bon d'intervention.",
+        "(B) En tant qu'application mobile/tablette autonome, utilisée au pied de la machine.",
+        "(C) Lors du briefing d'équipe du matin, pour analyser les pannes de la veille.",
+        "(D) Sur un grand écran tactile dans l'atelier, comme un outil collaboratif.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    }
+  ]
+}

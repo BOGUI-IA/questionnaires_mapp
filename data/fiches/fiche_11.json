@@ -1,0 +1,191 @@
+{
+  "id": 11,
+  "title": "Stratégie Corporate & Propriété Intellectuelle",
+  "description": "Définir les fondations légales, financières et stratégiques de l'entreprise pour sécuriser sa croissance et sa pérennité.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 PROPRIÉTÉ INTELLECTUELLE (Code Source) : Le code source développé pour le MVP par un prestataire externe doit être...",
+      "options": [
+        "(A) La propriété exclusive et totale de la startup \"IA PRODUCT-INDUS\", via une clause de cession de PI dans le contrat.",
+        "(B) Co-propriété entre la startup et le prestataire.",
+        "(C) Propriété du prestataire, avec une licence d'utilisation exclusive pour la startup.",
+        "(D) Open-sourcé pour attirer une communauté de contributeurs.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "🔥 PROPRIÉTÉ INTELLECTUELLE (Modèles IA) : Les modèles d'IA affinés sur les données d'un client sont...",
+      "options": [
+        "(A) La propriété exclusive de notre startup. Le client achète un droit d'usage.",
+        "(B) La propriété du client. Nous sommes simplement opérateurs.",
+        "(C) Co-propriété. C'est le fruit d'une collaboration.",
+        "(D) Notre propriété, mais nous garantissons contractuellement que le modèle d'un client A ne sera jamais directement utilisé pour le client B (son concurrent).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "STRATÉGIE DE LICENCE (Logiciel) : Notre produit sera distribué sous une licence...",
+      "options": [
+        "(A) **Commerciale propriétaire :** Le code est fermé et protégé. C'est le modèle standard du SaaS.",
+        "(B) **\"Open Core\" :** Le cœur de l'application est open-source, mais les fonctionnalités avancées et les assistants sont payants.",
+        "(C) **Source disponible :** Le code est visible par les clients pour audit, mais ils ne peuvent pas le modifier ou le redistribuer.",
+        "(D) Entièrement open-source, avec un business model basé sur le support et l'hébergement.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "STRATÉGIE DE MARQUE : La marque \"IA PRODUCT-INDUS\" doit être...",
+      "options": [
+        "(A) Déposée immédiatement au niveau national (ex: INPI en France).",
+        "(B) Déposée au niveau européen (EUIPO).",
+        "(C) Déposée au niveau international (WIPO).",
+        "(D) On attend d'avoir plus de traction avant d'investir dans le dépôt de marque.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "🔥 FINANCEMENT (Phase embryonnaire / MVP) : La meilleure source de financement pour lancer le projet est...",
+      "options": [
+        "(A) **Love Money & Fonds Propres (Bootstrap) :** Pour garder 100% du contrôle.",
+        "(B) **Prêts d'honneur & Subventions publiques (BPI, etc.) :** Financement non dilutif.",
+        "(C) **Business Angels :** Pour un premier \"petit\" ticket et l'accès à un réseau.",
+        "(D) **Incubateur / Accélérateur :** Pour l'accompagnement et le premier financement.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "🔥 FINANCEMENT (Phase de croissance / Scaling) : Pour passer de 10 à 100 clients, la stratégie de financement sera...",
+      "options": [
+        "(A) **Autofinancement** grâce aux revenus des premiers clients. Croissance organique.",
+        "(B) **Levée de fonds en \"Seed\" ou \"Série A\"** auprès de fonds de capital-risque (Venture Capital). Croissance accélérée.",
+        "(C) **Dette bancaire (prêt)** une fois que les revenus sont prévisibles.",
+        "(D) Un mélange de plusieurs de ces options.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "🔥 LA VISION À LONG TERME (Exit Strategy) : Dans 7 à 10 ans, le scénario idéal pour IA PRODUCT-INDUS est de...",
+      "options": [
+        "(A) **Devenir un leader indépendant et rentable**, et le rester.",
+        "(B) **Se faire racheter par un grand acteur industriel** (ex: Siemens, Schneider Electric) qui voudrait intégrer notre technologie.",
+        "(C) **Se faire racheter par un géant de la tech** (ex: Microsoft, Google) pour devenir leur brique \"IA Industrielle\".",
+        "(D) **Entrer en bourse (IPO)**.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "TYPE DE PARTENARIAT STRATÉGIQUE (Priorité N°1) : Le partenariat le plus important à nouer dans les 2 premières années est...",
+      "options": [
+        "(A) Un **partenariat technologique** avec un fournisseur cloud (ex: devenir \"Partenaire IA\" de Microsoft Azure).",
+        "(B) Un **partenariat commercial** avec des intégrateurs ou des cabinets de conseil qui revendront notre solution.",
+        "(C) Un **partenariat industriel** avec un constructeur de machines (OEM) pour intégrer notre solution en natif.",
+        "(D) Un **partenariat académique** avec des laboratoires de recherche pour rester à la pointe de l'IA.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "PARTENARIAT AVEC L'ÉTAT / SECTEUR PUBLIC : Collaborer avec des entités publiques (agences d'innovation, ministères) est...",
+      "options": [
+        "(A) Une priorité stratégique pour obtenir des subventions et de la crédibilité.",
+        "(B) Une opportunité intéressante, mais secondaire par rapport aux clients privés.",
+        "(C) Une distraction potentielle, trop lente et bureaucratique pour une startup.",
+        "(D) À considérer uniquement pour des projets de recherche spécifiques.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "STRUCTURE JURIDIQUE : La forme de l'entreprise au démarrage doit être...",
+      "options": [
+        "(A) Une **SAS (Société par Actions Simplifiée)** : La plus flexible pour faire entrer des investisseurs.",
+        "(B) Une SARL (Société à Responsabilité Limitée) : Plus simple au début si on ne prévoit pas de levée de fonds.",
+        "(C) Le statut d'auto-entrepreneur pour la phase de MVP.",
+        "(D) À définir avec un avocat spécialisé.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "PACTE D'ASSOCIÉS : Si un co-fondateur technique rejoint le projet, le pacte d'associés doit absolument inclure...",
+      "options": [
+        "(A) Une **clause de \"vesting\"** sur 4 ans (les parts sont acquises progressivement pour garantir l'engagement).",
+        "(B) Une clause de non-concurrence stricte.",
+        "(C) Une répartition claire des rôles et des pouvoirs de décision.",
+        "(D) Toutes les clauses ci-dessus sont non-négociables.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "GESTION DES DONNÉES CLIENT : Contractuellement, la relation à la donnée doit être...",
+      "options": [
+        "(A) Le client est propriétaire de ses données brutes, nous sommes propriétaires des \"insights\" et des modèles générés.",
+        "(B) Le client est propriétaire de tout, nous avons un simple droit d'usage pour opérer le service.",
+        "(C) Nous sommes co-propriétaires des données anonymisées pour notre Knowledge Graph.",
+        "(D) Cela doit être flexible et négocié au cas par cas avec chaque client.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "STRATÉGIE DE RECRUTEMENT : Pour attirer les meilleurs talents, notre principal argument sera...",
+      "options": [
+        "(A) La **rémunération** et les avantages (salaire compétitif).",
+        "(B) Les **parts dans l'entreprise (BSPCE/Stock-options)**, pour les associer au succès.",
+        "(C) La **mission et la culture** : l'opportunité de travailler sur un projet qui a du sens avec une équipe brillante.",
+        "(D) La **technologie de pointe** et les défis intellectuels.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "LA PREMIÈRE EMBAUCHE \"NON-TECH\" : Le premier recrutement qui ne sera ni un développeur, ni un data scientist, sera...",
+      "options": [
+        "(A) Un **commercial / business developer**.",
+        "(B) Un **spécialiste du marketing**.",
+        "(C) Un **customer success manager**.",
+        "(D) Un **chef de produit (Product Manager)**.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

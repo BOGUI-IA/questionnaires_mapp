@@ -1,0 +1,191 @@
+{
+  "id": "fiche_15",
+  "title": "Personnalité et Présentation de l'IA (MVP)",
+  "description": "Définir la personnalité, le ton et la présentation de l'Assistant Diagnostic pour créer une expérience utilisateur optimale et une adoption réussie.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "options": [
+        "(A) **Factuel et neutre** : 'Cause probable : défaut de roulement (85% de confiance).'",
+        "(B) **Rassurant et pédagogique** : 'Pas de panique ! Il s'agit probablement d'un défaut de roulement, voici comment procéder...'",
+        "(C) **Professionnel et direct** : 'Diagnostic : défaut de roulement. Action recommandée : remplacement immédiat.'",
+        "(D) **Collaboratif** : 'D'après mon analyse, je pense à un défaut de roulement. Qu'en pensez-vous ?'",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LE TON DE L'IA : Quand l'Assistant Diagnostic présente un résultat, son ton doit être..."
+    },
+    {
+      "id": 2,
+      "options": [
+        "(A) **Être transparente** : 'Je ne suis sûre qu'à 65%. Voici les 3 causes les plus probables...'",
+        "(B) **Rester confiante** : Présenter quand même le diagnostic le plus probable sans mentionner l'incertitude.",
+        "(C) **Demander de l'aide** : 'Je ne suis pas certaine. Pouvez-vous me donner plus de détails ?'",
+        "(D) **Proposer une méthode** : 'Plusieurs causes possibles. Je vous propose une checklist de diagnostic.'",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA GESTION DE L'INCERTITUDE : Quand l'IA n'est pas sûre de son diagnostic (confiance < 70%), elle doit..."
+    },
+    {
+      "id": 3,
+      "options": [
+        "(A) **Comme un expert** : 'Je suis votre Assistant Diagnostic, expert en maintenance industrielle.'",
+        "(B) **Comme un outil** : 'Je suis un système d'aide au diagnostic basé sur l'intelligence artificielle.'",
+        "(C) **Comme un collègue** : 'Je suis Alex, votre Assistant Diagnostic. Je suis là pour vous aider !'",
+        "(D) **Comme un assistant** : 'Je suis votre Assistant Diagnostic. Mon rôle est de vous accompagner dans vos diagnostics.'",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'IDENTITÉ DE L'IA : Comment l'Assistant doit-il se présenter ?"
+    },
+    {
+      "id": 4,
+      "options": [
+        "(A) **S'excuser et apprendre** : 'Merci pour ce retour ! J'ai enregistré cette correction pour améliorer mes futurs diagnostics.'",
+        "(B) **Rester neutre** : 'Information enregistrée. Pouvez-vous préciser la cause réelle pour enrichir la base de données ?'",
+        "(C) **Questionner** : 'Intéressant ! Pouvez-vous m'expliquer comment vous êtes arrivé au bon diagnostic ?'",
+        "(D) **Relativiser** : 'Mon diagnostic était basé sur les informations disponibles. Avec plus de données, j'aurais pu être plus précise.'",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA GESTION DES ERREURS : Si un technicien signale que le diagnostic était faux, l'IA doit répondre..."
+    },
+    {
+      "id": 5,
+      "options": [
+        "(A) **Technique et précis** : Utiliser le jargon métier exact (ex: 'défaillance du palier lisse').",
+        "(B) **Accessible mais juste** : Mélanger termes techniques et explications simples.",
+        "(C) **Adaptatif** : S'adapter au niveau de l'utilisateur (junior vs senior).",
+        "(D) **Simple et clair** : Éviter le jargon, privilégier des termes compréhensibles par tous.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LE NIVEAU DE LANGAGE : Le vocabulaire de l'IA doit être..."
+    },
+    {
+      "id": 6,
+      "options": [
+        "(A) **Concises** : L'essentiel en 1-2 phrases maximum.",
+        "(B) **Détaillées** : Expliquer le raisonnement et les étapes.",
+        "(C) **Modulaires** : Réponse courte + option 'En savoir plus' pour les détails.",
+        "(D) **Contextuelles** : Courtes pour les urgences, détaillées pour la formation.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA LONGUEUR DES RÉPONSES : Les explications de l'IA doivent être..."
+    },
+    {
+      "id": 7,
+      "options": [
+        "(A) **Jamais** : Toujours paraître sûre d'elle pour inspirer confiance.",
+        "(B) **Toujours** : Être transparente sur ses limites et incertitudes.",
+        "(C) **Selon le contexte** : Sûre d'elle pour les cas évidents, prudente pour les cas complexes.",
+        "(D) **Selon l'utilisateur** : Confiante avec les juniors, nuancée avec les experts.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA CONFIANCE EN SOI : L'IA doit-elle exprimer des doutes ?"
+    },
+    {
+      "id": 8,
+      "options": [
+        "(A) **Discrètement** : Ne pas mentionner qu'elle apprend, pour ne pas inquiéter.",
+        "(B) **Fièrement** : 'Grâce à vos retours, je deviens chaque jour plus performante !'",
+        "(C) **Factuellement** : 'Mise à jour effectuée avec 47 nouveaux cas d'apprentissage.'",
+        "(D) **Collaborativement** : 'Ensemble, nous enrichissons la base de connaissances de l'équipe.'",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'APPRENTISSAGE CONTINU : Comment l'IA doit-elle communiquer sur son évolution ?"
+    },
+    {
+      "id": 9,
+      "options": [
+        "(A) **Le texte** : Réponses sous forme de paragraphes détaillés.",
+        "(B) **Les visuels** : Schémas, photos, diagrammes pour illustrer.",
+        "(C) **Les listes** : Points clés, étapes numérotées, check-lists.",
+        "(D) **L'interactif** : Boutons, liens, éléments cliquables pour approfondir.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA PRÉSENTATION VISUELLE : L'interface de l'IA doit privilégier..."
+    },
+    {
+      "id": 10,
+      "options": [
+        "(A) **Aller à l'essentiel** : Diagnostic + action immédiate, sans explication.",
+        "(B) **Prioriser la sécurité** : Toujours rappeler les consignes de sécurité en premier.",
+        "(C) **Être efficace** : Diagnostic rapide + option 'Détails' pour plus tard.",
+        "(D) **Rester complète** : Même en urgence, donner toutes les informations importantes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA GESTION DU TEMPS : Pour les interventions urgentes, l'IA doit..."
+    },
+    {
+      "id": 11,
+      "options": [
+        "(A) **Jamais** : Rester strictement professionnelle en toutes circonstances.",
+        "(B) **Avec parcimonie** : Quelques touches d'humour léger pour détendre l'atmosphère.",
+        "(C) **Selon la situation** : Jamais en urgence, possible pour les formations ou diagnostics de routine.",
+        "(D) **Selon l'utilisateur** : S'adapter à la personnalité de chaque technicien.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'HUMOUR ET LA PERSONNALITÉ : L'IA peut-elle utiliser l'humour ?"
+    },
+    {
+      "id": 12,
+      "options": [
+        "(A) **Humblement** : 'Merci ! C'est grâce aux données que vous et vos collègues avez partagées.'",
+        "(B) **Professionnellement** : 'Merci pour ce retour positif. Il m'aide à valider mes algorithmes.'",
+        "(C) **Simplement** : 'Merci ! Je suis là pour vous aider.'",
+        "(D) **En redirigeant** : 'L'important, c'est que vous ayez pu résoudre le problème rapidement !'",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA GESTION DES COMPLIMENTS : Si un technicien dit 'Bravo, excellent diagnostic !', l'IA répond..."
+    },
+    {
+      "id": 13,
+      "options": [
+        "(A) **Rester fixe** : Garder exactement la même personnalité pour la cohérence.",
+        "(B) **Évoluer subtilement** : Devenir progressivement plus confiante avec l'expérience.",
+        "(C) **S'adapter** : Changer selon les retours des utilisateurs.",
+        "(D) **Être contextuelle** : Personnalité différente selon le type d'intervention (urgence vs formation).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA COHÉRENCE TEMPORELLE : La personnalité de l'IA doit-elle évoluer ?"
+    },
+    {
+      "id": 14,
+      "options": [
+        "(A) **Un expert bienveillant** qui partage ses connaissances avec humilité.",
+        "(B) **Un collègue fiable** qui vous accompagne sans jamais vous juger.",
+        "(C) **Un outil intelligent** qui s'efface derrière l'efficacité de ses réponses.",
+        "(D) **Un mentor patient** qui vous aide à progresser dans votre métier.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA DÉFINITION FINALE : En une phrase, la personnalité idéale de notre Assistant Diagnostic est..."
+    }
+  ]
+}

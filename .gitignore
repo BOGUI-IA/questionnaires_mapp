@@ -18,10 +18,33 @@ __pycache__/
 *~
 
 # Dossiers de données volumineux
-data/
+data/responses/
+data/backups_consistency/
 backups/
 responses/
 sessions/
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
 
 # Fichiers système
 .DS_Store
@@ -48,3 +71,3545 @@ dry_run_report.md
 app_debug.log
 fiches_update.log
 fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de

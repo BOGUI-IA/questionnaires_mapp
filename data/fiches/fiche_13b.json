@@ -1,0 +1,192 @@
+{
+  "id": "fiche_13b",
+  "title": "Architecture IA, Données & Cybersécurité",
+  "description": "Définir les principes directeurs de l'architecture de l'IA, de la gestion des données et de la stratégie de cybersécurité pour construire une plateforme digne de confiance.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "type": "checkbox",
+      "text": "LE RÔLE DU CERVEAU CENTRAL : Le \"Cerveau Central\" doit-il être...",
+      "help_text": "Une seule réponse par défaut. Une seconde réponse peut être indiquée dans les commentaires uniquement si elle est indissociable et d'égale importance pour le succès du projet.",
+      "options": [
+        "(A) **Un \"Chef d'Orchestre\" :** Il reçoit des informations des assistants, trouve des corrélations et renvoie des \"instructions\" ou des \"suggestions\" enrichies à chaque assistant.",
+        "(B) **Une \"Bibliothèque Centrale\" :** Son rôle principal est d'être la mémoire unifiée. Les assistants viennent y \"lire\" des informations, mais restent très autonomes dans leurs décisions.",
+        "(C) **Un \"Arbitre Stratégique\" :** Il n'intervient que pour résoudre des conflits d'objectifs entre les assistants (ex: Maintenance vs. Production).",
+        "(D) Un mélange des trois, avec une fonction principale d'orchestration.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": 2,
+      "type": "checkbox",
+      "text": "L'APPRENTISSAGE DE L'IA : Comment notre système apprend-il et s'améliore-t-il ?",
+      "options": [
+        "(A) **Apprentissage Centralisé :** Seul le Cerveau Central apprend des données de tous les clients (de manière anonymisée). Les assistants ne sont que des \"exécuteurs\".",
+        "(B) **Apprentissage Fédéré :** Chaque assistant apprend localement sur les données de son domaine. Le Cerveau Central agrège ces apprentissages sans jamais voir les données brutes.",
+        "(C) **Apprentissage par Renforcement Humain (RLHF) :** L'amélioration principale vient du feedback des utilisateurs (les \"pouces haut/bas\") qui corrige et affine continuellement les recommandations.",
+        "(D) Une approche hybride combinant l'apprentissage centralisé et le renforcement humain.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": 3,
+      "type": "checkbox",
+      "text": "🔥 LA GESTION DES DONNÉES PERSONNELLES/SENSIBLES : Comment traitons-nous les données qui pourraient être sensibles (ex: nom d'un technicien dans un rapport) ?",
+      "options": [
+        "(A) **Anonymisation Stricte :** Nous devons mettre en place un processus automatique qui détecte et supprime ou remplace systématiquement toutes les informations personnelles avant qu'elles n'entrent dans notre Data Lake.",
+        "(B) **Pseudonymisation :** Nous remplaçons les noms par des identifiants aléatoires (ex: \"Michel\" -> \"Technicien_A\").",
+        "(C) **Contrôle d'Accès :** Les données restent intactes, mais nous utilisons un système de droits très strict pour que seules les personnes autorisées (comme le manager du client) puissent voir ces informations.",
+        "(D) C'est la responsabilité du client de nous fournir des données déjà anonymisées.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": 4,
+      "type": "checkbox",
+      "text": "LE \"KNOWLEDGE GRAPH\" MULTI-CLIENT : L'apprentissage croisé entre clients (notre avantage concurrentiel) doit fonctionner en...",
+      "options": [
+        "(A) **Partageant des \"patterns\" anonymisés :** Notre IA apprend des schémas généraux (ex: \"ce type de vibration précède cette panne\") sans jamais mélanger les données brutes d'un client à un autre.",
+        "(B) **Créant un modèle \"fondation\" global :** Entraîné sur les données anonymisées de tous, puis affiné spécifiquement pour chaque client.",
+        "(C) Restant une option (\"opt-in\") : Les clients choisissent s'ils veulent contribuer au pot commun en échange d'une IA plus performante.",
+        "(D) Offrant une option \"opt-out\" payante pour les clients qui veulent rester dans leur silo.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": 5,
+      "text": "L'EXPLICABILITÉ DE L'IA (\"Explainable AI\") : Quand l'IA fait une recommandation, le niveau d'explication doit être...",
+      "options": [
+        "(A) **Basé sur les données :** \"Je te suggère cela car j'ai trouvé 3 cas similaires dans ton historique.\"",
+        "(B) **Basé sur les corrélations :** \"Je te suggère cela car je vois une corrélation entre la hausse de température et ce type de panne.\"",
+        "(C) **Simple et direct :** Pas besoin d'explication complexe, juste la recommandation et le score de confiance.",
+        "(D) Adaptatif : Simple pour les cas courants, détaillé et basé sur les données pour les recommandations surprenantes ou critiques.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "🔥 LA CYBERSÉCURITÉ - NOTRE PLUS GRANDE MENACE : La menace cybernétique la plus critique pour notre plateforme est...",
+      "options": [
+        "(A) Une **fuite de données (Data Breach)** : Un attaquant vole les données de nos clients.",
+        "(B) Une **attaque par déni de service (DDoS)** : Les attaquants rendent notre plateforme inaccessible pour nos clients.",
+        "(C) Une **corruption ou un ransomware** de nos bases de données : Les attaquants chiffrent ou détruisent nos données.",
+        "(D) Une **manipulation de l'IA (Adversarial Attack)** : Un attaquant essaie de \"tromper\" notre IA pour qu'elle donne des recommandations fausses ou dangereuses.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "LA DÉFENSE PRIORITAIRE : Pour nous protéger, l'investissement en cybersécurité doit se concentrer en priorité sur...",
+      "options": [
+        "(A) Le **chiffrement** de toutes les données, au repos et en transit.",
+        "(B) Une **gestion des identités et des accès (IAM)** extrêmement stricte.",
+        "(C) Un **monitoring de sécurité continu** pour détecter les comportements suspects en temps réel.",
+        "(D) Des **audits de sécurité et des tests de pénétration** réguliers par des experts externes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "LA SÉCURITÉ DANS L'USINE (OT Security) : Comment s'assurer que notre produit n'est pas une porte d'entrée vers les machines du client ?",
+      "options": [
+        "(A) **Isolation Stricte :** Notre système ne doit **jamais** avoir d'accès direct en écriture aux systèmes de contrôle de production (OT). La communication est toujours à sens unique (lecture seule) ou via une passerelle sécurisée.",
+        "(B) **Connecteurs Certifiés :** Nous ne développons que des connecteurs qui respectent les standards de sécurité industrielle (ex: IEC 62443).",
+        "(C) **Responsabilité du Client :** C'est à l'IT du client de mettre en place les pare-feux et les DMZ pour protéger leurs réseaux OT.",
+        "(D) Une combinaison de (A) et (B) est non-négociable.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "LA GOUVERNANCE DES DONNÉES : Qui est le propriétaire final des données ?",
+      "options": [
+        "(A) Le client est et reste le **propriétaire à 100% de ses données brutes**.",
+        "(B) Nous devenons **propriétaires des données anonymisées et agrégées** qui alimentent notre modèle global.",
+        "(C) C'est une **co-propriété** sur les \"insights\" générés par l'IA.",
+        "(D) Les termes doivent être définis dans un **\"Data Processing Agreement\" (DPA)** très clair.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "🔥 L'ÉVOLUTION DE L'ARCHITECTURE IA : L'approche RAG est parfaite pour le MVP. Mais dans 3 ans, notre architecture devra probablement évoluer vers...",
+      "options": [
+        "(A) Des **modèles d'IA multimodaux** (qui comprennent texte, images, son).",
+        "(B) Des **jumeaux numériques (Digital Twins)** pour la simulation.",
+        "(C) De l'**IA embarquée (\"Edge AI\")**,  avec des modèles qui tournent directement sur des capteurs dans l'usine.",
+        "(D) Le RAG restera le cœur, mais il sera beaucoup plus sophistiqué.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "LA GESTION DES MODÈLES (MLOps) : Quand un modèle d'IA doit-il être ré-entraîné ?",
+      "options": [
+        "(A) À intervalles fixes (ex: tous les mois).",
+        "(B) En continu, à chaque fois qu'un nouveau feedback utilisateur est reçu.",
+        "(C) Uniquement lorsque nous détectons une baisse de sa performance via notre monitoring.",
+        "(D) Une combinaison de (A) et (C).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "L'INTERCONNEXION DES ASSISTANTS : La communication directe entre deux assistants (sans passer par le Cerveau Central) doit être...",
+      "options": [
+        "(A) **Interdite.** Toute communication doit être orchestrée par le Cerveau pour garantir la cohérence.",
+        "(B) **Exceptionnelle,** réservée aux cas d'urgence prédéfinis (ex: l'Assistant Production alerte directement l'Assistant Sécurité).",
+        "(C) **Encouragée,** pour créer un système plus réactif et décentralisé.",
+        "(D) Possible, mais chaque communication est \"logguée\" et supervisée par le Cerveau Central.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "LA TRAÇABILITÉ DES DÉCISIONS : Pour chaque recommandation de l'IA, nous devons être capables de tracer...",
+      "options": [
+        "(A) Uniquement les **cas similaires** qui ont été utilisés pour la générer.",
+        "(B) La **version exacte du modèle d'IA** et du **dataset** qui ont été utilisés.",
+        "(C) L'**intégralité du prompt** qui a été envoyé au LLM.",
+        "(D) Tous les éléments ci-dessus. Une traçabilité totale est non-négociable.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "🔥 LE PLUS GRAND DÉFI TECHNIQUE GLOBAL : Au final, le défi le plus complexe pour notre vision à long terme sera...",
+      "options": [
+        "(A) La **qualité et la variété** des données à intégrer.",
+        "(B) La **scalabilité** de l'infrastructure pour gérer des milliers de clients en temps réel.",
+        "(C) La **complexité de l'orchestration** et de l'arbitrage entre les 19 assistants.",
+        "(D) Le **maintien de la performance et de la pertinence** des modèles d'IA dans le temps.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

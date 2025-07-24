@@ -1,0 +1,191 @@
+{
+  "id": "fiche_4",
+  "title": "L'Écosystème des 19 Assistants",
+  "description": "Définir l'architecture, les interactions et la cohérence globale entre tous les assistants IA.",
+  "session": 1,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 CERVEAU CENTRAL : Le 'Cerveau Central' qui orchestre tous les assistants devrait être...",
+      "options": [
+        "(A) Un assistant supplémentaire (le 20ème) qui supervise et coordonne les 19 autres.",
+        "(B) Une couche logicielle invisible qui gère les flux de données et les priorités entre assistants.",
+        "(C) L'Assistant Directeur d'Usine, qui a naturellement une vision globale.",
+        "(D) Un tableau de bord central où l'humain arbitre les conflits entre assistants.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "Spécialisation vs Polyvalence : Chaque assistant devrait être...",
+      "options": [
+        "(A) Ultra-spécialisé dans son domaine, quitte à créer des silos.",
+        "(B) Capable de 'déborder' légèrement sur les domaines voisins pour éviter les zones grises.",
+        "(C) Polyvalent avec une spécialité principale, pour pouvoir se substituer en cas de besoin.",
+        "(D) Modulaire : spécialisé par défaut, mais extensible selon les besoins du client.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "🔥 CONFLIT D'ASSISTANTS : Quand l'Assistant Maintenance dit 'Arrêtez la machine' et l'Assistant Production dit 'Continuez', la résolution devrait se faire par...",
+      "options": [
+        "(A) Une hiérarchie prédéfinie (ex: la sécurité prime toujours).",
+        "(B) Un algorithme qui calcule le coût/bénéfice de chaque option.",
+        "(C) L'escalade automatique vers un humain décisionnaire.",
+        "(D) Une négociation entre assistants qui proposent un compromis (ex: 'Finir la série en cours puis arrêter').",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "Mémoire Partagée : Les assistants devraient partager...",
+      "options": [
+        "(A) Toutes leurs données et analyses en temps réel.",
+        "(B) Seulement les informations critiques et les alertes.",
+        "(C) Un 'journal' commun des événements majeurs de l'usine.",
+        "(D) Des insights et patterns détectés, mais pas les données brutes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "🔥 ASSISTANT MANQUANT : L'assistant qui manque le plus dans la liste des 19 est probablement...",
+      "options": [
+        "(A) Assistant Cybersécurité Industrielle.",
+        "(B) Assistant Gestion de Crise.",
+        "(C) Assistant Innovation/Amélioration Continue.",
+        "(D) La liste est complète, il ne manque rien.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "Redondance Intelligente : Avoir plusieurs assistants qui peuvent traiter le même problème est...",
+      "options": [
+        "(A) Un gaspillage à éviter absolument.",
+        "(B) Une sécurité nécessaire pour les fonctions critiques.",
+        "(C) Une opportunité de croiser les analyses et d'améliorer la fiabilité.",
+        "(D) Acceptable seulement si les approches sont complémentaires.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "Évolution de l'Écosystème : Dans 2 ans, le nombre d'assistants devrait...",
+      "options": [
+        "(A) Rester à 19, mais avec des fonctionnalités beaucoup plus avancées.",
+        "(B) Augmenter vers 25-30 assistants pour couvrir des niches spécialisées.",
+        "(C) Diminuer vers 10-12 assistants plus polyvalents et puissants.",
+        "(D) Devenir modulaire : un socle de base + des modules spécialisés à la demande.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "🔥 PRIORITÉ D'IMPLÉMENTATION : Les 3 premiers assistants à développer en priorité sont...",
+      "options": [
+        "(A) Maintenance, Production, Qualité (le trio de base).",
+        "(B) Maintenance, Sécurité, Directeur d'Usine (pour la vision globale).",
+        "(C) Maintenance, Planification, Logistique (pour la fluidité opérationnelle).",
+        "(D) Cela dépend entièrement du secteur d'activité et des priorités du client.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "Communication Inter-Assistants : Les assistants devraient communiquer entre eux...",
+      "options": [
+        "(A) En permanence et en temps réel.",
+        "(B) Seulement quand c'est nécessaire (événements déclencheurs).",
+        "(C) Selon un planning prédéfini (ex: synchronisation toutes les heures).",
+        "(D) Via un 'hub' central qui filtre et route les informations pertinentes.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "Interface Unique vs Multiple : L'approche idéale pour les interfaces utilisateur est...",
+      "options": [
+        "(A) Une interface unique et cohérente pour tous, avec des modules/écrans qui s'activent selon le rôle de l'utilisateur.",
+        "(B) Des applications complètement distinctes et spécialisées pour chaque grand métier (une 'App Maintenance', une 'App Production').",
+        "(C) Une interface principale commune pour la vision d'ensemble, et des 'apps' spécialisées pour les tâches très techniques.",
+        "(D) De laisser le choix à chaque client de construire ses propres interfaces via une API.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "Donnée Universelle : LA donnée que absolument tous les assistants doivent connaître et partager est...",
+      "options": [
+        "(A) Le planning de production en temps réel.",
+        "(B) L'état de santé et la disponibilité de chaque équipement critique.",
+        "(C) Les objectifs de performance (KPI) du site pour la semaine en cours.",
+        "(D) Les coûts de revient minute par minute.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "🔥 CONFLIT TYPE : Le conflit d'objectif le plus fréquent que l'IA devra aider à arbitrer est...",
+      "options": [
+        "(A) **Qualité vs. Cadence** (ralentir pour réduire les rebuts).",
+        "(B) **Arrêt Préventif vs. Planning** (arrêter une machine qui tourne bien pour éviter une panne future).",
+        "(C) **Coûts vs. Stock de Sécurité** (réduire les stocks vs. risque de rupture).",
+        "(D) **Standardisation vs. Habitude** (imposer une nouvelle procédure vs. le 'on a toujours fait comme ça').",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "Stratégie Commerciale : Notre modèle de vente devrait être...",
+      "options": [
+        "(A) Vendre les assistants à l'unité ('à la carte').",
+        "(B) Vendre des packs logiques par pilier (ex: le 'Pack Maintenance' avec 4 assistants).",
+        "(C) Vendre la plateforme complète comme une solution unique et intégrée.",
+        "(D) Un modèle de base (le Cerveau Central) avec des assistants en 'add-ons' payants.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "Naming Métier : Les noms actuels des assistants ('Assistant Maintenance', 'Assistant Qualité') sont...",
+      "options": [
+        "(A) Parfaits : clairs, directs et compréhensibles par tous.",
+        "(B) Un peu trop 'génériques', il faudrait des noms plus marketing et différenciants.",
+        "(C) Pas assez descriptifs de leur fonction réelle.",
+        "(D) Bons pour le moment, mais il faudra probablement les affiner avec les retours des premiers clients.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

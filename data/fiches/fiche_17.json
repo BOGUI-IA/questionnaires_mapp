@@ -1,0 +1,191 @@
+{
+  "id": "fiche_17",
+  "title": "Design & UX de la Plateforme Mature (avec 19 Assistants)",
+  "description": "Définir l'interface et l'expérience utilisateur de la plateforme mature orchestrant 19 assistants spécialisés avec le Cerveau Central.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "options": [
+        "(A) **Comme une équipe** : 19 spécialistes qui collaborent sous ses yeux.",
+        "(B) **Comme un seul cerveau** : Une intelligence unique qui mobilise ses 'modules' selon les besoins.",
+        "(C) **Comme des outils** : 19 applications spécialisées qu'il peut activer à la demande.",
+        "(D) **Comme un écosystème** : Un environnement intelligent qui s'adapte automatiquement à ses besoins.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA PHILOSOPHIE D'ORCHESTRATION : Comment l'utilisateur doit-il percevoir les 19 assistants ?"
+    },
+    {
+      "id": 2,
+      "options": [
+        "(A) **Un tableau de bord unifié** : Vue d'ensemble de tous les KPI et alertes.",
+        "(B) **Une grille d'assistants** : 19 tuiles représentant chaque assistant spécialisé.",
+        "(C) **Un assistant conversationnel central** : Interface de chat avec le Cerveau Central.",
+        "(D) **Un workspace adaptatif** : Interface qui change selon le rôle de l'utilisateur (technicien, manager, etc.).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'INTERFACE PRINCIPALE : Que voit l'utilisateur sur l'écran d'accueil ?"
+    },
+    {
+      "id": 3,
+      "options": [
+        "(A) **Masquage intelligent** : Seuls les assistants pertinents pour l'utilisateur sont visibles.",
+        "(B) **Hiérarchisation** : Les assistants sont organisés par importance/fréquence d'usage.",
+        "(C) **Contextualisation** : L'interface s'adapte automatiquement à la situation (urgence, routine, formation).",
+        "(D) **Personnalisation** : Chaque utilisateur configure son interface selon ses besoins.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA GESTION DE LA COMPLEXITÉ : Comment éviter que l'utilisateur soit submergé ?"
+    },
+    {
+      "id": 4,
+      "options": [
+        "(A) **Visualisation des flux** : Flèches et animations montrant les échanges de données.",
+        "(B) **Timeline collaborative** : Historique des actions coordonnées entre assistants.",
+        "(C) **Notifications croisées** : Messages montrant qu'un assistant informe un autre.",
+        "(D) **Mode invisible** : La collaboration se fait en arrière-plan, l'utilisateur voit seulement le résultat final.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA COMMUNICATION INTER-ASSISTANTS : Comment montrer que les assistants collaborent ?"
+    },
+    {
+      "id": 5,
+      "options": [
+        "(A) **Clic direct** : Chaque assistant a sa propre interface dédiée.",
+        "(B) **Via le Cerveau Central** : Toutes les demandes passent par l'orchestrateur qui route vers le bon assistant.",
+        "(C) **Mode hybride** : Accès direct possible, mais le Cerveau Central peut intervenir pour optimiser.",
+        "(D) **Contextuel** : L'assistant approprié s'active automatiquement selon la situation.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'ACCÈS AUX ASSISTANTS : Comment l'utilisateur interagit-il avec un assistant spécifique ?"
+    },
+    {
+      "id": 6,
+      "options": [
+        "(A) **Arbitrage automatique** : Le Cerveau Central tranche et explique sa décision.",
+        "(B) **Présentation du conflit** : L'utilisateur voit les deux positions et choisit.",
+        "(C) **Escalade hiérarchique** : Le conflit remonte automatiquement au niveau managérial approprié.",
+        "(D) **Négociation assistée** : Interface de médiation pour aider à résoudre le conflit.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA GESTION DES CONFLITS : Que se passe-t-il si deux assistants donnent des recommandations contradictoires ?"
+    },
+    {
+      "id": 7,
+      "options": [
+        "(A) **File d'attente intelligente** : Tri automatique par criticité et impact.",
+        "(B) **Catégorisation** : Alertes groupées par type (sécurité, production, qualité, etc.).",
+        "(C) **Personnalisation** : Chaque utilisateur définit ses priorités.",
+        "(D) **Contextualisation** : Priorités qui s'adaptent à la situation actuelle de l'entreprise.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA PRIORISATION : Comment gérer les alertes multiples de plusieurs assistants ?"
+    },
+    {
+      "id": 8,
+      "options": [
+        "(A) **Métriques d'évolution** : Graphiques montrant l'amélioration des performances.",
+        "(B) **Suggestions proactives** : La plateforme propose des améliorations basées sur l'apprentissage.",
+        "(C) **Historique des optimisations** : Journal des améliorations apportées par l'IA.",
+        "(D) **Mode discret** : L'amélioration se fait en arrière-plan sans notification.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "L'APPRENTISSAGE COLLECTIF : Comment montrer que la plateforme devient plus intelligente ?"
+    },
+    {
+      "id": 9,
+      "options": [
+        "(A) **Application dédiée** : Version mobile simplifiée avec les fonctions essentielles.",
+        "(B) **Interface responsive** : Même interface qui s'adapte à la taille d'écran.",
+        "(C) **Mode contextuel** : L'interface mobile s'adapte à la situation (terrain, bureau, urgence).",
+        "(D) **Assistants spécialisés** : Chaque assistant a sa propre app mobile optimisée.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA MOBILITÉ : Comment adapter cette complexité aux appareils mobiles ?"
+    },
+    {
+      "id": 10,
+      "options": [
+        "(A) **Formation progressive** : Déverrouillage graduel des assistants selon l'expérience.",
+        "(B) **Assistant formation** : Un 20ème assistant dédié à l'apprentissage et à l'aide.",
+        "(C) **Mode simulation** : Environnement de test pour expérimenter sans risque.",
+        "(D) **Compagnonnage IA** : L'IA guide l'utilisateur en temps réel dans ses premières utilisations.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA FORMATION : Comment aider les utilisateurs à maîtriser cette complexité ?"
+    },
+    {
+      "id": 11,
+      "options": [
+        "(A) **Chargement à la demande** : Seuls les assistants utilisés sont chargés en mémoire.",
+        "(B) **Priorisation des ressources** : Les assistants critiques ont la priorité sur les ressources système.",
+        "(C) **Mode dégradé** : En cas de surcharge, certains assistants passent en mode simplifié.",
+        "(D) **Architecture distribuée** : Chaque assistant fonctionne sur son propre serveur.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA PERFORMANCE : Comment maintenir la fluidité avec 19 assistants actifs ?"
+    },
+    {
+      "id": 12,
+      "options": [
+        "(A) **Authentification unique** : Un seul login donne accès à tous les assistants autorisés.",
+        "(B) **Permissions granulaires** : Chaque assistant nécessite des droits spécifiques.",
+        "(C) **Rôles métier** : Les accès sont définis par fonction (technicien, manager, directeur).",
+        "(D) **Sécurité adaptative** : Les permissions s'ajustent selon le contexte et le risque.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "LA SÉCURITÉ : Comment gérer les accès dans un environnement multi-assistants ?"
+    },
+    {
+      "id": 13,
+      "options": [
+        "(A) **Architecture modulaire** : Chaque nouvel assistant s'intègre automatiquement.",
+        "(B) **Marketplace interne** : Catalogue d'assistants que l'entreprise peut activer.",
+        "(C) **Développement guidé** : Outils pour créer facilement de nouveaux assistants métier.",
+        "(D) **Écosystème ouvert** : API permettant l'intégration d'assistants tiers.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 L'ÉVOLUTIVITÉ : Comment préparer l'ajout de nouveaux assistants ?"
+    },
+    {
+      "id": 14,
+      "options": [
+        "(A) **L'efficacité absolue** : Chaque action est optimisée, chaque décision est éclairée.",
+        "(B) **La simplicité retrouvée** : Malgré la complexité technique, l'usage reste intuitif.",
+        "(C) **L'intelligence augmentée** : L'utilisateur se sent plus intelligent et capable.",
+        "(D) **L'harmonie opérationnelle** : Tous les métiers travaillent en parfaite coordination.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox",
+      "text": "🔥 LA VISION FINALE : L'expérience utilisateur idéale de cette plateforme mature est..."
+    }
+  ]
+}

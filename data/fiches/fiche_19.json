@@ -1,0 +1,220 @@
+{
+  "id": "fiche_19",
+  "title": "Scénarios Opérationnels Complexes & Définition de l'Algorithme Maître",
+  "description": "Définition du cœur de l'avantage concurrentiel brevetable de l'IA PRODUCT-INDUS à travers des scénarios opérationnels complexes.",
+  "session": 4,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Pour le scénario 'La Matière Première Douteuse', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Validation Historique : L'IA croise le certificat fournisseur avec son historique de qualité pour donner un score de risque.",
+        "Niveau 2 - Ajustement Préventif : L'IA propose des paramètres machine adaptés au risque pour limiter les rebuts.",
+        "Niveau 3 - Analyse Contextuelle : L'IA intègre les conditions de transport, le planning, la météo pour une vision globale du risque.",
+        "Niveau 4 - Arbitrage Économique : L'IA simule le ROI de 'Produire avec risque' vs 'Tests supplémentaires' et recommande l'option la plus rentable.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q2",
+      "text": "Pour le scénario 'La Panne Critique Imminente', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Coordination de Planning : L'IA alerte la Maintenance et la Production de l'impact sur le planning.",
+        "Niveau 2 - Re-séquencement Intelligent : L'IA modifie le planning pour produire les commandes urgentes avant la fenêtre de panne.",
+        "Niveau 3 - Optimisation du Coût Global : L'IA calcule dynamiquement le coût de l'arrêt préventif vs. le coût de la panne subie et recommande le moment optimal.",
+        "Niveau 4 - Orchestration de la Supply Chain : L'IA coordonne fournisseurs et clients pour minimiser l'impact global sur la chaîne de valeur.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q3",
+      "text": "Pour le scénario 'La Demande de Sur-Cadence', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Analyse d'Impact Technique : L'IA calcule l'impact sur l'énergie, les rebuts et l'usure.",
+        "Niveau 2 - Analyse d'Impact Humain : L'IA intègre les compétences et la charge de travail de l'équipe en poste.",
+        "Niveau 3 - Analyse de Risque Systémique : L'IA évalue l'impact simultané sur la qualité, la maintenance, les RH et les coûts.",
+        "Niveau 4 - Plan d'Action Conditionnel : L'IA répond 'Oui, mais...' en proposant un plan complet d'actions de mitigation.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q4",
+      "text": "Pour le scénario 'Le Défaut Qualité Inexpliqué', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Corrélation Simple : L'IA cherche un lien avec le lot de matière première ou l'opérateur.",
+        "Niveau 2 - Corrélation Événementielle : L'IA analyse les événements juste avant la dérive (micro-arrêt, etc.).",
+        "Niveau 3 - Corrélation Environnementale : L'IA intègre les données de l'atelier (T°, humidité) ou les vibrations voisines.",
+        "Niveau 4 - Analyse Causale Profonde : L'IA explore des chaînes de causalité complexes et propose une hypothèse multi-facteurs (ex: 'Lot X + Humidité Y + usure du Filtre Z').",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q5",
+      "text": "Pour le scénario 'L'Industrialisation d'un Nouveau Produit', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Vérification de Faisabilité : L'IA valide la compatibilité des équipements et la disponibilité des matières.",
+        "Niveau 2 - Proposition de Réglages Prédictifs : L'IA propose un premier jeu de paramètres en se basant sur les produits similaires.",
+        "Niveau 3 - Plan de Contrôle Qualité Intelligent : L'IA génère un plan de contrôle renforcé, ciblé sur les risques de ce nouveau produit.",
+        "Niveau 4 - Simulation Complète d'Impact : L'IA simule un 'tour à blanc' virtuel et calcule l'impact sur le planning, la maintenance, la formation et les coûts.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q6",
+      "text": "Pour le scénario 'La Pénurie Fournisseur', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Alerte et Impact Planning : L'IA recalcule l'impact sur le planning de production.",
+        "Niveau 2 - Proposition d'Alternatives : L'IA cherche dans l'historique des matières de substitution déjà utilisées.",
+        "Niveau 3 - Ré-optimisation Globale : L'IA recalcule tout le planning de production pour minimiser l'impact.",
+        "Niveau 4 - Sourcing Intelligent : L'IA interroge des plateformes externes pour trouver des fournisseurs alternatifs.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q7",
+      "text": "Pour le scénario 'L'Audit Qualité Surprise', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Documentation Automatisée : L'IA génère automatiquement les documents requis pour l'audit.",
+        "Niveau 2 - Préparation Ciblée : L'IA identifie les points faibles et suggère des actions correctives.",
+        "Niveau 3 - Simulation d'Audit : L'IA simule un audit complet et fournit un rapport de conformité.",
+        "Niveau 4 - Optimisation Continue : L'IA propose des améliorations de processus pour éviter les non-conformités futures.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q8",
+      "text": "Pour le scénario 'La Nouvelle Réglementation', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Analyse de Conformité : L'IA identifie les points de non-conformité des process actuels.",
+        "Niveau 2 - Simulation des Coûts : L'IA simule les coûts de mise en conformité.",
+        "Niveau 3 - Proposition de Nouveaux Paramètres : L'IA propose des réglages qui respectent la norme en minimisant l'impact performance.",
+        "Niveau 4 - Monitoring Continu : L'IA met en place une surveillance renforcée pour garantir le respect de la norme en continu.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q9",
+      "text": "Pour le scénario 'L'Absentéisme Inattendu', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Alerte d'Impact : L'IA alerte sur l'impact sur la capacité et les compétences.",
+        "Niveau 2 - Proposition de Réaffectation : L'IA propose des réaffectations basées sur la matrice des compétences.",
+        "Niveau 3 - Ajustement du Planning : L'IA recalcule un planning de production réaliste.",
+        "Niveau 4 - Analyse de Risque Opérationnel : L'IA identifie les tâches à risque (celles faites par du personnel moins expert) et suggère de renforcer la supervision.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q10",
+      "text": "Pour le scénario 'La Commande 'VIP' Urgente', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Simulation d'Impact : L'IA calcule les retards sur les autres commandes.",
+        "Niveau 2 - Chemin Critique Optimisé : L'IA propose le meilleur ré-ordonnancement pour un impact minimal.",
+        "Niveau 3 - Coordination Supply Chain : L'IA vérifie les matières, les transports et alerte la chaîne.",
+        "Niveau 4 - Calcul de la Rentabilité de l'Urgence : L'IA calcule le coût réel de l'urgence pour aider à la décision.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q11",
+      "text": "Pour le scénario 'La Consommation Énergétique Anormale', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Alerte Simple : L'IA signale l'anomalie.",
+        "Niveau 2 - Corrélation Maintenance : L'IA la classe comme signe de panne imminente.",
+        "Niveau 3 - Corrélation Qualité : L'IA la classe comme signe de dérive process.",
+        "Niveau 4 - Diagnostic Multi-Domaines : L'IA propose une hypothèse combinant plusieurs facteurs (ex: usure + mauvais réglage).",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q12",
+      "text": "Pour le scénario 'Le Retour Client Massif', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Traçabilité Instantanée : L'IA identifie tous les lots, matières et paramètres concernés.",
+        "Niveau 2 - Identification des Clients à Risque : L'IA identifie tous les autres clients ayant reçu des produits des mêmes lots.",
+        "Niveau 3 - Analyse Causale 'A Posteriori' : L'IA trouve la cause racine probable du problème.",
+        "Niveau 4 - Plan d'Action Corrective : L'IA propose un plan complet (rappel, communication, actions correctives).",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q13",
+      "text": "Pour le scénario 'La Standardisation des 'Best Practices'', quelle approche préconisez-vous ?",
+      "type": "checkbox",
+      "options": [
+        "Niveau 1 - Reporting : L'IA signale l'écart de performance.",
+        "Niveau 2 - Analyse Comportementale : L'IA identifie les 'secrets' (réglages, séquences) de l'équipe performante.",
+        "Niveau 3 - Génération de Mode Opératoire : L'IA transforme ces 'secrets' en un nouveau standard optimisé.",
+        "Niveau 4 - Proposition de Formation : L'IA propose un plan de formation ciblé pour l'équipe moins performante.",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    },
+    {
+      "id": "q14",
+      "text": "Pour le scénario 'L'Algorithme Maître (Synthèse)', quelle est la caractéristique principale de notre IA ?",
+      "type": "checkbox",
+      "options": [
+        "Son intégration complète avec les systèmes existants",
+        "Sa capacité d'auto-apprentissage continu",
+        "Son modèle économique innovant",
+        "Son approche unique de résolution des problèmes complexes",
+        "Autre (à préciser dans les commentaires)"
+      ],
+      "required": true
+    }
+  ],
+  "context_section": {
+    "title": "Section Contexte Industriel",
+    "description": "Cette section nous aide à contextualiser tes choix et à préparer le dossier de brevetabilité.",
+    "fields": [
+      {
+        "id": "secteur",
+        "text": "Dans quel secteur industriel exercez-vous principalement ?",
+        "type": "text",
+        "required": true
+      },
+      {
+        "id": "taille_entreprise",
+        "text": "Quelle est la taille de votre entreprise ?",
+        "type": "select",
+        "options": [
+          "TPE",
+          "PME",
+          "ETI",
+          "Grand Groupe"
+        ],
+        "required": true
+      },
+      {
+        "id": "commentaires",
+        "text": "Avez-vous des commentaires ou suggestions supplémentaires ?",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "id": "fiche_14a",
+  "title": "Scénarios d'Évolution – Du MVP à la Plateforme Mature",
+  "description": "Illustrer par des cas d'usage concrets comment la capacité de réponse de 'IA PRODUCT-INDUS' évolue, passant d'un assistant spécialisé (MVP) à un écosystème intelligent et orchestré (Plateforme Mature).",
+  "session": 4,
+  "scenario_count": 3,
+  "questions": [],
+  "scenarios": [
+    {
+      "id": 1,
+      "title": "Scénario 1 : Une Panne de Pompe Hydraulique",
+      "context": "Un technicien est appelé sur la ligne 3. La pompe hydraulique P-751 fait un bruit de 'sifflement aigu' et présente une légère fuite d'huile.",
+      "mvp_response": {
+        "title": "1.1. Réponse du MVP (Focus : Diagnostic Maintenance)",
+        "questions": [
+          {
+            "options": [
+              "(A) Elle analyse le texte 'sifflement aigu pompe P-751 fuite huile' et cherche des cas similaires dans l'historique de la GMAO.",
+              "(B) Elle demande plus de détails au technicien (vibration, température).",
+              "(C) Elle affiche directement la procédure de réparation standard pour une pompe P-751."
+            ],
+            "type": "radio",
+            "text": "Comment l'IA réagit-elle ?",
+            "comment": ""
+          },
+          {
+            "options": [
+              "(A) 'Cause probable : Joint du vérin usé (85%). Cas similaire : BT-451, solution : Remplacement kit joints Réf. 78-AB-45.'",
+              "(B) 'Causes possibles : Problème de joint, niveau d'huile bas, filtre colmaté.'",
+              "(C) 'Contacter Michel, il a eu le même problème il y a 2 ans.'"
+            ],
+            "type": "radio",
+            "text": "Quelle information clé le technicien reçoit-il ?",
+            "comment": ""
+          },
+          {
+            "type": "open",
+            "text": "Quelle est la limite principale de la réponse du MVP ?",
+            "comment": "",
+            "help_text": "L'IA ne sait pas si la pièce 78-AB-45 est en stock, ni si la ligne 3 peut être arrêtée maintenant sans impacter une commande urgente."
+          }
+        ]
+      },
+      "mature_platform_response": {
+        "title": "1.2. Réponse de la PLATEFORME MATURE (Focus : Orchestration Écosystémique)",
+        "questions": [
+          {
+            "options": [
+              "(A) Le Cerveau Central reçoit l'alerte, l'analyse et active 5 assistants simultanément.",
+              "(B) L'Assistant Maintenance prend le lead et interroge les autres assistants.",
+              "(C) Le technicien pose sa question, et le Cerveau Central agrège les réponses de plusieurs assistants."
+            ],
+            "type": "radio",
+            "text": "Comment la plateforme réagit-elle ?",
+            "comment": ""
+          },
+          {
+            "type": "multiple_choice",
+            "options": [
+              "Assistant Stock : 'Pièce 78-AB-45 : 3 en stock, emplacement B-12. Temps estimé pour la récupérer : 8 minutes.'",
+              "Assistant Production : 'La Ligne 3 produit actuellement le lot C-902, fin prévue dans 45 minutes. Un arrêt immédiat impacterait la commande du client XYZ.'",
+              "Assistant Qualité : 'Attention, une micro-fuite similaire sur P-750 a causé une contamination du lot B-800 le mois dernier.'",
+              "Assistant Sécurité : 'Rappel : La consignation de la pompe P-751 requiert une procédure LOTO spécifique (voir doc #542).'"
+            ],
+            "text": "Quelles informations additionnelles le technicien reçoit-il sur sa tablette ?",
+            "comment": ""
+          },
+          {
+            "type": "open",
+            "text": "Quelle décision intelligente la plateforme propose-t-elle au manager ?",
+            "comment": "",
+            "help_text": "Proposition : Maintenir la production pendant 45 min sous surveillance. Pendant ce temps, faire préparer la pièce et la procédure par un autre technicien. L'intervention peut commencer dès la fin du lot C-902. Impact sur le planning global : retard de 15 minutes, acceptable."
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Scénario 2 : Un Problème de Qualité",
+      "context": "Le service qualité détecte une augmentation de 5% du taux de rebut sur les produits sortant de la thermoformeuse T-08. La cause est inconnue.",
+      "mvp_response": {
+        "title": "2.1. Réponse du MVP",
+        "questions": [
+          {
+            "options": [
+              "(A) Rien. Le MVP est focalisé sur le diagnostic de pannes machine, pas sur les problèmes de qualité process.",
+              "(B) Le technicien peut taper 'augmentation rebut thermoformeuse T-08', et l'IA cherchera si une panne a déjà été associée à ce symptôme.",
+              "(C) Limité, mais il peut montrer l'historique des pannes sur la T-08, ce qui peut donner une piste."
+            ],
+            "type": "radio",
+            "text": "Que peut faire le MVP dans cette situation ?",
+            "comment": ""
+          }
+        ]
+      },
+      "mature_platform_response": {
+        "title": "2.2. Réponse de la PLATEFORME MATURE",
+        "questions": [
+          {
+            "options": [
+              "(A) L'Assistant Qualité détecte la dérive du taux de rebut en temps réel.",
+              "(B) L'Assistant Production détecte une instabilité des paramètres machine.",
+              "(C) Le Cerveau Central détecte une corrélation anormale entre plusieurs facteurs."
+            ],
+            "type": "radio",
+            "text": "Comment la plateforme détecte-t-elle le problème ?",
+            "comment": ""
+          },
+          {
+            "type": "open",
+            "text": "Quelle analyse le Cerveau Central fournit-il en quelques secondes ?",
+            "comment": "",
+            "help_text": "Corrélation détectée : L'augmentation du taux de rebut coïncide à 92% avec (1) l'utilisation du lot de matière première N°MP-654 du fournisseur Z, (2) une température de chauffe réglée 3°C au-dessus de la consigne par l'équipe de nuit, et (3) une micro-vibration sur le moteur de l'extrudeuse, détectée par l'Assistant Maintenance."
+          },
+          {
+            "type": "multiple_choice",
+            "options": [
+              "Assistant Production : 'Action immédiate : Réduire la température de chauffe de 3°C sur la T-08.'",
+              "Assistant Qualité : 'Isoler et contrôler 100% des produits du lot C-903.'",
+              "Assistant Gestion de Stock : 'Mettre le reste du lot de matière première N°MP-654 en quarantaine.'",
+              "Assistant Maintenance : 'Planifier une inspection des roulements du moteur de l'extrudeuse de la T-08 dans les prochaines 24h.'"
+            ],
+            "text": "Quelles actions coordonnées sont proposées ?",
+            "comment": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Scénario 3 : Une Demande Urgente d'un Client",
+      "context": "Un client majeur appelle. Il a besoin de doubler sa commande prévue pour la semaine prochaine et veut une réponse sur la faisabilité en urgence.",
+      "mvp_response": {
+        "title": "3.1. Réponse du MVP",
+        "questions": [
+          {
+            "options": [
+              "(A) Rien. Le MVP n'a aucune information sur les clients, les commandes ou la planification. C'est totalement hors de son périmètre."
+            ],
+            "type": "radio",
+            "text": "Que peut faire le MVP dans cette situation ?",
+            "comment": ""
+          }
+        ]
+      },
+      "mature_platform_response": {
+        "title": "3.2. Réponse de la PLATEFORME MATURE",
+        "questions": [
+          {
+            "type": "open",
+            "text": "Comment le manager utilise-t-il la plateforme pour répondre ?",
+            "comment": "",
+            "help_text": "Le manager lance une 'simulation' dans l'Assistant Pilotage : 'Quel est l'impact de doubler la commande XYZ ?'."
+          },
+          {
+            "type": "multiple_choice",
+            "options": [
+              "Assistant Production : 'Faisable, mais nécessite de passer 3 lignes en 3x8. Impact : augmentation des coûts de personnel de X€.'",
+              "Assistant Gestion de Stock : 'Alerte : Rupture de stock de la matière première Z prévue dans 4 jours si la commande est doublée. Délai d'approvisionnement : 7 jours.'",
+              "Assistant Maintenance : 'Alerte : Pousser la ligne 5 en 3x8 augmentera de 40% le risque de panne sur le compresseur C-202, qui a déjà une maintenance préventive en retard.'",
+              "Assistant Supply Chain : 'Nos transporteurs partenaires n'ont pas la capacité pour doubler les expéditions la semaine prochaine.'"
+            ],
+            "text": "Quelle analyse complète le Cerveau Central fournit-il en moins d'une minute ?",
+            "comment": ""
+          },
+          {
+            "type": "open",
+            "text": "Quelle est la décision finale proposée par l'IA ?",
+            "comment": "",
+            "help_text": "Proposition au client : Nous pouvons livrer 50% de la commande supplémentaire la semaine prochaine, et les 50% restants 3 jours plus tard. Cela nous permet de sécuriser l'approvisionnement matière et de réaliser la maintenance critique sur le compresseur C-202 sans risque pour la production. Coût additionnel : Y€."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": 9,
+  "title": "Roadmap Produit & Évolution",
+  "description": "Co-construire la feuille de route long-terme du produit, prioriser les futures fonctionnalités et anticiper les évolutions stratégiques.",
+  "session": 3,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "La Prochaine Étape : Le MVP de diagnostic est un immense succès. LA fonctionnalité ou l'assistant à développer juste après est...",
+      "options": [
+        "(A) L'**Assistant Analyse Récurrente**, pour passer du traitement d'une panne à la résolution des problèmes de fond.",
+        "(B) L'**Assistant Paramétrage Machine**, pour agir en amont et prévenir les pannes liées aux réglages.",
+        "(C) L'**Assistant Gestion de Stock**, pour connecter le diagnostic à la logistique des pièces.",
+        "(D) Un **Dashboard Managérial**, pour donner de la visibilité aux décideurs sur les KPI de maintenance.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "Le Fruit le Plus Mûr (\"Low-Hanging Fruit\") : L'amélioration qui aurait le plus d'impact client avec le moins d'effort de développement serait...",
+      "options": [
+        "(A) Améliorer continuellement la **précision du modèle d'IA** de diagnostic.",
+        "(B) Raffiner l'**interface utilisateur (UX/UI)** en se basant sur les retours du pilote.",
+        "(C) Ajouter un **premier tableau de bord simple** avec 2 ou 3 indicateurs clés.",
+        "(D) **Traduire l'interface** dans une autre langue pour préparer l'internationalisation.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "L'Intégration Rêvée : Si nous pouvions nous intégrer parfaitement avec UN SEUL autre type de logiciel, ce serait...",
+      "options": [
+        "(A) Les **GMAO** (pour automatiser complètement le flux de travail de la maintenance).",
+        "(B) Les **MES** (pour avoir une vision temps réel de la production).",
+        "(C) Les **ERP** (pour connecter nos analyses à la finance et aux stocks centraux).",
+        "(D) Les outils de communication comme **Microsoft Teams ou Slack** (pour envoyer des alertes et des rapports).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "Le Pilier Stratégique : Pour une ETI, le pilier d'assistants qui représente le plus grand levier de transformation est...",
+      "options": [
+        "(A) Le pilier **Production**, car il a un impact direct sur le chiffre d'affaires.",
+        "(B) Le pilier **Gestion** (Stock, Finance), car il a un impact direct sur les marges.",
+        "(C) Le pilier **Support** (RH, Formation), car il a un impact sur la performance à long terme.",
+        "(D) Il n'y a pas de règle, cela dépend totalement de la maturité et des problèmes de chaque entreprise.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "La Vision des Utilisateurs : Après 3 mois d'utilisation, les techniciens vont nous réclamer en priorité...",
+      "options": [
+        "(A) Une **version mobile sur smartphone**, plus pratique que la tablette.",
+        "(B) La capacité d'**ajouter des photos et des vidéos** à leurs descriptions de pannes.",
+        "(C) Une **recherche par \"scan de pièce\"** pour identifier un composant.",
+        "(D) Un **mode hors-ligne** pour les zones de l'usine sans réseau.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "La Demande des Managers : Après 3 mois, leurs managers vont nous réclamer en priorité...",
+      "options": [
+        "(A) Des **rapports d'analyse** hebdomadaires automatisés par email.",
+        "(B) Un **tableau de bord personnalisable** avec leurs propres KPI.",
+        "(C) Un système de **gestion des compétences** pour voir qui est expert sur quel type de panne.",
+        "(D) La capacité de **comparer la performance** entre différentes équipes ou lignes de production.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "La Frontière de l'IA : Il y a des domaines où la décision doit rester 100% humaine, notamment...",
+      "options": [
+        "(A) Les décisions de **sécurité critiques** (ex: redémarrer une machine après un incident grave).",
+        "(B) Les décisions ayant un **impact RH majeur** (ex: évaluation d'un employé).",
+        "(C) Les **décisions d'investissement** stratégiques (ex: acheter une nouvelle machine).",
+        "(D) Tous les domaines ci-dessus. L'IA conseille, l'humain décide.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "La Donnée du Futur : Dans 2 ans, la nouvelle source de données qu'il sera crucial d'intégrer sera...",
+      "options": [
+        "(A) L'**analyse d'images et de vidéos** en temps réel (caméras sur les lignes).",
+        "(B) L'**analyse du son** des machines pour détecter des anomalies acoustiques.",
+        "(C) Les **données non structurées** des emails et des chats d'équipe.",
+        "(D) Les **données de nos fournisseurs** sur la qualité de leurs livraisons.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "Le Modèle de Déploiement : Pour nos clients, le modèle le plus adapté sera...",
+      "options": [
+        "(A) **100% Cloud (SaaS)**, pour la simplicité et la rapidité de déploiement.",
+        "(B) **Hybride**, avec une partie des traitements de données qui peut rester chez le client.",
+        "(C) **Sur site (\"On-premise\")**,  une option indispensable pour les grands comptes ou les secteurs très réglementés.",
+        "(D) Proposer les trois options pour s'adapter à tous les besoins.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "La Personnalisation Client : Le niveau de personnalisation de l'outil doit être...",
+      "options": [
+        "(A) **Minimal.** L'outil impose ses \"best practices\", c'est sa force.",
+        "(B) **Moyen.** Permettre de personnaliser des éléments simples comme les rapports ou les dashboards.",
+        "(C) **Élevé.** Permettre aux clients de configurer leurs propres règles métier ou workflows.",
+        "(D) **Total.** Offrir un \"studio\" qui permet aux clients de créer leurs propres assistants.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "Le \"App Store\" d'Assistants : L'idée de permettre à des tiers (constructeurs, intégrateurs) de développer et de vendre leurs propres assistants sur notre plateforme est...",
+      "options": [
+        "(A) La vision ultime à long terme, notre objectif final.",
+        "(B) Une excellente idée, mais pour dans 5 ans minimum, une fois que notre propre offre est mature.",
+        "(C) Une distraction dangereuse qui nous ferait perdre notre focus.",
+        "(D) Trop complexe techniquement et commercialement.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "La Concurrence de Demain : Dans 5 ans, notre plus grand concurrent sera probablement...",
+      "options": [
+        "(A) Un géant de la tech (Microsoft, Google) qui \"verticalise\" son offre IA pour l'industrie.",
+        "(B) Un acteur industriel historique (Siemens, Schneider) qui aura réussi sa transformation digitale.",
+        "(C) Une autre startup, plus rapide et plus agile que nous.",
+        "(D) Les constructeurs de machines (OEM) qui intègreront l'IA directement dans leurs équipements.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "L'Évolution du Métier : Notre outil va principalement transformer le métier de technicien en le faisant passer...",
+      "options": [
+        "(A) D'un \"réparateur\" à un \"analyste de fiabilité\".",
+        "(B) D'un \"solitaire\" à un \"collaborateur\" qui partage sa connaissance.",
+        "(C) D'un \"expert manuel\" à un \"pilote de technologie\".",
+        "(D) Il ne va pas le transformer, mais simplement le rendre plus efficace.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "Le Futur de l'Usine : En 2035, l'IA dans l'usine sera...",
+      "options": [
+        "(A) Principalement un outil d'optimisation et de prédiction, comme nous le construisons.",
+        "(B) Totalement intégrée aux robots et aux machines, qui deviendront autonomes.",
+        "(C) Un véritable \"jumeau numérique\" qui permettra de simuler toute l'usine avant de prendre une décision.",
+        "(D) Un \"collaborateur digital\" pour chaque employé de l'usine.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

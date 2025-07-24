@@ -1,0 +1,191 @@
+{
+  "id": "fiche_1",
+  "title": "ADN du Projet & Hypothèses Critiques",
+  "description": "Définir la mission fondamentale, la proposition de valeur unique et les contraintes du projet.",
+  "session": "session_1",
+  "question_count": 14,
+  "questions": [
+    {
+      "id": "q1_pitch_ultime",
+      "text": "Pitch Ultime : Notre produit est avant tout...",
+      "options": [
+        "(A) Un outil de diagnostic ultra-rapide pour les techniciens.",
+        "(B) Une plateforme qui transforme les données de l'usine en économies mesurables.",
+        "(C) Un système qui capture et redistribue la connaissance des experts.",
+        "(D) Le système nerveux central qui connecte tous les services de l'usine.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q2_promesse_centrale",
+      "text": "Promesse Centrale : LA promesse irréfutable que nous faisons à nos clients est de...",
+      "options": [
+        "(A) Gagner du temps sur les diagnostics.",
+        "(B) Économiser de l'argent sur la maintenance.",
+        "(C) Réduire le stress des équipes techniques.",
+        "(D) Sécuriser et capitaliser leur savoir-faire.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q3_ennemi_public",
+      "text": "L'Ennemi Public N°1 : Le \"grand méchant\" que notre produit combat au quotidien est...",
+      "options": [
+        "(A) Le temps perdu en recherche d'information.",
+        "(B) La perte de savoir-faire (départs en retraite, turnover).",
+        "(C) L'imprévisibilité et la récurrence des pannes.",
+        "(D) Le manque de communication et les silos entre services.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q4_temoignage_client",
+      "text": "Témoignage Client Rêvé : Notre client parfait dirait de nous...",
+      "options": [
+        "(A) J'ai réduit mes arrêts de production non planifiés de 30% en 6 mois.",
+        "(B) Mes techniciens juniors sont efficaces en 3 mois au lieu d'un an.",
+        "(C) Je dors enfin la nuit, car j'ai une vision prédictive de ce qui va se passer demain.",
+        "(D) Ma maintenance et ma production travaillent enfin main dans la main, basées sur les mêmes données.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q5_hypothese_critique",
+      "text": "🔥 HYPOTHÈSE CRITIQUE : Notre hypothèse la plus audacieuse (et la plus risquée) est...",
+      "options": [
+        "(A) Que les PME/ETI sont prêtes à payer un abonnement significatif pour une IA avancée.",
+        "(B) Que les données historiques de nos clients, même \"sales\", sont de qualité suffisante pour entraîner une IA pertinente.",
+        "(C) Que les techniciens \"terrain\" accepteront d'être guidés par une IA et lui feront confiance.",
+        "(D) Que notre approche écosystémique (connecter tous les assistants) est techniquement réalisable et apportera une valeur supérieure.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q6_point_rupture",
+      "text": "🔥 POINT DE RUPTURE : Le projet serait tué si...",
+      "options": [
+        "(A) Notre algorithme de diagnostic n'atteint pas une précision de 85%+.",
+        "(B) Le cycle de vente pour signer un client s'avère être supérieur à 12 mois.",
+        "(C) Un géant (Siemens, Microsoft) intègre une fonctionnalité similaire \"gratuitement\" dans son offre.",
+        "(D) Nous ne parvenons pas à recruter les talents en IA/Data Science nécessaires pour faire évoluer le produit.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q7_client_parfait",
+      "text": "Client Parfait : Notre client idéal est...",
+      "options": [
+        "(A) Une PME innovante (< 250 employés) avec des systèmes anciens mais une forte volonté de digitaliser.",
+        "(B) Une ETI en pleine croissance (250-2000 employés) qui souffre de problèmes de standardisation entre ses lignes/sites.",
+        "(C) Un grand groupe qui cherche une solution agile pour un site pilote, en rupture avec ses systèmes lourds.",
+        "(D) Une entreprise d'un secteur spécifique (ex: agro-alimentaire, pharmaceutique) avec de très fortes contraintes réglementaires et de traçabilité.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q8_alternative_dominante",
+      "text": "Alternative Dominante : Aujourd'hui, pour un diagnostic complexe, la solution N°1 est...",
+      "options": [
+        "(A) La recherche par mots-clés dans la GMAO.",
+        "(B) L'appel ou la recherche du collègue expert (\"le gourou\").",
+        "(C) La consultation de carnets personnels ou de classeurs de documentation papier.",
+        "(D) Une recherche externe sur Google ou YouTube.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q9_avantage_inattaquable",
+      "text": "Avantage Inattaquable : Notre avantage concurrentiel le plus durable sera...",
+      "options": [
+        "(A) Notre avance technologique sur les algorithmes d'IA (RAG, etc.).",
+        "(B) L'effet de réseau de notre \"Knowledge Graph\" qui s'améliore avec chaque client.",
+        "(C) Notre expérience utilisateur, d'une simplicité et d'une pertinence radicales.",
+        "(D) Nos partenariats stratégiques avec des constructeurs de machines ou des intégrateurs.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q10_objection_fatale",
+      "text": "Objection Fatale : La plus grande résistance à l'achat viendra de...",
+      "options": [
+        "(A) La Direction Financière, à cause du prix et du ROI à prouver.",
+        "(B) Le service IT, à cause des questions de sécurité et d'intégration des données.",
+        "(C) Les managers intermédiaires, qui craignent une perte de contrôle ou de pertinence.",
+        "(D) Les utilisateurs finaux (techniciens), qui ont peur du changement et du \"flicage\".",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q11_argument_financier",
+      "text": "🔥 ARGUMENT FINANCIER : Pour convaincre le Directeur Financier, l'argument massue est...",
+      "options": [
+        "(A) Un ROI direct et mesurable en moins de 6 mois, basé sur la réduction des temps d'arrêt.",
+        "(B) La transformation d'un centre de coût (la maintenance) en un levier de productivité globale (OEE).",
+        "(C) La réduction du risque opérationnel et financier lié aux pannes critiques imprévues.",
+        "(D) La valorisation de l'actif \"données\" de l'entreprise, qui était jusqu'ici inexploité.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q12_enveloppe_budgetaire",
+      "text": "🔥 ENVELOPPE BUDGÉTAIRE : Le budget maximum réaliste pour le développement de ce MVP est de l'ordre de...",
+      "options": [
+        "(A) Moins de 50 000 €.",
+        "(B) Entre 50 000 € et 100 000 €.",
+        "(C) Entre 100 000 € et 150 000 €.",
+        "(D) Le budget n'est pas fixe, il dépendra de la vélocité et des premiers résultats.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q13_deadline_absolue",
+      "text": "🔥 DEADLINE ABSOLUE : Nous devons absolument avoir signé notre premier client payant avant...",
+      "options": [
+        "(A) 3 mois après la fin du MVP.",
+        "(B) 6 mois après la fin du MVP.",
+        "(C) 9 mois après la fin du MVP.",
+        "(D) Fin 2026.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    },
+    {
+      "id": "q14_contraintes_dures",
+      "text": "🔥 CONTRAINTES DURES : Une contrainte qui est totalement non-négociable pour notre produit est...",
+      "options": [
+        "(A) La souveraineté des données : toutes les données et traitements doivent rester en Europe (ou dans le pays du client).",
+        "(B) La capacité de fonctionner en mode déconnecté (offline-first), car les usines ont souvent des problèmes de réseau.",
+        "(C) La conformité avec une norme industrielle ou réglementaire spécifique (ex: GxP pour la pharma, HACCP pour l'agroalimentaire).",
+        "(D) La possibilité, pour les grands comptes, de déployer la solution sur leurs propres serveurs (\"on-premise\").",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "type": "checkbox",
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :"
+    }
+  ]
+}

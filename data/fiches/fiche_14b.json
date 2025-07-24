@@ -1,0 +1,205 @@
+{
+  "id": "fiche_14b",
+  "title": "Scénarios Opérationnels du MVP",
+  "description": "Définir comment l'IA doit se comporter dans des situations opérationnelles concrètes pour maximiser son utilité et son adoption.",
+  "session": 4,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Scénario 1 : La Panne Inconnue - Un technicien saisit : \"Machine qui fait un bruit bizarre depuis ce matin.\"",
+      "question": "1. L'IA doit d'abord...",
+      "options": [
+        "(A) Demander des précisions : \"Pouvez-vous décrire le bruit plus précisément ?\"",
+        "(B) Proposer une **checklist de diagnostic** pour aider le technicien à mieux caractériser le problème.",
+        "(C) Chercher dans l'historique tous les cas contenant \"bruit\" et afficher les plus probables.",
+        "(D) Proposer les 3 pannes les plus fréquentes sur ce type de machine.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "Scénario 2 : Le Diagnostic Évident - Le technicien saisit : \"Fuite d'huile importante au niveau du réducteur R-205.\"",
+      "question": "2. L'IA doit...",
+      "options": [
+        "(A) Afficher immédiatement la procédure de réparation standard pour ce type de fuite.",
+        "(B) **Vérifier d'abord** s'il y a des spécificités sur ce réducteur particulier (âge, historique).",
+        "(C) Proposer un diagnostic différentiel : \"Fuite au joint, fuite au carter, ou surcharge ?\"",
+        "(D) Alerter immédiatement sur les risques de sécurité liés à cette fuite.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "Scénario 3 : La Panne Récurrente - Le système détecte que c'est la 3ème fois en 2 mois que cette machine tombe en panne.",
+      "question": "3. L'IA doit automatiquement...",
+      "options": [
+        "(A) Signaler cette récurrence au technicien et suggérer une analyse de cause racine.",
+        "(B) Proposer un **changement de stratégie de maintenance** (préventif au lieu de curatif).",
+        "(C) Alerter le responsable maintenance sur cette machine \"à problème\".",
+        "(D) Tous les éléments ci-dessus.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "Scénario 4 : La Panne Intermittente - Un technicien saisit : \"La ligne 5 s'arrête de manière aléatoire 2-3 fois par jour, mais redémarre toute seule.\"",
+      "question": "4. L'IA doit prioriser dans ses résultats...",
+      "options": [
+        "(A) Les cas similaires qui mentionnent explicitement les mots \"intermittent\" ou \"aléatoire\".",
+        "(B) Les pannes électriques ou de capteurs, qui sont souvent la cause de ce type de problème.",
+        "(C) Une checklist axée sur la **vérification des connexions**, des logs de l'automate et des conditions environnementales.",
+        "(D) Tous les éléments ci-dessus.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "Scénario 5 : Plusieurs Pannes en une - Un technicien saisit : \"Le moteur M-5 fait un bruit de sifflement ET il y a une fuite d'huile au niveau du réducteur.\"",
+      "question": "5. La meilleure approche pour l'IA est de...",
+      "options": [
+        "(A) Traiter la phrase comme un tout et chercher des cas qui contiennent à la fois \"sifflement\" et \"fuite\".",
+        "(B) Décomposer la requête en deux problèmes (\"problème moteur\" et \"problème réducteur\") et afficher des diagnostics pour les deux.",
+        "(C) Poser une question de clarification : \"Le problème principal est-il le bruit ou la fuite ?\"",
+        "(D) Se concentrer sur le premier symptôme décrit, considéré comme le plus important.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "Scénario 6 : L'Utilisateur se trompe de machine - Le technicien saisit une panne de pompe mais sélectionne \"Convoyeur C-2\" dans la liste des équipements.",
+      "question": "6. L'IA, en analysant le texte \"panne de pompe\", devrait...",
+      "options": [
+        "(A) Exécuter la recherche comme demandé, ce qui donnera des résultats probablement mauvais.",
+        "(B) Afficher une **alerte de cohérence** : \"Le texte de votre panne semble mentionner une 'pompe', mais vous avez sélectionné l'équipement 'Convoyeur C-2'. Voulez-vous continuer ?\"",
+        "(C) Ignorer l'équipement sélectionné et baser sa recherche uniquement sur le texte.",
+        "(D) Ne rien faire, c'est la responsabilité de l'utilisateur de bien saisir les informations.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "Scénario 7 : Le Feedback Négatif - L'IA propose un diagnostic, et le technicien clique sur \"Pouce vers le bas 👎\".",
+      "question": "7. La réaction immédiate de l'interface doit être...",
+      "options": [
+        "(A) Simplement enregistrer le vote et passer à autre chose.",
+        "(B) Afficher un court message \"Merci pour votre retour !\" et proposer de lancer une nouvelle recherche.",
+        "(C) Ouvrir une **petite fenêtre optionnelle** demandant : \"Pouvez-vous nous dire en quelques mots ce qui n'allait pas ?\"",
+        "(D) Afficher immédiatement les 3 diagnostics suivants les plus probables.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "Scénario 8 : L'Utilisateur veut copier le rapport pour sa GMAO - Le technicien clique sur le bouton \"Copier pour la GMAO\".",
+      "question": "8. L'action doit...",
+      "options": [
+        "(A) Copier le texte et afficher une petite notification \"Texte copié dans le presse-papiers.\"",
+        "(B) Copier le texte et ouvrir une nouvelle fenêtre avec le logiciel GMAO du client.",
+        "(C) Proposer plusieurs formats de copie (texte simple, texte riche, formaté pour Word).",
+        "(D) Copier le texte, mais aussi l'ID unique de l'analyse pour pouvoir lier le rapport GMAO à notre système.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "Scénario 9 : La Connexion Internet est Perdue - Un technicien est dans une zone de l'usine avec un mauvais réseau WiFi et clique sur \"Analyser\".",
+      "question": "9. L'application doit...",
+      "options": [
+        "(A) Afficher une page d'erreur du navigateur.",
+        "(B) \"Geler\" sans donner d'explication.",
+        "(C) Afficher un **message d'erreur clair et non-technique** dans l'application : \"Connexion internet perdue. Veuillez vérifier votre réseau et réessayer.\"",
+        "(D) Avoir un mode \"hors-ligne\" de base qui permet de consulter au moins l'historique déjà chargé.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "Scénario 10 : L'API Backend est en Panne - Le service qui héberge l'IA est momentanément indisponible (erreur 500).",
+      "question": "10. L'interface utilisateur doit...",
+      "options": [
+        "(A) Afficher un message d'erreur technique et cryptique.",
+        "(B) Afficher un **message d'excuse professionnel** : \"Notre service de diagnostic est momentanément indisponible. Notre équipe technique a été alertée et travaille à sa résolution. Veuillez réessayer dans quelques minutes.\"",
+        "(C) Rediriger vers une page de statut du service.",
+        "(D) Essayer de relancer automatiquement la requête 3 fois avant d'afficher une erreur.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "Scénario 11 : Le Résultat est Très Long - La \"checklist d'action\" ou la \"solution appliquée\" d'un cas similaire est très longue.",
+      "question": "11. L'affichage par défaut doit être...",
+      "options": [
+        "(A) Complet, quitte à ce que la page soit très longue.",
+        "(B) **Tronqué**, en affichant les 3 premières lignes avec un bouton ou un lien **\"... Voir plus\"** pour déplier le reste du contenu.",
+        "(C) Dans une fenêtre \"popup\" qui s'ouvre quand on clique dessus.",
+        "(D) Dans un panneau latéral qui s'ouvre à côté des résultats principaux.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "Scénario 12 : L'Utilisateur veut Partager un Résultat - Un technicien junior obtient un diagnostic et veut le faire valider par son tuteur.",
+      "question": "12. Pour le MVP, la meilleure solution est...",
+      "options": [
+        "(A) Pas de fonctionnalité de partage. Il peut faire une capture d'écran.",
+        "(B) Un bouton \"Partager\" qui **copie un lien unique** vers cette page de résultat dans le presse-papiers.",
+        "(C) Un bouton \"Partager par email\" qui ouvre un email pré-rempli.",
+        "(D) Un système de notification interne à l'application.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "Scénario 13 : Le Langage est Familier ou Injurieux - Un technicien, frustré, saisit : \"Put*** de machine de m**** qui est encore en rade !!! Bruit bizarre.\"",
+      "question": "13. L'IA doit...",
+      "options": [
+        "(A) Refuser de traiter la requête à cause du langage inapproprié.",
+        "(B) Traiter la requête en ignorant les injures, en se concentrant sur les mots-clés techniques (\"machine\", \"rade\", \"bruit bizarre\").",
+        "(C) Répondre sur un ton humoristique.",
+        "(D) Traiter la requête et ajouter une note \"flag\" dans les logs pour analyse par les administrateurs.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "Scénario 14 : L'Utilisateur pose une Question au lieu de décrire une Panne - Un technicien saisit : \"Quelle est la pression d'huile recommandée pour la presse P-300 ?\"",
+      "question": "14. L'IA du MVP de diagnostic doit...",
+      "options": [
+        "(A) Essayer de trouver des cas similaires contenant \"pression d'huile\" et \"P-300\", même si ce n'est pas une panne.",
+        "(B) Répondre qu'elle n'est pas conçue pour répondre à des questions, mais uniquement pour diagnostiquer des pannes.",
+        "(C) Détecter qu'il s'agit d'une question et répondre : **\"Je suis spécialisé dans le diagnostic de pannes. Pour les données techniques, veuillez consulter l'Assistant Documentation.\"** (même si cet assistant n'existe pas encore, cela éduque l'utilisateur sur le périmètre).",
+        "(D) Tenter de répondre si la réponse se trouve explicitement dans un rapport de panne (ex: \"vérifier que la pression est à 5 bars\").",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}

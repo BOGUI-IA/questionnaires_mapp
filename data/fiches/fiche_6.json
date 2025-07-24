@@ -1,0 +1,191 @@
+{
+  "id": 6,
+  "title": "Modèle Économique & ROI",
+  "description": "Construire un business model viable et une stratégie de prix juste, alignés sur la valeur créée pour le client.",
+  "session": 2,
+  "question_count": 14,
+  "questions": [
+    {
+      "id": 1,
+      "text": "🔥 PRIX PSYCHOLOGIQUE : Pour un outil qui fait gagner en moyenne 45 minutes par jour à chaque technicien et réduit significativement les arrêts imprévus, un prix mensuel 'juste' par site serait de l'ordre de...",
+      "options": [
+        "(A) Quelques centaines d'euros (< 1000€), pour être une 'no-brainer decision'.",
+        "(B) Quelques milliers d'euros (1000€ - 3000€), reflétant la valeur d'un 'consultant virtuel'.",
+        "(C) Plusieurs milliers d'euros (3000€ - 10 000€), positionné comme un investissement stratégique majeur.",
+        "(D) Le prix devrait être directement proportionnel à la taille de l'usine et au nombre d'équipements.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 2,
+      "text": "Métrique de Facturation : La manière la plus équitable et la plus simple à comprendre pour facturer serait...",
+      "options": [
+        "(A) **Par utilisateur actif :** Simple, mais peut freiner l'adoption par toute l'équipe.",
+        "(B) **Par machine/équipement critique connecté :** Lie le prix à l'étendue de l'usage.",
+        "(C) **Un forfait fixe par site industriel :** Le plus simple, prévisible pour le budget du client.",
+        "(D) **Un pourcentage des économies générées (Revenue Sharing) :** Alignement parfait des intérêts, mais complexe à mesurer et à contractualiser.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 3,
+      "text": "🔥 ROI MINIMUM ATTENDU : Pour qu'un DAF valide l'investissement sans hésiter, le client doit voir un retour sur investissement (ROI) mesurable en...",
+      "options": [
+        "(A) Moins de 3 mois.",
+        "(B) Moins de 6 mois.",
+        "(C) Moins de 12 mois.",
+        "(D) L'important n'est pas la vitesse du ROI, mais son ampleur sur 3 ans.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 4,
+      "text": "Offre d'Entrée ('Starter Pack') : La composition parfaite du 'pack découverte' pour séduire un maximum de prospects est...",
+      "options": [
+        "(A) Un seul assistant (Diagnostic) à un prix très bas pour mettre le pied dans la porte.",
+        "(B) Le pilier 'Maintenance' complet (Diagnostic, Analyse, Ordonnancement) pour montrer une solution cohérente.",
+        "(C) Un 'pack découverte' personnalisable où le client choisit ses 3 assistants prioritaires.",
+        "(D) Un accès à toute la plateforme, mais limité à une seule ligne de production.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 5,
+      "text": "Upselling Naturel : Une fois le pack de base adopté, l'argument le plus puissant pour vendre un module supplémentaire (ex: Production) est...",
+      "options": [
+        "(A) 'Vous avez réduit vos pannes, maintenant augmentez votre performance.'",
+        "(B) 'Vous avez les données de maintenance, connectez-les à la production pour voir l'image complète.'",
+        "(C) Une promotion tarifaire agressive sur le module suivant.",
+        "(D) Une démonstration basée sur les propres données du client qui montre le potentiel du nouveau module.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 6,
+      "text": "🔥 COÛTS CACHÉS CLIENT : Le coût interne le plus important pour le client, que nous devons anticiper, est...",
+      "options": [
+        "(A) Le temps que ses équipes devront passer en formation et en accompagnement au changement.",
+        "(B) Le temps et l'effort pour préparer et fournir des données de qualité au début du projet.",
+        "(C) Le coût d'éventuelles mises à niveau de leur infrastructure IT pour se connecter à notre plateforme.",
+        "(D) Il n'y a pas de coûts cachés significatifs, c'est notre principal argument de vente.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 7,
+      "text": "Modèle Freemium : Proposer une version gratuite et limitée de notre produit est...",
+      "options": [
+        "(A) Une excellente idée pour générer des leads et faire connaître le produit.",
+        "(B) Une mauvaise idée, cela dévalorise le produit et attire des utilisateurs non qualifiés.",
+        "(C) Pertinent, mais uniquement sous la forme d'un 'essai gratuit' limité dans le temps (ex: 14 jours).",
+        "(D) Pertinent, mais avec une limite d'usage (ex: 10 diagnostics par mois).",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 8,
+      "text": "Premium Exclusif ('Single-Tenant') : Proposer à un client de payer plus cher pour un modèle IA entraîné uniquement sur ses données est...",
+      "options": [
+        "(A) Une option stratégique essentielle pour rassurer les grands comptes sur la confidentialité.",
+        "(B) Une mauvaise idée, car cela contredit notre avantage concurrentiel principal qui est l'apprentissage croisé.",
+        "(C) Une option 'premium' à proposer, mais à un prix très élevé pour compenser la perte de données pour notre modèle global.",
+        "(D) Inutile, une bonne anonymisation des données devrait suffire à rassurer.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 9,
+      "text": "🔥 SUPPORT INCLUS : Le support technique pour nos clients devrait être...",
+      "options": [
+        "(A) Inclus dans tous les plans d'abonnement, car c'est un service essentiel.",
+        "(B) Payant, sous forme de pack d'heures ou d'un abonnement de support séparé.",
+        "(C) Gratuit pour le support de base (email), et payant pour le support premium (téléphone, intervention).",
+        "(D) Gratuit la première année, puis intégré dans un contrat de maintenance payant.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 10,
+      "text": "Incentive Data : Offrir une réduction tarifaire aux clients qui partagent le plus de données de qualité pour améliorer l'IA est...",
+      "options": [
+        "(A) Une excellente idée pour accélérer l'apprentissage de notre modèle global.",
+        "(B) Une mauvaise idée, cela crée une usine à gaz contractuelle et peut être perçu négativement.",
+        "(C) Intéressant, mais seulement pour nos 'partenaires fondateurs' au début.",
+        "(D) Il vaut mieux offrir des fonctionnalités en avant-première plutôt qu'une réduction.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 11,
+      "text": "🔥 DÉCIDEUR CIBLE : Dans une ETI, pour un premier achat, la personne qu'il faut absolument convaincre est...",
+      "options": [
+        "(A) Le Responsable de Maintenance, car c'est lui qui a le 'problème'.",
+        "(B) Le Directeur de Site / Directeur Industriel, car c'est lui qui a le budget.",
+        "(C) Le DSI, car c'est lui qui valide la sécurité et l'intégration technique.",
+        "(D) Il faut convaincre les trois en même temps, chacun avec un argumentaire différent.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 12,
+      "text": "Démo Signature : LA chose à absolument montrer dans une démo commerciale pour déclencher l'achat est...",
+      "options": [
+        "(A) La vitesse et la simplicité : un diagnostic complet en moins de 30 secondes.",
+        "(B) La pertinence : un diagnostic sur un cas de panne réel et complexe fourni par le prospect lui-même.",
+        "(C) Le ROI : un tableau de bord montrant les économies potentielles chiffrées pour leur usine.",
+        "(D) La vision : le schéma de l'écosystème montrant comment les assistants collaboreront à terme.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 13,
+      "text": "Ligne Budgétaire : Notre solution s'intègre le plus naturellement dans le budget...",
+      "options": [
+        "(A) De la Maintenance (OPEX - dépenses de fonctionnement).",
+        "(B) Des Investissements IT (CAPEX - dépenses d'investissement).",
+        "(C) De l'Innovation / Transformation Digitale.",
+        "(D) De la Production / Amélioration Continue.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    },
+    {
+      "id": 14,
+      "text": "🔥 JUSTIFICATION DAF : L'argumentaire en 3 points pour le Directeur Financier est...",
+      "options": [
+        "(A) 1. ROI < 6 mois, 2. Réduction des arrêts critiques, 3. Faible coût d'intégration.",
+        "(B) 1. Modèle SaaS prévisible (OPEX), 2. Augmentation de l'OEE, 3. Valorisation de l'actif data.",
+        "(C) 1. Avantage concurrentiel durable, 2. Amélioration de la productivité, 3. Sécurité opérationnelle accrue.",
+        "(D) 1. Faible coût total de possession (TCO), 2. Réduction des coûts de maintenance, 3. Amélioration des marges.",
+        "(E) Autre (à préciser dans les commentaires)"
+      ],
+      "comment": "Précisions/Commentaires (obligatoire si Option E ou choix multiples) :",
+      "type": "checkbox"
+    }
+  ]
+}
