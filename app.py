@@ -5,6 +5,26 @@ from datetime import datetime
 from pathlib import Path
 import glob
 
+# Configuration des chemins des dossiers de données
+BASE_DIR = Path(__file__).parent
+DATA_DIR = BASE_DIR / "data"
+FICHES_DIR = DATA_DIR / "fiches"
+SESSIONS_FILE = DATA_DIR / "sessions.json"
+
+# Création des dossiers si inexistants
+for directory in [DATA_DIR, FICHES_DIR]:
+    directory.mkdir(exist_ok=True, parents=True)
+
+# Création du fichier sessions.json s'il n'existe pas
+if not SESSIONS_FILE.exists():
+    with open(SESSIONS_FILE, "w", encoding="utf-8") as f:
+        json.dump({"sessions": {}}, f, ensure_ascii=False, indent=2)
+
+# Fonction pour obtenir le chemin d'un fichier de fiche
+def get_fiche_path(fiche_id):
+    """Retourne le chemin complet vers un fichier de fiche"""
+    return FICHES_DIR / f"{fiche_id}.json"
+
 # Configuration de la page
 def set_page_config():
     """Configure l'apparence de la page"""
@@ -2062,17 +2082,20 @@ def show_dashboard():
 
 def load_sessions():
     """Charge les données des sessions depuis le fichier sessions.json"""
-    sessions_file = os.path.join(os.path.dirname(__file__), "data", "sessions.json")
-    
     try:
-        if os.path.exists(sessions_file):
-            with open(sessions_file, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        else:
-            st.error(f"Fichier de sessions introuvable : {sessions_file}")
-            return {"sessions": {}}
+        with open(SESSIONS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        # Si le fichier n'existe pas, on le crée avec une structure vide
+        with open(SESSIONS_FILE, "w", encoding="utf-8") as f:
+            default_data = {"sessions": {}}
+            json.dump(default_data, f, ensure_ascii=False, indent=2)
+        return default_data
+    except json.JSONDecodeError:
+        st.error("Erreur de décodage du fichier des sessions. Vérifiez le format du fichier.")
+        return {"sessions": {}}
     except Exception as e:
-        st.error(f"Erreur lors du chargement des sessions : {str(e)}")
+        st.error(f"Erreur lors du chargement des sessions : {e}")
         return {"sessions": {}}
 
 @st.cache_data(ttl=300)  # Cache pendant 5 minutes
@@ -2087,18 +2110,27 @@ def load_fiche_cached(fiche_id):
 
 def load_fiches(session_id):
     """Charge les fiches d'une session spécifique"""
-    fiches_dir = os.path.join(os.path.dirname(__file__), "data", "fiches")
     fiches = []
     
-    for filename in glob.glob(os.path.join(fiches_dir, '*.json')):
+    # Vérifier si le dossier des fiches existe
+    if not FICHES_DIR.exists():
+        FICHES_DIR.mkdir(parents=True, exist_ok=True)
+        st.warning(f"Le dossier des fiches a été créé : {FICHES_DIR}")
+        return fiches
+    
+    # Parcourir les fichiers JSON dans le dossier des fiches
+    for filename in FICHES_DIR.glob('*.json'):
         try:
             with open(filename, 'r', encoding='utf-8') as f:
                 fiche = json.load(f)
                 if 'id' not in fiche:
-                    fiche['id'] = os.path.splitext(os.path.basename(filename))[0]
+                    fiche['id'] = filename.stem  # Utiliser le nom du fichier sans extension comme ID
                 fiches.append(fiche)
+        except json.JSONDecodeError:
+            st.error(f"Erreur de décodage JSON dans le fichier {filename}. Vérifiez le format du fichier.")
+            continue
         except Exception as e:
-            st.warning(f"Erreur lors du chargement de {filename}: {e}")
+            st.error(f"Erreur lors du chargement de {filename}: {e}")
             continue
     
     return fiches
