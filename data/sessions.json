@@ -1,0 +1,84 @@
+{
+    "general_guidelines": {
+        "title": "Consignes pour Remplir les Questionnaires Stratégiques",
+        "welcome_message": "Bienvenue dans cet atelier de travail structuré. Ce questionnaire est notre principal outil pour transformer ta vision en un plan d'action concret. Prends ton temps, il n'y a pas de \"bonne\" ou de \"mauvaise\" réponse, seulement ta vision et ton expertise.",
+        "rules": {
+            "qcm_rules": {
+                "title": "Pour les Questions à Choix Multiples (QCM) :",
+                "main_rule": "**Règle Générale : Une seule réponse.** L'objectif principal est de nous aider à **prioriser**. Choisis l'option qui te semble la plus **critique**, la plus **pertinente** ou la plus **alignée** avec ta vision fondamentale.",
+                "exception": "**L'Exception :** Tu peux choisir **deux réponses (maximum)** uniquement si elles sont **absolument indissociables et d'égale importance**. Utilise la case \"Précisions/Commentaires\" pour indiquer ta deuxième priorité."
+            },
+            "comments_usage": {
+                "title": "L'Usage de la Case \"Précisions/Commentaires\" :",
+                "description": "Cette case est **essentielle**. Utilise-la pour justifier un choix, ajouter une nuance, exprimer un doute, ou proposer une alternative (Option E)."
+            },
+            "mindset": {
+                "title": "Ton État d'Esprit pour Répondre :",
+                "mvp_thinking": "Pense \"MVP\" pour les fiches sur l'exécution : ce qui est **réaliste et essentiel** pour les 3-6 prochains mois.",
+                "vision_thinking": "Pense \"Vision\" pour les fiches sur la stratégie : n'hésite pas à être **ambitieux et visionnaire**.",
+                "honesty": "Sois Brutalement Honnête : Tes réponses les plus franches sont les plus précieuses."
+            }
+        },
+        "summary": "**1 SEULE réponse par défaut pour prioriser. 2 réponses maximum si INDISSOCIABLES. La case COMMENTAIRES est ton espace de liberté pour nuancer, justifier et innover.**"
+    },
+    "sessions": {
+        "session1_fondations": {
+            "id": "session_1",
+            "title": "Fondations & Stratégie MVP",
+            "description": "Valider le POURQUOI fondamental du projet et définir le périmètre précis du QUOI pour le premier produit (MVP)",
+            "icon": "🚀",
+            "livrable": "Un Executive Summary du projet et un cahier des charges fonctionnel pour le MVP",
+            "fiches": ["fiche_1", "fiche_2", "fiche_8", "fiche_12", "fiche_14b"],
+            "specific_guidelines": {
+                "welcome": "Bienvenue dans ce premier atelier de travail. Ce formulaire contient **5 sections** ou **fiches**. Son objectif est de valider le **\"Pourquoi\"** de notre projet et de définir avec précision le **périmètre** de notre premier produit (MVP).",
+                "rules_summary": "**1 SEULE réponse par défaut** pour prioriser. **2 réponses maximum si INDISSOCIABLES.** (Utilisez la case \"Précisions\" si besoin). La case **Précisions/Commentaires** est votre espace de liberté pour nuancer, justifier et innover.",
+                "importance": "Tes réponses ici sont la fondation de tout le projet. Merci pour ton implication !"
+            },
+            "confirmation_message": "Merci {user_name} ! Tes réponses pour cette première session ont été enregistrées avec succès. Elles sont extrêmement précieuses et vont nous servir de base pour notre prochain atelier de validation. Nous revenons vers toi très rapidement pour planifier la suite."
+        },
+        "session2_experience": {
+            "id": "session_2", 
+            "title": "Expérience Utilisateur & Design de la Solution",
+            "description": "Définir en détail l'utilisation des données, le rôle de chaque assistant, et l'expérience utilisateur",
+            "icon": "🎨",
+            "livrable": "Des spécifications UX/UI détaillées et des principes de design clairs",
+            "fiches": ["fiche_5", "fiche_15", "fiche_16", "fiche_17"],
+            "specific_guidelines": {
+                "welcome": "Bienvenue dans ce deuxième atelier. Maintenant que les fondations sont posées, nous allons plonger au cœur de la solution. Ce formulaire contient **4 sections** ou **fiches**.",
+                "objectives": "L'objectif est de définir en détail : Comment nous allons utiliser vos données, Le rôle précis de chaque assistant, L'expérience et le design que nous voulons créer pour les utilisateurs.",
+                "rules_summary": "Les mêmes consignes s'appliquent : **1 réponse pour prioriser**, 2 si inséparables, et la case **Précisions/Commentaires** pour exprimer toute votre expertise."
+            },
+            "confirmation_message": "Un grand merci, {user_name} ! Tes réponses pour cette deuxième session sont extrêmement riches. Elles vont nous permettre de concevoir une solution qui soit non seulement puissante techniquement, mais aussi parfaitement adaptée à la réalité du terrain. Nous allons maintenant analyser tout cela pour préparer notre prochain atelier sur l'algorithme 'maître'."
+        },
+        "session3_intelligence": {
+            "id": "session_3",
+            "title": "Architecture de l'Intelligence & Données", 
+            "description": "Plonger dans le 'cerveau' de la machine et définir notre 'sauce secrète'",
+            "icon": "🧠",
+            "livrable": "Des spécifications d'architecture conceptuelle et les bases du dossier de brevetabilité",
+            "fiches": ["fiche_3", "fiche_4", "fiche_13a", "fiche_13b", "fiche_14a", "fiche_18", "fiche_19"],
+            "specific_guidelines": {
+                "welcome": "Bienvenue dans ce troisième atelier. Nous abordons ici les questions les plus stratégiques qui définiront notre avantage concurrentiel unique, notre modèle économique et la trajectoire future de l'entreprise.",
+                "content": "Ce formulaire contient **7 sections** ou **fiches**.",
+                "purpose": "Tes réponses ici vont nous aider à concevoir notre \"sauce secrète\" brevetable et à construire un business plan solide.",
+                "rules_summary": "Les mêmes consignes s'appliquent : **1 réponse pour prioriser**, et la case **Précisions/Commentaires** pour exprimer toute ta vision."
+            },
+            "confirmation_message": "Merci infiniment, {user_name}. Tes réponses à cet atelier sont fondamentales. Elles vont nous permettre de finaliser le business plan, de définir notre innovation principale et de tracer la trajectoire de l'entreprise pour les années à venir. Nous avons maintenant toutes les cartes en main pour construire un projet exceptionnel."
+        },
+        "session4_strategie": {
+            "id": "session_4",
+            "title": "Stratégie d'Entreprise & Avenir",
+            "description": "Élever la réflexion au niveau de l'entreprise (business model, risques, vision)",
+            "icon": "📈",
+            "livrable": "Les piliers du Business Plan et de la vision à long terme",
+            "fiches": ["fiche_6", "fiche_7", "fiche_9", "fiche_10", "fiche_11"],
+            "specific_guidelines": {
+                "welcome": "Bienvenue dans ce dernier atelier, le plus stratégique de tous. Ce formulaire contient **5 sections**.",
+                "objectives": "L'objectif est de finaliser notre vision sur des aspects fondamentaux : Comment nous allons gagner de l'argent (Modèle Économique), Comment nous allons nous protéger (Gestion des Risques), Comment nous allons grandir (Roadmap & Stratégie Corporate).",
+                "importance": "Tes réponses ici construiront le Business Plan et la feuille de route de l'entreprise pour les années à venir.",
+                "rules_summary": "Les mêmes consignes s'appliquent."
+            },
+            "confirmation_message": "Félicitations {user_name}, tu es arrivé au bout de notre processus de co-construction ! Tes réponses à ces questions stratégiques sont la dernière pièce du puzzle. Nous avons maintenant une vision à 360° d'une clarté exceptionnelle. La prochaine étape sera de synthétiser toutes tes réponses pour produire le document fondateur final de IA PRODUCT-INDUS : notre manifeste et notre business plan."
+        }
+    }
+}
