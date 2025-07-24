@@ -1,9 +1,23 @@
 import streamlit as st
 import json
 import os
+import zipfile
+import io
+import re
 from datetime import datetime
 from pathlib import Path
 import glob
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email import encoders
+from typing import Dict, List, Any, Optional, Union
+from jsonschema import validate, ValidationError
+from dotenv import load_dotenv
+
+# Charger les variables d'environnement depuis le fichier .env
+load_dotenv(override=True)
 
 # Configuration des chemins des dossiers de données
 BASE_DIR = Path(__file__).parent
@@ -611,30 +625,174 @@ class SessionManager:
         # Utiliser un chemin absolu basé sur le fichier app.py
         base_dir = os.path.dirname(os.path.abspath(__file__))
         self.sessions_file = os.path.join(base_dir, sessions_file)
-        st.write(f"📁 Chemin du fichier sessions: {self.sessions_file}")
+        # Message de débogage supprimé : st.write(f"📁 Chemin du fichier sessions: {self.sessions_file}")
+        
+        # Schéma de validation des données de session
+        self.SESSION_SCHEMA = {
+            "type": "object",
+            "properties": {
+                "sessions": {
+                    "type": "object",
+                    "patternProperties": {
+                        "^[a-zA-Z0-9_-]+$": {
+                            "type": "object",
+                            "properties": {
+                                "id": {"type": "string"},
+                                "title": {"type": "string"},
+                                "description": {"type": "string"},
+                                "created_at": {"type": "string"},
+                                "updated_at": {"type": "string"},
+                                "fiches": {"type": "array", "items": {"type": "string"}},
+                                "progress": {"type": "number", "minimum": 0, "maximum": 100}
+                            },
+                            "required": ["id", "title", "fiches"]
+                        }
+                    },
+                    "default": {}
+                }
+            },
+            "required": ["sessions"]
+        }
+        
         self.sessions_data = self.load_sessions()
         self.fiches_cache = {}
     
-    def load_sessions(self):
-        """Charge les données de sessions avec validation"""
-        try:
-            if not os.path.exists(self.sessions_file):
-                st.error(f"❌ Fichier sessions.json introuvable: {self.sessions_file}")
-                st.write(f"Répertoire parent existe: {os.path.exists(os.path.dirname(self.sessions_file))}")
-                if os.path.exists(os.path.dirname(self.sessions_file)):
-                    st.write(f"Contenu du répertoire: {os.listdir(os.path.dirname(self.sessions_file))}")
-                return {"sessions": {}}
+    def validate_session_data(self, data: dict) -> tuple[bool, list[str]]:
+        """
+        Valide les données de session par rapport au schéma défini
+        
+        Args:
+            data: Données à valider
+            
+        Returns:
+            tuple: (is_valid, errors) - Booléen indiquant si les données sont valides et liste des erreurs
+        """
+        if not isinstance(data, dict):
+            return False, ["Les données doivent être un dictionnaire"]
+            
+        errors = []
+        
+        # Vérifier la structure de base
+        if 'sessions' not in data:
+            errors.append("Clé 'sessions' manquante dans les données")
+            return False, errors
+            
+        if not isinstance(data['sessions'], dict):
+            errors.append("La clé 'sessions' doit être un dictionnaire")
+            return False, errors
+            
+        # Valider chaque session
+        for session_id, session in data['sessions'].items():
+            if not isinstance(session, dict):
+                errors.append(f"La session {session_id} doit être un dictionnaire")
+                continue
+                
+            # Vérifier les champs obligatoires
+            for field in ['id', 'title', 'fiches']:
+                if field not in session:
+                    errors.append(f"Champ obligatoire manquant dans la session {session_id}: {field}")
+            
+            # Vérifier le type des fiches
+            if 'fiches' in session and not isinstance(session['fiches'], list):
+                errors.append(f"Le champ 'fiches' de la session {session_id} doit être une liste")
+            
+            # Vérifier le format de la progression si elle existe
+            if 'progress' in session and not (0 <= session['progress'] <= 100):
+                errors.append(f"La progression de la session {session_id} doit être entre 0 et 100")
+        
+        return len(errors) == 0, errors
+    
+    def normalize_session_data(self, data: dict) -> dict:
+        """
+        Normalise les données de session pour s'assurer qu'elles correspondent au schéma attendu
+        
+        Args:
+            data: Données à normaliser
+            
+        Returns:
+            dict: Données normalisées
+        """
+        if not isinstance(data, dict):
+            return {"sessions": {}}
+            
+        normalized = {"sessions": {}}
+        
+        if 'sessions' in data and isinstance(data['sessions'], dict):
+            for session_id, session in data['sessions'].items():
+                if not isinstance(session, dict):
+                    continue
                     
+                # Créer une session normalisée avec des valeurs par défaut
+                normalized_session = {
+                    'id': str(session.get('id', session_id)),
+                    'title': str(session.get('title', f"Session {session_id}")),
+                    'description': str(session.get('description', '')),
+                    'created_at': session.get('created_at', datetime.now().isoformat()),
+                    'updated_at': session.get('updated_at', datetime.now().isoformat()),
+                    'fiches': [str(f) for f in session.get('fiches', []) if isinstance(f, (str, int, float))],
+                    'progress': min(100, max(0, float(session.get('progress', 0))))
+                }
+                
+                # Conserver les champs supplémentaires
+                for key, value in session.items():
+                    if key not in normalized_session:
+                        normalized_session[key] = value
+                
+                normalized["sessions"][session_id] = normalized_session
+        
+        return normalized
+    
+    def load_sessions(self):
+        """Charge les données de sessions avec validation et normalisation"""
+        try:
+            # Si le fichier n'existe pas, retourner une structure vide
+            if not os.path.exists(self.sessions_file):
+                return self.normalize_session_data({"sessions": {}})
+            
+            # Charger les données brutes
             with open(self.sessions_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                st.success(f"✅ Sessions chargées depuis: {self.sessions_file}")
-                st.write(f"Nombre de sessions dans le fichier: {len(data.get('sessions', {}))}")
-                return data
+                try:
+                    raw_data = json.load(f)
+                except json.JSONDecodeError as e:
+                    st.error(f"❌ Erreur de décodage JSON dans {self.sessions_file}: {e}")
+                    return self.normalize_session_data({"sessions": {}})
+            
+            # Valider les données
+            is_valid, errors = self.validate_session_data(raw_data)
+            
+            if not is_valid:
+                st.warning("⚠️ Des problèmes ont été détectés dans les données de session:")
+                for error in errors:
+                    st.warning(f"- {error}")
+                
+                # Essayer de récupérer quand même les données valides
+                if raw_data and 'sessions' in raw_data and isinstance(raw_data['sessions'], dict):
+                    st.info("Tentative de récupération des sessions valides...")
+                else:
+                    st.error("Aucune donnée de session valide trouvée.")
+                    return self.normalize_session_data({"sessions": {}})
+            
+            # Normaliser les données
+            normalized_data = self.normalize_session_data(raw_data)
+            
+            # Vérifier si des fiches référencées n'existent pas
+            missing_fiches = []
+            for session_id, session in normalized_data['sessions'].items():
+                for fiche_id in session['fiches']:
+                    fiche_path = os.path.join(os.path.dirname(self.sessions_file), 'fiches', f"{fiche_id}.json")
+                    if not os.path.exists(fiche_path):
+                        missing_fiches.append(f"- Fiche '{fiche_id}' référencée dans la session '{session_id}' n'existe pas")
+            
+            if missing_fiches:
+                st.warning("⚠️ Certaines fiches référencées sont introuvables:")
+                for msg in missing_fiches:
+                    st.warning(msg)
+            
+            return normalized_data
+            
         except Exception as e:
             st.error(f"❌ Erreur lors du chargement des sessions : {e}")
-            st.error(f"Type d'erreur: {type(e).__name__}")
-            st.error(f"Chemin du fichier: {self.sessions_file}")
-            return {"sessions": {}}
+            return self.normalize_session_data({"sessions": {}})
     
     def get_session_by_id(self, session_id):
         """Récupère une session par son ID"""
@@ -792,6 +950,224 @@ def save_current_responses(session_id=None, responses=None, auto_save=False):
         if not auto_save:  # Ne pas afficher d'erreur pour l'auto-save
             st.error(f"Erreur lors de la sauvegarde : {str(e)}")
         return False
+
+def export_all_responses():
+    """Exporte toutes les réponses en un fichier ZIP"""
+    try:
+        responses_dir = os.path.join(os.path.dirname(__file__), "data", "responses")
+        if not os.path.exists(responses_dir):
+            return None
+        
+        # Créer un ZIP en mémoire
+        zip_buffer = io.BytesIO()
+        with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
+            # Ajouter tous les fichiers JSON de réponses
+            for file in os.listdir(responses_dir):
+                if file.endswith('.json'):
+                    file_path = os.path.join(responses_dir, file)
+                    zip_file.write(file_path, file)
+            
+            # Ajouter un fichier de résumé
+            summary = create_responses_summary()
+            zip_file.writestr("resume_reponses.txt", summary)
+        
+        zip_buffer.seek(0)
+        return zip_buffer.getvalue()
+    except Exception as e:
+        st.error(f"Erreur lors de la création du ZIP : {e}")
+        return None
+
+def send_responses_by_email(admin_email="ia.indus.project@gmail.com"):
+    """Envoie toutes les réponses par email à l'administrateur"""
+    try:
+        # Créer le ZIP des réponses
+        zip_data = export_all_responses()
+        if not zip_data:
+            st.warning("Aucune réponse à envoyer.")
+            return False
+        
+        # Configuration du message
+        msg = MIMEMultipart()
+        msg['From'] = os.getenv('SMTP_EMAIL', 'noreply@questionnaires-mapp.com')
+        msg['To'] = admin_email
+        msg['Subject'] = f"Résultats des questionnaires - {datetime.now().strftime('%d/%m/%Y %H:%M')}"
+        
+        # Corps du message avec plus d'informations
+        body = f"""
+        <html>
+            <body>
+                <p>Bonjour,</p>
+                
+                <p>Vous recevez ce message car une demande d'export des réponses aux questionnaires a été effectuée.</p>
+                
+                <p><strong>Détails de l'export :</strong></p>
+                <ul>
+                    <li>Date : {datetime.now().strftime('%d/%m/%Y à %H:%M')}</li>
+                    <li>Fichier joint : reponses_mapp_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip</li>
+                    <li>Contenu : Toutes les réponses aux questionnaires au format JSON</li>
+                </ul>
+                
+                <p>Si vous n'êtes pas à l'origine de cette demande, veuillez contacter l'administrateur du système.</p>
+                
+                <p>Cordialement,<br>
+                L'équipe Questionnaires MAPP</p>
+                
+                <hr>
+                <p style="color: #666; font-size: 0.8em;">
+                    Ceci est un message automatique, merde de ne pas y répondre.
+                </p>
+            </body>
+        </html>
+        """
+        
+        # Ajouter la partie HTML et texte brut pour la compatibilité
+        msg.attach(MIMEText(body, 'html', 'utf-8'))
+        
+        # Ajouter le fichier ZIP en pièce jointe
+        part = MIMEBase('application', 'zip')
+        part.set_payload(zip_data)
+        encoders.encode_base64(part)
+        part.add_header('Content-Disposition', f'attachment; filename="reponses_mapp_{datetime.now().strftime("%Y%m%d_%H%M%S")}.zip"')
+        msg.attach(part)
+        
+        # Configuration SMTP sécurisée avec variables d'environnement
+        smtp_server = os.getenv('SMTP_SERVER', 'smtp.gmail.com')
+        smtp_port = int(os.getenv('SMTP_PORT', 587))
+        smtp_username = os.getenv('SMTP_USERNAME', os.getenv('SMTP_EMAIL'))
+        smtp_password = os.getenv('SMTP_PASSWORD')
+        
+        if not smtp_username or not smtp_password:
+            st.warning("Configuration SMTP incomplète. Veuillez configurer SMTP_EMAIL et SMTP_PASSWORD dans les variables d'environnement.")
+            return False
+        
+        # Connexion sécurisée au serveur SMTP
+        try:
+            with smtplib.SMTP(smtp_server, smtp_port, timeout=10) as server:
+                server.ehlo()
+                if smtp_server == 'smtp.gmail.com':
+                    server.starttls()
+                    server.ehlo()
+                
+                # Authentification
+                server.login(smtp_username, smtp_password)
+                
+                # Envoi de l'email
+                server.send_message(msg)
+                
+                # Journalisation (peut être commenté en production)
+                print(f"Email envoyé avec succès à {admin_email}")
+                
+        except smtplib.SMTPAuthenticationError:
+            st.error("❌ Échec de l'authentification SMTP. Vérifiez vos identifiants.")
+            return False
+        except smtplib.SMTPException as e:
+            st.error(f"❌ Erreur SMTP lors de l'envoi de l'email : {str(e)}")
+            return False
+        except Exception as e:
+            st.error(f"❌ Erreur inattendue lors de l'envoi de l'email : {str(e)}")
+            return False
+        
+        # Succès
+        st.success(f"✅ Les réponses ont été envoyées avec succès à {admin_email}")
+        
+        # Envoyer une notification si l'option est activée
+        if os.getenv('ENABLE_EMAIL_NOTIFICATIONS', '').lower() == 'true':
+            try:
+                notification_msg = MIMEMultipart()
+                notification_msg['From'] = smtp_username
+                notification_msg['To'] = smtp_username  # Envoyer aussi une copie à l'expéditeur
+                notification_msg['Subject'] = f"[NOTIF] Export des réponses effectué - {datetime.now().strftime('%d/%m/%Y')}"
+                
+                notification_body = f"""
+                Un export des réponses a été effectué avec succès.
+                
+                Détails :
+                - Destinataire : {admin_email}
+                - Date : {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}
+                - Fichier : reponses_mapp_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip
+                """
+                
+                notification_msg.attach(MIMEText(notification_body, 'plain', 'utf-8'))
+                
+                with smtplib.SMTP(smtp_server, smtp_port) as server:
+                    server.starttls()
+                    server.login(smtp_username, smtp_password)
+                    server.send_message(notification_msg)
+                    
+            except Exception as e:
+                print(f"[Avertissement] Échec de l'envoi de la notification : {str(e)}")
+        
+        return True
+        
+    except Exception as e:
+        st.error(f"❌ Erreur lors de la préparation de l'email : {str(e)}")
+        import traceback
+        print(f"[Erreur détaillée] {traceback.format_exc()}")
+        return False
+
+def setup_auto_email_on_response():
+    """
+    Configure l'envoi automatique d'email à chaque nouvelle réponse.
+    
+    Cette fonction est appelée après chaque sauvegarde pour envoyer automatiquement
+    les nouvelles réponses par email si la configuration le permet.
+    
+    Returns:
+        bool: True si l'email a été envoyé avec succès, False sinon
+    """
+    # Vérifier si l'envoi automatique est activé via les variables d'environnement
+    auto_email_enabled = os.getenv('AUTO_EMAIL_ENABLED', '').lower() == 'true'
+    
+    if not auto_email_enabled:
+        return False
+        
+    try:
+        # Vérifier si nous avons suffisamment de réponses pour justifier un envoi
+        responses_dir = os.path.join(os.path.dirname(__file__), "data", "responses")
+        if not os.path.exists(responses_dir):
+            return False
+            
+        response_files = [f for f in os.listdir(responses_dir) if f.endswith('.json')]
+        if not response_files:
+            return False
+            
+        # Envoyer l'email avec les réponses
+        admin_email = os.getenv('ADMIN_EMAIL', 'ia.indus.project@gmail.com')
+        return send_responses_by_email(admin_email)
+        
+    except Exception as e:
+        print(f"[Erreur] Échec de l'envoi automatique d'email : {str(e)}")
+        return False
+
+def create_responses_summary():
+    """Crée un résumé des réponses pour l'administrateur"""
+    responses_dir = os.path.join(os.path.dirname(__file__), "data", "responses")
+    if not os.path.exists(responses_dir):
+        return "Aucune réponse trouvée."
+    
+    summary = f"RÉSUMÉ DES RÉPONSES - {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}\n"
+    summary += "=" * 60 + "\n\n"
+    
+    files = [f for f in os.listdir(responses_dir) if f.endswith('.json')]
+    summary += f"Nombre total de fichiers de réponses : {len(files)}\n\n"
+    
+    for file in sorted(files):
+        try:
+            file_path = os.path.join(responses_dir, file)
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                session_id = data.get('session_id', 'Inconnu')
+                timestamp = data.get('timestamp', 'Inconnu')
+                responses_count = len(data.get('responses', {}))
+                
+                summary += f"Fichier : {file}\n"
+                summary += f"  Session : {session_id}\n"
+                summary += f"  Date : {timestamp}\n"
+                summary += f"  Nombre de réponses : {responses_count}\n\n"
+        except Exception as e:
+            summary += f"Erreur lors de la lecture de {file} : {e}\n\n"
+    
+    return summary
 
 def load_responses(session_id):
     """Charge les réponses sauvegardées pour une session"""
@@ -973,8 +1349,8 @@ def show_home():
     """, unsafe_allow_html=True)
     
     # Section de statistiques rapides
-    sessions_data = load_sessions()
-    sessions = sessions_data.get('sessions', {})
+    session_manager = SessionManager()
+    sessions = session_manager.sessions_data.get('sessions', {})
     
     if sessions:
         total_sessions = len(sessions)
@@ -1156,31 +1532,171 @@ def show_home():
     </div>
     """, unsafe_allow_html=True)
 
+def show_dashboard():
+    """Affiche le tableau de bord avec les statistiques et les outils d'administration"""
+    # Initialiser selected_session s'il n'existe pas
+    if 'selected_session' not in st.session_state:
+        st.session_state.selected_session = None
+        
+    # Si aucune session n'est sélectionnée, on affiche un message mais on ne bloque pas l'accès
+    if not st.session_state.selected_session:
+        st.warning("Aucune session sélectionnée. Les statistiques seront limitées.")
+        if st.button("← Sélectionner une session", key="select_session_btn"):
+            st.session_state.current_page = "Accueil"
+            st.rerun()
+    
+    st.title("📊 Tableau de Bord")
+    
+    # Charger les données de la session
+    session_manager = SessionManager()
+    sessions_data = session_manager.sessions_data
+    
+    # Afficher un résumé global
+    st.markdown("### Progression Globale")
+    
+    # Calculer les statistiques globales
+    total_sessions = len(sessions_data['sessions'])
+    completed_sessions = 0
+    total_questions = 0
+    answered_questions = 0
+    
+    # Parcourir toutes les sessions pour calculer les statistiques
+    for session_id, session in sessions_data['sessions'].items():
+        session_complete = True
+        
+        # Vérifier les fiches de la session
+        if 'fiches' in session and session['fiches']:
+            for fiche_id in session['fiches']:
+                fiche = get_fiche(fiche_id)
+                if fiche and 'questions' in fiche:
+                    total_questions += len(fiche['questions'])
+                    
+                    # Vérifier les réponses pour chaque question
+                    for question in fiche['questions']:
+                        question_id = question.get('id')
+                        if question_id and 'responses' in st.session_state:
+                            response = st.session_state['responses'].get(question_id, {})
+                            if response:
+                                answered_questions += 1
+                            else:
+                                session_complete = False
+            
+            if session_complete and session['fiches']:
+                completed_sessions += 1
+    
+    # Afficher les statistiques
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Sessions Complétées", f"{completed_sessions}/{total_sessions}")
+    with col2:
+        st.metric("Questions Répondues", f"{answered_questions}/{total_questions}" if total_questions > 0 else "0/0")
+    with col3:
+        progress = (answered_questions / total_questions * 100) if total_questions > 0 else 0
+        st.metric("Progression Globale", f"{progress:.1f}%")
+    
+    # Afficher une barre de progression
+    st.progress(min(progress / 100, 1.0))
+    
+    # Section Administration
+    st.markdown("---")
+    st.markdown("### 🔐 Outils d'Administration")
+    
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        if st.button("📥 Télécharger toutes les réponses", help="Télécharge un fichier ZIP avec toutes les réponses"):
+            zip_data = export_all_responses()
+            if zip_data:
+                st.download_button(
+                    label="💾 Télécharger le fichier ZIP",
+                    data=zip_data,
+                    file_name=f"reponses_mapp_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip",
+                    mime="application/zip",
+                    help="Cliquez pour télécharger le fichier ZIP"
+                )
+            else:
+                st.warning("Aucune réponse à télécharger")
+    
+    with col2:
+        if st.button("📧 Envoyer par email", help="Envoie toutes les réponses par email"):
+            if send_responses_by_email():
+                st.balloons()
+    
+    with col3:
+        # Afficher le nombre de réponses disponibles
+        responses_dir = os.path.join(os.path.dirname(__file__), "data", "responses")
+        if os.path.exists(responses_dir):
+            response_files = [f for f in os.listdir(responses_dir) if f.endswith('.json')]
+            st.metric("Fichiers de réponses", len(response_files))
+        else:
+            st.metric("Fichiers de réponses", 0)
+    
+    # Afficher la progression par session
+    st.markdown("### Progression par Session")
+    
+    for session_id, session in sessions_data['sessions'].items():
+        with st.expander(f"{session.get('icon', '📄')} {session.get('title', 'Session sans titre')}"):
+            # Calculer la progression pour cette session
+            session_questions = 0
+            session_answered = 0
+            
+            if 'fiches' in session and session['fiches']:
+                for fiche_id in session['fiches']:
+                    fiche = get_fiche(fiche_id)
+                    if fiche and 'questions' in fiche:
+                        session_questions += len(fiche['questions'])
+                        
+                        for question in fiche['questions']:
+                            question_id = question.get('id')
+                            if question_id and 'responses' in st.session_state:
+                                response = st.session_state['responses'].get(question_id, {})
+                                if response:
+                                    session_answered += 1
+            
+            # Afficher la progression de la session
+            if session_questions > 0:
+                session_progress = (session_answered / session_questions) * 100
+                st.metric("Progression", f"{session_progress:.1f}%")
+                st.progress(min(session_progress / 100, 1.0))
+                
+                # Bouton pour accéder à la session
+                if st.button(f"Accéder à la session {session.get('title', '')}", key=f"goto_{session_id}"):
+                    st.session_state.selected_session = session_id
+                    st.session_state.current_page = "Questionnaires"
+                    st.rerun()
+
+
 def show_help():
     """Affiche la page d'aide et de support"""
-    st.title("❓ Aide et Support")
+    st.title("❓ Aide & Support")
     
-    st.markdown("### Comment utiliser cette application ?")
     st.markdown("""
-    - **Navigation** : Utilisez le menu latéral pour vous déplacer
-    - **Questionnaires** : Répondez aux questions des fiches thématiques
-    - **Sauvegarde** : Enregistrez régulièrement vos réponses
-    - **Progression** : Suivez votre avancement en temps réel
+    ## Comment utiliser l'application
+    
+    ### Navigation
+    - Utilisez le menu latéral pour naviguer entre les différentes sections de l'application.
+    - La page d'accueil vous permet de sélectionner une session de travail.
+    - La section Questionnaires affiche les fiches à compléter.
+    - Le Tableau de Bord montre votre progression globale.
+    
+    ### Remplir un questionnaire
+    1. Sélectionnez une session depuis la page d'accueil
+    2. Cliquez sur les fiches pour les déplier et voir les questions
+    3. Répondez aux questions dans l'ordre ou dans l'ordre de votre choix
+    4. Vos réponses sont enregistrées automatiquement
+    
+    ### Sauvegarde
+    - Vos réponses sont automatiquement enregistrées au fur et à mesure.
+    - Vous pouvez également utiliser le bouton "💾 Sauvegarder" dans le panneau latéral.
+    
+    ### Support
+    Pour toute question ou problème, veuillez contacter l'équipe de support à l'adresse suivante :
+    [support@ia-indus.fr](mailto:support@ia-indus.fr)
     """)
     
-    st.markdown("### Indicateurs de statut")
-    st.markdown("""
-    - 🟢 **Complète** : Toutes les questions répondues
-    - 🟡 **En cours** : Réponses partielles
-    - ⚪ **Non commencé** : Aucune réponse
-    """)
-    
-    st.markdown("### Support technique")
-    st.markdown("""
-    Pour toute question ou problème, veuillez contacter :
-    - Email : support@ia-indus.fr
-    - Téléphone : +33 1 23 45 67 89
-    """)
+    if st.button("← Retour à l'accueil"):
+        st.session_state.current_page = "Accueil"
+        st.rerun()
 
 def display_guidelines(sessions_data, selected_session):
     """Affiche les directives spécifiques à la session sélectionnée"""
@@ -1799,7 +2315,8 @@ def show_questionnaires():
         return
     
     # Charger les données de la session
-    sessions_data = load_sessions()
+    session_manager = SessionManager()
+    sessions_data = session_manager.sessions_data
     selected_session_id = st.session_state.selected_session
     selected_session = sessions_data.get('sessions', {}).get(selected_session_id)
     
@@ -1997,13 +2514,12 @@ def show_questionnaires():
         if st.button("← Retour à l'accueil", key="back_to_home_from_questionnaires"):
             st.session_state.current_page = "Accueil"
             st.rerun()
-
-def show_dashboard():
     """Affiche le tableau de bord avec les statistiques de progression"""
     st.title("📊 Tableau de Bord")
     
-    # Charger les données des sessions
-    sessions_data = load_sessions()
+    # Initialiser le gestionnaire de sessions
+    session_manager = SessionManager()
+    sessions_data = session_manager.sessions_data
     
     # Vérifier si des données de session sont disponibles
     if not sessions_data or 'sessions' not in sessions_data or not sessions_data['sessions']:
@@ -2058,6 +2574,49 @@ def show_dashboard():
     
     # Afficher une barre de progression
     st.progress(min(progress / 100, 1.0))
+    
+    # SECTION : Administration
+    st.markdown("---")
+    st.markdown("### 🔐 Administration")
+    
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        if st.button("📥 Télécharger toutes les réponses", help="Télécharge un fichier ZIP avec toutes les réponses"):
+            zip_data = export_all_responses()
+            if zip_data:
+                st.download_button(
+                    label="💾 Télécharger le fichier ZIP",
+                    data=zip_data,
+                    file_name=f"reponses_mapp_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip",
+                    mime="application/zip",
+                    help="Cliquez pour télécharger le fichier ZIP"
+                )
+            else:
+                st.warning("Aucune réponse à télécharger")
+    
+    with col2:
+        if st.button("📧 Envoyer par email", help="Envoie toutes les réponses par email"):
+            if send_responses_by_email():
+                st.balloons()
+    
+    with col3:
+        # Afficher le nombre de réponses disponibles
+        responses_dir = os.path.join(os.path.dirname(__file__), "data", "responses")
+        if os.path.exists(responses_dir):
+            response_files = [f for f in os.listdir(responses_dir) if f.endswith('.json')]
+            st.metric("Fichiers de réponses", len(response_files))
+        else:
+            st.metric("Fichiers de réponses", 0)
+    
+    with col3:
+        # Afficher le nombre de réponses disponibles
+        responses_dir = os.path.join(os.path.dirname(__file__), "data", "responses")
+        if os.path.exists(responses_dir):
+            response_files = [f for f in os.listdir(responses_dir) if f.endswith('.json')]
+            st.metric("Fichiers de réponses", len(response_files))
+        else:
+            st.metric("Fichiers de réponses", 0)
     
     # Afficher la progression par session
     st.markdown("### Progression par Session")
@@ -2267,8 +2826,8 @@ def main():
     # Affichage de la session active
     if hasattr(st.session_state, 'selected_session') and st.session_state.selected_session:
         try:
-            sessions_data = load_sessions()
-            selected_session = sessions_data.get('sessions', {}).get(st.session_state.selected_session)
+            session_manager = SessionManager()
+            selected_session = session_manager.get_session(st.session_state.selected_session)
             
             if selected_session:
                 progress = get_session_progress(selected_session)
