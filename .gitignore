@@ -1,0 +1,50 @@
+# Environnements virtuels
+.venv
+venv/
+env/
+
+# Fichiers de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers de configuration locaux
+.env
+*.log
+
+# Fichiers de sauvegarde
+*.bak
+*.swp
+*~
+
+# Dossiers de données volumineux
+data/
+backups/
+responses/
+sessions/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de l'éditeur
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Fichiers temporaires
+temp/
+tmp/
+
+# Fichiers de déploiement
+build/
+dist/
+*.egg-info/
+
+# Fichiers de débogage
+debug_report.md
+dry_run_report.md
+app_debug.log
+fiches_update.log
+fix_consistency.log

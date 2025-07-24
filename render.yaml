@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: questionnaires-mapp
+    env: python
+    buildCommand: "./setup.sh"
+    startCommand: "streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true"
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "True"
+      - key: PORT
+        value: "10000"
